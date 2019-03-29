@@ -1,0 +1,5 @@
+"spr_battle_button_fight"				"./sprite/spr_battle_button_fight"
+"spr_battle_button_act"					"./sprite/spr_battle_button_act"
+"spr_battle_button_item"				"./sprite/spr_battle_button_item"
+"spr_battle_button_item_empty"			"./sprite/spr_battle_button_item_empty"
+"spr_battle_button_mercy"				"./sprite/spr_battle_button_mercy"

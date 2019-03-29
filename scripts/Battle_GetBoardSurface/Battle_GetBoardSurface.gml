@@ -1,0 +1,1 @@
+return battle_board._surface;

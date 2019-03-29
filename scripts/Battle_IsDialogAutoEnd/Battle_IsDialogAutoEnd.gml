@@ -1,0 +1,1 @@
+return battle._dialog_auto_end;
