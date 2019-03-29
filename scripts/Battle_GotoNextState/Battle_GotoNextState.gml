@@ -1,0 +1,1 @@
+Battle_SetState(Battle_GetNextState());

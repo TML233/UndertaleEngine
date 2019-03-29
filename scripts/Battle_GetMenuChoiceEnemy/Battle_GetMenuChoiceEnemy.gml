@@ -1,0 +1,1 @@
+return battle._menu_choice_enemy;

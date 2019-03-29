@@ -1,0 +1,1 @@
+return battle._turn_number;

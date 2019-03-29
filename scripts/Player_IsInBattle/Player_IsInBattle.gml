@@ -1,0 +1,1 @@
+return instance_exists(battle);

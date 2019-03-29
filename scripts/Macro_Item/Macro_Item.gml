@@ -1,0 +1,5 @@
+enum ITEM_EVENT{
+	USE,
+	INFO,
+	DROP
+};

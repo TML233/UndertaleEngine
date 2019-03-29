@@ -1,0 +1,3 @@
+"font_dotumche"				"./font/font_dotumche"
+"font_determination_mono"				"./font/font_determination_mono"
+"font_determination_sans"				"./font/font_determination_sans"

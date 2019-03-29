@@ -1,0 +1,1 @@
+camera_destroy(_camera);
