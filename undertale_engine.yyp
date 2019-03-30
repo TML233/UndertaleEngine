@@ -679,6 +679,22 @@
             }
         },
         {
+            "Key": "1fbd2387-a3e9-4045-b2d6-1f8fccbe24b5",
+            "Value": {
+                "id": "ddef8051-86cd-4af5-b5d3-4cd29d32add5",
+                "resourcePath": "scripts\\Battle_SetMenuChoiceMercyOverride\\Battle_SetMenuChoiceMercyOverride.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2043a6a6-887d-49ae-9fcd-cdb524fa33c8",
+            "Value": {
+                "id": "7b060323-b99b-4c2f-808d-c5a42ad9220b",
+                "resourcePath": "scripts\\Battle_GetMenuChoiceMercyOverrideName\\Battle_GetMenuChoiceMercyOverrideName.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2068e6f2-9c8d-44a0-a2a7-de86351c64db",
             "Value": {
                 "id": "7928b80c-f5a1-4653-8c3e-49a7b3055bf0",
@@ -907,6 +923,14 @@
             "Value": {
                 "id": "f9f5c3a8-510e-4d87-99e4-0284a1f76bae",
                 "resourcePath": "scripts\\Console_Uninit\\Console_Uninit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3065732a-a1ae-4c2b-b562-13c97ceb40e3",
+            "Value": {
+                "id": "00621c13-ea6e-4db9-ab17-08550a01398f",
+                "resourcePath": "scripts\\Battle_GetMenuChoiceMercyOverride\\Battle_GetMenuChoiceMercyOverride.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2623,6 +2647,14 @@
             }
         },
         {
+            "Key": "8e8dfeff-73f5-4bca-8f45-10925abff500",
+            "Value": {
+                "id": "3e65daf1-060d-4b5c-8acb-66133bf66c8b",
+                "resourcePath": "scripts\\Battle_SetMenuChoiceMercyOverrideName\\Battle_SetMenuChoiceMercyOverrideName.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8eaab41c-10c8-4b23-a26c-7fafcbddc788",
             "Value": {
                 "id": "03e9b5b1-f105-4d30-af9a-ae4d740cf21e",
@@ -3155,6 +3187,14 @@
             "Value": {
                 "id": "4d8436a6-82f8-4a26-be64-2b38815f9ae0",
                 "resourcePath": "scripts\\Battle_GetTurnTime\\Battle_GetTurnTime.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "adb3c320-157f-4b8f-8e2f-6f280778ac2a",
+            "Value": {
+                "id": "0b226d01-55f7-4e85-b44b-a6071ca4424e",
+                "resourcePath": "scripts\\Battle_SetMenuChoiceMercyOverrideNumber\\Battle_SetMenuChoiceMercyOverrideNumber.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3991,6 +4031,14 @@
             }
         },
         {
+            "Key": "d82c8aaa-e719-43af-876a-7c064c449b89",
+            "Value": {
+                "id": "b4a2eb66-88c6-441c-90b8-b4ed0100d3ef",
+                "resourcePath": "scripts\\Battle_GetMenuChoiceMercyOverrideNumber\\Battle_GetMenuChoiceMercyOverrideNumber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d860e9dd-790d-4eb1-85b8-dbbe8c5eeb64",
             "Value": {
                 "id": "03e6bd49-b674-42a3-ac24-3d9cab3e5678",
@@ -4712,10 +4760,16 @@
         "ca63c00b-dd82-47af-817e-9c9eac9aa29c",
         "0ea3358c-491d-403d-988f-789544b4f395",
         "6e96e4f1-3d4a-4130-8e12-053ee5a447d8",
-        "c8407506-3e0c-4945-83b1-007da3a01f22",
-        "1ca1bc87-f675-4e4d-83b1-18757e919210",
         "5550704f-568f-42e0-910d-a409bbecefd9",
         "8b2e7c3d-3a84-42be-80bb-fea18de60190",
+        "c8407506-3e0c-4945-83b1-007da3a01f22",
+        "1ca1bc87-f675-4e4d-83b1-18757e919210",
+        "1fbd2387-a3e9-4045-b2d6-1f8fccbe24b5",
+        "3065732a-a1ae-4c2b-b562-13c97ceb40e3",
+        "adb3c320-157f-4b8f-8e2f-6f280778ac2a",
+        "d82c8aaa-e719-43af-876a-7c064c449b89",
+        "2043a6a6-887d-49ae-9fcd-cdb524fa33c8",
+        "8e8dfeff-73f5-4bca-8f45-10925abff500",
         "e48fa714-3070-4c2c-9a39-4dfd42a40ffe",
         "0235428a-dad9-42f6-ab57-a1447cffcef5",
         "c58d8efb-c8d8-4076-ba6a-21df097d0240",
