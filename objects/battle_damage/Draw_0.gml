@@ -12,14 +12,14 @@ if(damage<=0){
 	var draw_x=x;
 	
 	if(LEN%2!=0){
-		draw_x-=(LEN-1)*((sprite_get_width(spr_battle_damage)+1)/2);
+		draw_x-=(LEN-1)*((SPR_W+1)/2);
 	}else{
-		draw_x-=((sprite_get_width(spr_battle_damage))/2)+(LEN/2-1)*(sprite_get_width(spr_battle_damage)+1);
+		draw_x-=((SPR_W)/2)+(LEN/2-1)*(SPR_W+1);
 	}
 	var proc=1;
 	repeat(LEN){
 		draw_sprite_ext(spr_battle_damage,real(string_char_at(STR,proc)),draw_x,y,1,1,0,color,1);
-		draw_x+=sprite_get_width(spr_battle_damage)+1;
+		draw_x+=SPR_W+1;
 		proc+=1;
 	}
 }
