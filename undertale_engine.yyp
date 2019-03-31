@@ -1343,14 +1343,6 @@
             }
         },
         {
-            "Key": "4821a2e0-bd4f-4a08-8b16-8e1be2429d08",
-            "Value": {
-                "id": "ae332962-57f9-4517-a9dd-ac9bc2ff0350",
-                "resourcePath": "sounds\\bgm_ruins\\bgm_ruins.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "488bb17f-c8ae-4073-bccf-4204739be154",
             "Value": {
                 "id": "86e12552-7fe0-4751-a593-7822bee025ff",
@@ -3287,14 +3279,6 @@
             }
         },
         {
-            "Key": "b2b308e1-9207-4cad-b3bb-39428496b8d5",
-            "Value": {
-                "id": "b55d2f62-4714-4bc5-a042-3a12c2fe40ff",
-                "resourcePath": "sounds\\bgm_battle_pre\\bgm_battle_pre.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "b2bd37ba-f270-4100-b184-39036cfa49f5",
             "Value": {
                 "id": "d6af9aa6-503e-4d1e-aaf1-9eb068449bf4",
@@ -3484,14 +3468,6 @@
                 "id": "02ec0fcc-b9d5-429e-9a56-3613cb1cafeb",
                 "resourcePath": "scripts\\Battle_GetTurnInfo\\Battle_GetTurnInfo.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "c1b4853f-92a4-47a5-9f55-c88f86f4f802",
-            "Value": {
-                "id": "a02b0794-d853-4585-a622-e0cf7c993e06",
-                "resourcePath": "sounds\\bgm_menu_0\\bgm_menu_0.yy",
-                "resourceType": "GMSound"
             }
         },
         {
