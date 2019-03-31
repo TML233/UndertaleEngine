@@ -212,7 +212,7 @@ if(_state==BATTLE_STATE.MENU){
 			}
 		}else if(Input_CheckPressed(INPUT.DOWN)){
 			var mercy=Battle_GetMenuChoiceMercy()+1;
-			if(mercy<=_menu_flee_enabled){
+			if((!Battle_IsMenuChoiceMercyOverride()&&mercy<=_menu_mercy_flee_enabled) || (Battle_IsMenuChoiceMercyOverride()&&mercy<Battle_GetMenuChoiceMercyOverrideNumber())){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceMercy(mercy);
 			}
@@ -231,6 +231,8 @@ if(_state==BATTLE_STATE.MENU){
 				Battle_EndMenu(BATTLE_MENU_RESULT.SPARE);
 			}else if(_menu_choice_mercy==1){
 				Battle_EndMenu(BATTLE_MENU_RESULT.FLEE);
+			}else{
+				Battle_EndMenu(BATTLE_MENU_RESULT.SPARE);
 			}
 		}
 	}
