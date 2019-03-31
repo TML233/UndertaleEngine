@@ -90,29 +90,41 @@ if(MENU==BATTLE_MENU.ITEM){
 
 //仁慈
 if(MENU==BATTLE_MENU.MERCY){
-	//越界归零
-	if(Battle_GetMenuChoiceMercy()>Battle_IsMenuFleeEnabled()){
-		Battle_SetMenuChoiceMercy(0,false);
-	}
-	
 	var text="";
-	var proc=0;
-	//仁慈菜单文字
-	repeat(3){
-		if(Battle_IsEnemySpareable(proc)){
-			text+="{color `yellow`}";
-			break;
+	if(!Battle_IsMenuChoiceMercyOverride()){
+		//越界归零
+		if(Battle_GetMenuChoiceMercy()>Battle_IsMenuMercyFleeEnabled()){
+			Battle_SetMenuChoiceMercy(0,false);
 		}
-		proc+=1;
+		
+		var proc=0;
+		//仁慈菜单文字
+		repeat(3){
+			if(Battle_IsEnemySpareable(proc)){
+				text+="{color `yellow`}";
+				break;
+			}
+			proc+=1;
+		}
+		text+=Lang_GetString("battle.menu.mercy.spare");
+		
+		//逃跑是否可用
+		if(Battle_IsMenuMercyFleeEnabled()){
+			text+="&{color `white`}";
+			text+=Lang_GetString("battle.menu.mercy.flee");
+		}
+	}else{
+		if(Battle_GetMenuChoiceMercy()>=Battle_GetMenuChoiceMercyOverrideNumber()){
+			Battle_SetMenuChoiceMercy(0,false);
+		}
+		
+		var proc=0;
+		repeat(Battle_GetMenuChoiceMercyOverrideNumber()){
+			text+=Battle_GetMenuChoiceMercyOverrideName(proc);
+			text+="&";
+			proc+=1;
+		}
 	}
-	text+=Lang_GetString("battle.menu.mercy.spare");
-	
-	//逃跑是否可用
-	if(Battle_IsMenuFleeEnabled()){
-		text+="&{color `white`}";
-		text+=Lang_GetString("battle.menu.mercy.flee");
-	}
-	
 	Battle_SetDialog(text,true);
 }
 	

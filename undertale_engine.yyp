@@ -66,7 +66,7 @@
             "Key": "0235428a-dad9-42f6-ab57-a1447cffcef5",
             "Value": {
                 "id": "5e428a04-4ade-4759-8224-5f18c80e0e09",
-                "resourcePath": "scripts\\Battle_SetMenuFleeEnabled\\Battle_SetMenuFleeEnabled.yy",
+                "resourcePath": "scripts\\Battle_SetMenuMercyFleeEnabled\\Battle_SetMenuMercyFleeEnabled.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -930,7 +930,7 @@
             "Key": "3065732a-a1ae-4c2b-b562-13c97ceb40e3",
             "Value": {
                 "id": "00621c13-ea6e-4db9-ab17-08550a01398f",
-                "resourcePath": "scripts\\Battle_GetMenuChoiceMercyOverride\\Battle_GetMenuChoiceMercyOverride.yy",
+                "resourcePath": "scripts\\Battle_IsMenuChoiceMercyOverride\\Battle_IsMenuChoiceMercyOverride.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1802,7 +1802,7 @@
             "Key": "624d55e0-4f52-41ae-8557-4e62429ff598",
             "Value": {
                 "id": "b5c29798-821c-46fd-87ed-7890170e9cc0",
-                "resourcePath": "scripts\\Encounter_IsMenuFleeEnabled\\Encounter_IsMenuFleeEnabled.yy",
+                "resourcePath": "scripts\\Encounter_IsMenuMercyFleeEnabled\\Encounter_IsMenuMercyFleeEnabled.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4162,7 +4162,7 @@
             "Key": "e48fa714-3070-4c2c-9a39-4dfd42a40ffe",
             "Value": {
                 "id": "fe231b6b-2773-4235-8a63-b036ed648e72",
-                "resourcePath": "scripts\\Battle_IsMenuFleeEnabled\\Battle_IsMenuFleeEnabled.yy",
+                "resourcePath": "scripts\\Battle_IsMenuMercyFleeEnabled\\Battle_IsMenuMercyFleeEnabled.yy",
                 "resourceType": "GMScript"
             }
         },
