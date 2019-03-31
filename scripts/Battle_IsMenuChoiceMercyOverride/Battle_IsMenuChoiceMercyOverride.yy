@@ -1,8 +1,8 @@
 {
-    "id": "624d55e0-4f52-41ae-8557-4e62429ff598",
+    "id": "3065732a-a1ae-4c2b-b562-13c97ceb40e3",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Encounter_IsMenuFleeEnabled",
+    "name": "Battle_IsMenuChoiceMercyOverride",
     "IsCompatibility": false,
     "IsDnD": false
 }
