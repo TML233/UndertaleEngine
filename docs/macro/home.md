@@ -1,0 +1,2 @@
+# Macro
+* [Battle](/macro/battle)
