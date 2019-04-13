@@ -137,3 +137,18 @@ if(_char_linked!=-1){
 		}
 	}
 }
+
+if(is_real(alpha_override)){
+	if(alpha_override!=_alpha_override_previous){
+		_alpha_override_previous=alpha_override;
+		
+		var proc=0;
+		repeat(ds_list_size(_list_inst)){
+			var INST=ds_list_find_value(_list_inst,proc);
+			if(instance_exists(INST)){
+				INST.alpha=alpha_override;
+			}
+			proc+=1;
+		}
+	}
+}
