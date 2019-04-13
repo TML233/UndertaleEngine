@@ -65,3 +65,5 @@ event_user(5);
 
 width=0;
 height=0;
+alpha_override=undefined;
+_alpha_override_previous=-1;
