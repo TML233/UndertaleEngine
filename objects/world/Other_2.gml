@@ -33,6 +33,7 @@ Dialog_Init();
 instance_create_depth(0,0,0,camera);
 instance_create_depth(0,0,0,fader);
 instance_create_depth(0,0,0,border);
+instance_create_depth(0,0,0,closed_captions);
 
 application_surface_draw_enable(false);
 
