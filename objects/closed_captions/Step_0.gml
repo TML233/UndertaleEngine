@@ -18,8 +18,12 @@ while(!ds_queue_empty(_queue_text)){
 //处理显示时间
 var proc=0;
 repeat(ds_list_size(_list_inst)){
-	if(_list_time[|proc]>0){
-		_list_time[|proc]-=1;
+	if(instance_exists(_list_inst[|proc])){
+		if(_list_time[|proc]>0){
+			_list_time[|proc]-=1;
+		}
+	}else{
+		_list_time[|proc]=0;
 	}
 	proc+=1;
 }
@@ -29,10 +33,12 @@ var proc=0;
 repeat(ds_list_size(_list_inst)){
 	if(_list_time[|proc]<=0){
 		var inst=_list_inst[|proc];
-		Anim_Stop(inst,"alpha_override");
-		Anim_New(inst,"alpha_override",0,0,1,-1,10);
-		ds_list_add(_list_destroy_inst,inst);
-		ds_list_add(_list_destroy_time,10);
+		if(instance_exists(inst)){
+			Anim_Stop(inst,"alpha_override");
+			Anim_New(inst,"alpha_override",0,0,1,-1,10);
+			ds_list_add(_list_destroy_inst,inst);
+			ds_list_add(_list_destroy_time,10);
+		}
 		ds_list_delete(_list_inst,proc);
 		ds_list_delete(_list_time,proc);
 		//proc-=1;
@@ -46,7 +52,9 @@ var proc=0;
 var height=0;
 repeat(ds_list_size(_list_inst)){
 	var inst=_list_inst[|proc];
-	height+=inst.height;
+	if(instance_exists(inst)){
+		height+=inst.height;
+	}
 	proc+=1;
 }
 
@@ -72,13 +80,15 @@ var proc=0;
 var yy=_y-up_show;
 repeat(ds_list_size(_list_inst)){
 	var inst=_list_inst[|proc];
-	inst.x=_x-_left;
-	if(proc==ds_list_size(_list_inst)-1){
-		inst.y=_y-inst.height;
-	}else{
-		inst.y=yy;
+	if(instance_exists(inst)){
+		inst.x=_x-_left;
+		if(proc==ds_list_size(_list_inst)-1){
+			inst.y=_y-inst.height;
+		}else{
+			inst.y=yy;
+		}
+		yy+=inst.height;
 	}
-	yy+=inst.height;
 	proc+=1;
 }
 
@@ -86,12 +96,17 @@ repeat(ds_list_size(_list_inst)){
 var proc=0;
 repeat(ds_list_size(_list_destroy_inst)){
 	if(_list_destroy_time[|proc]<=0){
-		instance_destroy(_list_destroy_inst[|proc]);
+		var inst=_list_destroy_inst[|proc];
+		if(instance_exists(inst)){
+			instance_destroy(inst);
+		}
+	}else{
+		_list_destroy_time[|proc]-=1;
+	}
+	if(!instance_exists(_list_destroy_inst[|proc])){
 		ds_list_delete(_list_destroy_inst,proc);
 		ds_list_delete(_list_destroy_time,proc);
 		proc-=1;
-	}else{
-		_list_destroy_time[|proc]-=1;
 	}
 	proc+=1;
 }
