@@ -9,7 +9,9 @@ Go to the [repository page](https://github.com/TML233/undertale_engine), click *
 Get **Github Desktop** [here](https://desktop.github.com/), and install it.
 Launch it and clone the repository which you forked just now to your own machine.
 
-After finishing cloning, click **Show in Explorer**. It will open the project folder. Open **undertale_engine.yyp** to load the project.
+After finishing cloning, click **Branch** → **New branch...**, create a branch _based on_ **the master branch**. You will develop your game on **this new branch**(hereafter referred to as **the game branch**).
+
+Click **Show in Explorer**. It will open the project folder. Open **undertale_engine.yyp** to load the project.
 
 ## Before you start playing around
 !> DO NOT rename the name of the project file, or you will have problems when trying to update the engine!
@@ -27,4 +29,5 @@ For example:
 Save the script.
 
 ## Update the engine
-When there's a update, click **Update from ...** in **Github Desktop**. If there are merge conflicts, fix it.
+When there's a update, checkout **the master branch**, click **Update from ...** in **Github Desktop**. If there are merge conflicts, fix it.
+Then checkout **the game branch**, merge **the master branch** _into_ **the game branch**. If there are merge conflicts, fix it.

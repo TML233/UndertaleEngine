@@ -9,7 +9,7 @@ Battle_GetState();
 ```
 
 ## Returns
-Real([`BATTLE_STATE`](/macro/battle?id=BATTLE_STATE))
+Real([BATTLE_STATE](/macro/battle?id=BATTLE_STATE))
 
 ## Example
 ```gml
