@@ -1,3 +1,3 @@
 user_char=-1;
-multiple=false;
 _triggered=false;
+_collided_previous=false;

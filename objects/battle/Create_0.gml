@@ -60,8 +60,13 @@ _menu_choice_action=0;
 _menu_choice_item=0;
 _menu_choice_item_first=0;
 _menu_choice_mercy=0;
+_menu_choice_mercy_override=false;
+_menu_choice_mercy_override_number=1;
+_menu_choice_mercy_override_name[0]="";
+_menu_choice_mercy_override_name[1]="";
+_menu_choice_mercy_override_name[2]="";
 _menu_fleeable=false;
-_menu_flee_enabled=Encounter_IsMenuFleeEnabled(ENCOUNTER);
+_menu_mercy_flee_enabled=Encounter_IsMenuMercyFleeEnabled(ENCOUNTER);
 _menu_dialog=Encounter_GetMenuDialog(ENCOUNTER);
 
 _menu_fight_damage=0;

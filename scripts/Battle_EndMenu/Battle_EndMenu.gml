@@ -21,8 +21,12 @@ if(Battle_GetState()==BATTLE_STATE.MENU){
 	
 	//计算逃跑
 	if(RESULT==BATTLE_MENU_RESULT.FLEE){
-		var value=irandom(100)+10*Battle_GetTurnNumber();
-		Battle_SetFleeable(round(value/100));
+		if(Battle_IsMenuMercyFleeEnabled()){
+			var value=irandom(100)+10*Battle_GetTurnNumber();
+			Battle_SetFleeable(round(value/100));
+		}else{
+			Battle_SetFleeable(false);
+		}
 	}
 	
 	//调用事件
