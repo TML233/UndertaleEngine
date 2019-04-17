@@ -1,15 +1,25 @@
 ///@arg type
 var TYPE=argument[0];
 
+var result="./"+GAME_SAVE_NAME+"/"+GAME_GUID+"/";
 switch(TYPE){
 	case FLAG_TYPE.STATIC:
-		return ("./"+string(Flag_GetSaveSlot())+"/static");
+		result+=string(Flag_GetSaveSlot())+"/static";
+		break;
+		
 	case FLAG_TYPE.DYNAMIC:
-		return ("./"+string(Flag_GetSaveSlot())+"/dynamic");
+		result+=string(Flag_GetSaveSlot())+"/dynamic";
+		break;
 	case FLAG_TYPE.INFO:
-		return ("./"+string(Flag_GetSaveSlot())+"/info");
+		result+=string(Flag_GetSaveSlot())+"/info";
+		break;
 	case FLAG_TYPE.SETTINGS:
-		return ("./settings");
+		result+="settings";
+		break;
+		
 	default:
-		return ("");
+		result="";
+		break;
 }
+
+return result;

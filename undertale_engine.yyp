@@ -66,7 +66,7 @@
             "Key": "0235428a-dad9-42f6-ab57-a1447cffcef5",
             "Value": {
                 "id": "5e428a04-4ade-4759-8224-5f18c80e0e09",
-                "resourcePath": "scripts\\Battle_SetMenuFleeEnabled\\Battle_SetMenuFleeEnabled.yy",
+                "resourcePath": "scripts\\Battle_SetMenuMercyFleeEnabled\\Battle_SetMenuMercyFleeEnabled.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -679,6 +679,22 @@
             }
         },
         {
+            "Key": "1fbd2387-a3e9-4045-b2d6-1f8fccbe24b5",
+            "Value": {
+                "id": "ddef8051-86cd-4af5-b5d3-4cd29d32add5",
+                "resourcePath": "scripts\\Battle_SetMenuChoiceMercyOverride\\Battle_SetMenuChoiceMercyOverride.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2043a6a6-887d-49ae-9fcd-cdb524fa33c8",
+            "Value": {
+                "id": "7b060323-b99b-4c2f-808d-c5a42ad9220b",
+                "resourcePath": "scripts\\Battle_GetMenuChoiceMercyOverrideName\\Battle_GetMenuChoiceMercyOverrideName.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2068e6f2-9c8d-44a0-a2a7-de86351c64db",
             "Value": {
                 "id": "7928b80c-f5a1-4653-8c3e-49a7b3055bf0",
@@ -691,6 +707,14 @@
             "Value": {
                 "id": "f9c51489-4a99-4dd4-9cd3-69ec2f998ef8",
                 "resourcePath": "sprites\\spr_battle_ui_kr\\spr_battle_ui_kr.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "22002860-4acf-45cb-9462-19b60514b465",
+            "Value": {
+                "id": "f2200bf3-e255-41fe-8b92-524b295895e3",
+                "resourcePath": "sprites\\spr_closed_captions_corner\\spr_closed_captions_corner.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -780,6 +804,14 @@
                 "id": "36aaf5bf-2e1e-4d3e-80a0-8cf7cd4efee4",
                 "resourcePath": "scripts\\Battle_GetRewardGold\\Battle_GetRewardGold.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "286a909e-1725-4336-bcb9-49b0bf63ce4c",
+            "Value": {
+                "id": "887cfe5a-e6cd-4a21-9aed-939dbcfd5c29",
+                "resourcePath": "views\\286a909e-1725-4336-bcb9-49b0bf63ce4c.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -887,6 +919,14 @@
             }
         },
         {
+            "Key": "2f520413-6342-4150-bb01-d6a8ff1afb28",
+            "Value": {
+                "id": "c57143e6-9342-4adc-a1c1-76871152898d",
+                "resourcePath": "objects\\closed_captions\\closed_captions.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2f892e21-e8bc-4226-b296-9eea1b27fbd0",
             "Value": {
                 "id": "1376d689-a192-4766-9e6e-ee6189c8f65a",
@@ -907,6 +947,14 @@
             "Value": {
                 "id": "f9f5c3a8-510e-4d87-99e4-0284a1f76bae",
                 "resourcePath": "scripts\\Console_Uninit\\Console_Uninit.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3065732a-a1ae-4c2b-b562-13c97ceb40e3",
+            "Value": {
+                "id": "00621c13-ea6e-4db9-ab17-08550a01398f",
+                "resourcePath": "scripts\\Battle_IsMenuChoiceMercyOverride\\Battle_IsMenuChoiceMercyOverride.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1011,6 +1059,14 @@
             "Value": {
                 "id": "b3176951-8eb1-4881-8769-5d1cf54b4c8f",
                 "resourcePath": "scripts\\Anim_New\\Anim_New.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3539a799-1d0e-49b5-8c88-511215da7b19",
+            "Value": {
+                "id": "fbbf282e-e143-4009-99e9-d6cf4edea89e",
+                "resourcePath": "scripts\\Macro_Game\\Macro_Game.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1316,14 +1372,6 @@
                 "id": "21f894eb-8089-4e30-94db-335b98df100f",
                 "resourcePath": "objects\\battle_menu_fight_hp_bar\\battle_menu_fight_hp_bar.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "4821a2e0-bd4f-4a08-8b16-8e1be2429d08",
-            "Value": {
-                "id": "ae332962-57f9-4517-a9dd-ac9bc2ff0350",
-                "resourcePath": "sounds\\bgm_ruins\\bgm_ruins.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -1786,7 +1834,7 @@
             "Key": "624d55e0-4f52-41ae-8557-4e62429ff598",
             "Value": {
                 "id": "b5c29798-821c-46fd-87ed-7890170e9cc0",
-                "resourcePath": "scripts\\Encounter_IsMenuFleeEnabled\\Encounter_IsMenuFleeEnabled.yy",
+                "resourcePath": "scripts\\Encounter_IsMenuMercyFleeEnabled\\Encounter_IsMenuMercyFleeEnabled.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2060,6 +2108,14 @@
                 "id": "d54204be-e78a-4e35-ad69-99b66f8b7f52",
                 "resourcePath": "objects\\char_player\\char_player.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "71a1ee7e-fba2-48ef-aebe-69423159c404",
+            "Value": {
+                "id": "ce465072-0a8a-473b-8f0a-063a1e659b6d",
+                "resourcePath": "scripts\\CC_Add\\CC_Add.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2623,6 +2679,14 @@
             }
         },
         {
+            "Key": "8e8dfeff-73f5-4bca-8f45-10925abff500",
+            "Value": {
+                "id": "3e65daf1-060d-4b5c-8acb-66133bf66c8b",
+                "resourcePath": "scripts\\Battle_SetMenuChoiceMercyOverrideName\\Battle_SetMenuChoiceMercyOverrideName.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8eaab41c-10c8-4b23-a26c-7fafcbddc788",
             "Value": {
                 "id": "03e9b5b1-f105-4d30-af9a-ae4d740cf21e",
@@ -3159,6 +3223,14 @@
             }
         },
         {
+            "Key": "adb3c320-157f-4b8f-8e2f-6f280778ac2a",
+            "Value": {
+                "id": "0b226d01-55f7-4e85-b44b-a6071ca4424e",
+                "resourcePath": "scripts\\Battle_SetMenuChoiceMercyOverrideNumber\\Battle_SetMenuChoiceMercyOverrideNumber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "adccad85-f8d2-4b99-99ec-936649a46aa3",
             "Value": {
                 "id": "a28729ae-cdad-4377-8bde-279338a05a45",
@@ -3247,14 +3319,6 @@
             }
         },
         {
-            "Key": "b2b308e1-9207-4cad-b3bb-39428496b8d5",
-            "Value": {
-                "id": "b55d2f62-4714-4bc5-a042-3a12c2fe40ff",
-                "resourcePath": "sounds\\bgm_battle_pre\\bgm_battle_pre.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "b2bd37ba-f270-4100-b184-39036cfa49f5",
             "Value": {
                 "id": "d6af9aa6-503e-4d1e-aaf1-9eb068449bf4",
@@ -3284,6 +3348,14 @@
                 "id": "32ae07e4-9a88-46e4-83d0-fafe058c14cd",
                 "resourcePath": "scripts\\Console_Custom\\Console_Custom.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b64133fc-0e27-4111-af20-95adeb2ae5ea",
+            "Value": {
+                "id": "b80628e7-05b1-4a2c-a51a-514f0d6043e6",
+                "resourcePath": "views\\b64133fc-0e27-4111-af20-95adeb2ae5ea.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3444,14 +3516,6 @@
                 "id": "02ec0fcc-b9d5-429e-9a56-3613cb1cafeb",
                 "resourcePath": "scripts\\Battle_GetTurnInfo\\Battle_GetTurnInfo.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "c1b4853f-92a4-47a5-9f55-c88f86f4f802",
-            "Value": {
-                "id": "a02b0794-d853-4585-a622-e0cf7c993e06",
-                "resourcePath": "sounds\\bgm_menu_0\\bgm_menu_0.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -3991,6 +4055,14 @@
             }
         },
         {
+            "Key": "d82c8aaa-e719-43af-876a-7c064c449b89",
+            "Value": {
+                "id": "b4a2eb66-88c6-441c-90b8-b4ed0100d3ef",
+                "resourcePath": "scripts\\Battle_GetMenuChoiceMercyOverrideNumber\\Battle_GetMenuChoiceMercyOverrideNumber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d860e9dd-790d-4eb1-85b8-dbbe8c5eeb64",
             "Value": {
                 "id": "03e6bd49-b674-42a3-ac24-3d9cab3e5678",
@@ -4138,7 +4210,7 @@
             "Key": "e48fa714-3070-4c2c-9a39-4dfd42a40ffe",
             "Value": {
                 "id": "fe231b6b-2773-4235-8a63-b036ed648e72",
-                "resourcePath": "scripts\\Battle_IsMenuFleeEnabled\\Battle_IsMenuFleeEnabled.yy",
+                "resourcePath": "scripts\\Battle_IsMenuMercyFleeEnabled\\Battle_IsMenuMercyFleeEnabled.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4684,6 +4756,7 @@
         "251bbc82-4032-4a58-a758-e0c4d23b93cf",
         "9c7a3da5-4d2a-4fdc-bd10-62ad73a72f5f",
         "b17a191f-75a1-406c-9984-2c616d345922",
+        "3539a799-1d0e-49b5-8c88-511215da7b19",
         "3ab51fa2-1d90-4d68-b265-c6438b3f2bb5",
         "63178f69-765e-4aa7-bf0c-ea3e69bc0d8d",
         "f9277ef1-fb66-45e2-958b-04ede8518c19",
@@ -4712,10 +4785,16 @@
         "ca63c00b-dd82-47af-817e-9c9eac9aa29c",
         "0ea3358c-491d-403d-988f-789544b4f395",
         "6e96e4f1-3d4a-4130-8e12-053ee5a447d8",
-        "c8407506-3e0c-4945-83b1-007da3a01f22",
-        "1ca1bc87-f675-4e4d-83b1-18757e919210",
         "5550704f-568f-42e0-910d-a409bbecefd9",
         "8b2e7c3d-3a84-42be-80bb-fea18de60190",
+        "c8407506-3e0c-4945-83b1-007da3a01f22",
+        "1ca1bc87-f675-4e4d-83b1-18757e919210",
+        "1fbd2387-a3e9-4045-b2d6-1f8fccbe24b5",
+        "3065732a-a1ae-4c2b-b562-13c97ceb40e3",
+        "adb3c320-157f-4b8f-8e2f-6f280778ac2a",
+        "d82c8aaa-e719-43af-876a-7c064c449b89",
+        "2043a6a6-887d-49ae-9fcd-cdb524fa33c8",
+        "8e8dfeff-73f5-4bca-8f45-10925abff500",
         "e48fa714-3070-4c2c-9a39-4dfd42a40ffe",
         "0235428a-dad9-42f6-ab57-a1447cffcef5",
         "c58d8efb-c8d8-4076-ba6a-21df097d0240",
@@ -4970,7 +5049,8 @@
         "0f02929d-7c23-4060-8e6a-d9dd4e54cdd7",
         "aca76236-2c67-44dd-ac16-aed1885167c8",
         "c0eb0dad-cbb0-46ee-a553-ee98b73a603f",
-        "c5e930c3-112f-4d63-a968-3f620963e6fc"
+        "c5e930c3-112f-4d63-a968-3f620963e6fc",
+        "71a1ee7e-fba2-48ef-aebe-69423159c404"
     ],
     "tutorial": ""
 }

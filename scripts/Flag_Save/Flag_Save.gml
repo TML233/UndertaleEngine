@@ -6,7 +6,7 @@ var map_f=-1;
 if(ds_map_exists(map,TYPE)){
 	map_f=ds_map_find_value(map,TYPE);
 }else{
-	Console_OutputLine("Attempted to save non-existing flag type "+string(TYPE)+" to \""+PATH+"\"!")
+	Console_OutputLine("Attempted to save non-existing flag type "+string(TYPE)+"!");
 	return false;
 }
 

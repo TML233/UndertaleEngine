@@ -37,7 +37,6 @@ switch(string_lower(_naming_name)){
 		break;
 	case "papyru":
 		text=Lang_GetString("menu.confirm.title.papyru");
-		valid=false;
 		break;
 	case "undyne":
 		text=Lang_GetString("menu.confirm.title.undyne");
