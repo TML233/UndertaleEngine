@@ -1063,6 +1063,14 @@
             }
         },
         {
+            "Key": "3539a799-1d0e-49b5-8c88-511215da7b19",
+            "Value": {
+                "id": "fbbf282e-e143-4009-99e9-d6cf4edea89e",
+                "resourcePath": "scripts\\Macro_Game\\Macro_Game.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "36554a22-d2a9-4db0-82dd-a42281994450",
             "Value": {
                 "id": "f1610156-abcc-45f2-9647-3423cd4200c3",
@@ -4748,6 +4756,7 @@
         "251bbc82-4032-4a58-a758-e0c4d23b93cf",
         "9c7a3da5-4d2a-4fdc-bd10-62ad73a72f5f",
         "b17a191f-75a1-406c-9984-2c616d345922",
+        "3539a799-1d0e-49b5-8c88-511215da7b19",
         "3ab51fa2-1d90-4d68-b265-c6438b3f2bb5",
         "63178f69-765e-4aa7-bf0c-ea3e69bc0d8d",
         "f9277ef1-fb66-45e2-958b-04ede8518c19",

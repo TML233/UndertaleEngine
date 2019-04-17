@@ -39,7 +39,13 @@ application_surface_draw_enable(false);
 
 //Border_SetEnabled(true);
 
-Console_OutputLine("UNDERTALE Engine "+ENGINE_VERSION);
+Console_OutputLine("UNDERTALE by Toby Fox");
+Console_OutputLine("UNDERTALE Engine by TML");
+Console_OutputLine("Engine Version: "+ENGINE_VERSION);
+Console_OutputLine("Game Name: "+GAME_NAME);
+Console_OutputLine("Game Author: "+GAME_AUTHOR);
+Console_OutputLine("Game Version: "+GAME_VERSION);
+Console_OutputLine("Game GUID: "+GAME_GUID);
 
 //show_debug_overlay(true);
 
