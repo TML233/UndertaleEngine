@@ -46,7 +46,7 @@ if(MENU==BATTLE_MENU.FIGHT_AIM){
 	
 	var OBJ=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.BATTLE_MENU_FIGHT_OBJ);
 	if(object_exists(OBJ)){
-		if(OBJ==battle_menu_fight||object_get_parent(OBJ)==battle_menu_fight){
+		if(OBJ==battle_menu_fight||Object_GetBaseParent(OBJ)==battle_menu_fight){
 			instance_create_depth(0,0,0,OBJ);
 		}
 	}

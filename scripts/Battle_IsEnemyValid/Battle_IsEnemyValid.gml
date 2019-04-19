@@ -6,7 +6,7 @@ if(!object_exists(ENEMY) && instance_exists(ENEMY)){
 }
 
 if(object_exists(ENEMY)){
-	if(ENEMY==battle_enemy || object_get_parent(ENEMY)==battle_enemy){
+	if(ENEMY==battle_enemy || Object_GetBaseParent(ENEMY)==battle_enemy){
 		return true;
 	}else{
 		return false;
