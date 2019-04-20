@@ -42,7 +42,7 @@ if(_char!=" "&&_char!="　"){
 	INST.alpha_outline=_alpha_outline;
 	INST.effect=_effect;
 	INST.gui=_gui;
-	INST.depth=_depth;
+	INST.depth=depth;
 	ds_list_add(_list_inst,INST);
 	
 	if(!_voice_played&&!_skipping&&!_instant&&_voice>=0){

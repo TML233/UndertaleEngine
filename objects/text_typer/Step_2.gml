@@ -1,5 +1,4 @@
 _voice_played=false;
-depth=_depth;
 
 event_user(4);
 
@@ -110,7 +109,7 @@ if(_char_proc<string_length(text)+1){
 
 if(instance_exists(_face)){
 	_face.gui=_gui;
-	_face.depth=_depth;
+	_face.depth=depth;
 	_face.talking=(!_sleep&&!_paused&&_char_proc<=string_length(text));
 }
 
@@ -138,17 +137,21 @@ if(_char_linked!=-1){
 	}
 }
 
-if(is_real(alpha_override)){
-	if(alpha_override!=_alpha_override_previous){
-		_alpha_override_previous=alpha_override;
-		
-		var proc=0;
-		repeat(ds_list_size(_list_inst)){
-			var INST=ds_list_find_value(_list_inst,proc);
-			if(instance_exists(INST)){
-				INST.alpha=alpha_override;
+if(override_alpha_enabled||override_color_text_enabled){
+	var proc=0;
+	repeat(ds_list_size(_list_inst)){
+		var INST=ds_list_find_value(_list_inst,proc);
+		if(instance_exists(INST)){
+			if(override_alpha_enabled){
+				INST.alpha=override_alpha;
 			}
-			proc+=1;
+			if(override_color_text_enabled){
+				INST.color_text[0]=override_color_text[0];
+				INST.color_text[1]=override_color_text[1];
+				INST.color_text[2]=override_color_text[2];
+				INST.color_text[3]=override_color_text[3];
+			}
 		}
+		proc+=1;
 	}
 }

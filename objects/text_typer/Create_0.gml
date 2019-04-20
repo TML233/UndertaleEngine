@@ -58,12 +58,16 @@ _shadow_x=0.5;
 _shadow_y=0.5;
 _effect=-1;
 _gui=false;
-_depth=0;
 
 //group init
 event_user(5);
 
 width=0;
 height=0;
-alpha_override=undefined;
-_alpha_override_previous=-1;
+override_alpha_enabled=false;
+override_alpha=1;
+override_color_text_enabled=false;
+override_color_text[0]=c_white;
+override_color_text[1]=c_white;
+override_color_text[2]=c_white;
+override_color_text[3]=c_white;
