@@ -1,7 +1,6 @@
 if(GMU_CONSOLE_ENABLED){
 	var input=Console_GetInput();
 	var list_cmd=global._gmu_console_list_cmd;
-	var map_macro=global._gmu_console_map_macro;
 	
 	ds_list_clear(list_cmd);
 	
@@ -10,7 +9,7 @@ if(GMU_CONSOLE_ENABLED){
 	var cmd="";
 	var str_mode=false;
 	var str_input=false;
-	repeat(length+1){
+	while(proc<=length+1){
 		var cmd_char=string_char_at(input,proc);
 		if((cmd_char==" "&&!str_input)||proc>length){
 			if(!str_mode){
