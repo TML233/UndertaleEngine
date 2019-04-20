@@ -1,5 +1,4 @@
 _voice_played=false;
-depth=_depth;
 
 event_user(4);
 
@@ -17,8 +16,10 @@ if(_choice!=-1){
 		audio_play_sound(snd_menu_switch,0,false);
 	}
 	if(Input_CheckPressed(INPUT.CONFIRM)){
-		ds_map_delete(_map_macro,_choice_macro);
-		ds_map_add(_map_macro,_choice_macro,_choice);
+		if(is_string(_choice_macro)){
+			ds_map_delete(_map_macro,_choice_macro);
+			ds_map_add(_map_macro,_choice_macro,_choice);
+		}
 		Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TEXT_TYPER_CHOICE,_choice);
 		_choice=-1;
 		audio_play_sound(snd_menu_confirm,0,false);
@@ -35,7 +36,7 @@ if(_char_proc<string_length(text)+1){
 			}else{
 				do{
 					repeat(_char_per_frame){
-						while((string_char_at(text,_char_proc)=="{"||string_char_at(text,_char_proc)=="&"||string_char_at(text,_char_proc)==" ")&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
+						while((string_char_at(text,_char_proc)=="{"||string_char_at(text,_char_proc)=="&"||(_skip_space&&(string_char_at(text,_char_proc)==" "||string_char_at(text,_char_proc)=="　")))&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
 							while(string_char_at(text,_char_proc)=="{"&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
 								_char_proc+=1;
 								ds_list_clear(_list_cmd);
@@ -43,7 +44,7 @@ if(_char_proc<string_length(text)+1){
 								var cmd="";
 								var str_mode=false;
 								var str_input=false;
-								while(loop){
+								while(_char_proc<=string_length(text)&&loop){
 									var cmd_char=string_char_at(text,_char_proc);
 									if((cmd_char==" "||cmd_char=="}")&&!str_input){
 										if(!str_mode){
@@ -77,6 +78,9 @@ if(_char_proc<string_length(text)+1){
 									}
 									_char_proc+=1;
 								}
+								if(loop){
+									Console_OutputLine("WARNING! Text typer command is not valid in \""+text+"\"!");
+								}
 							}
 							
 							while(string_char_at(text,_char_proc)=="&"&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
@@ -84,7 +88,7 @@ if(_char_proc<string_length(text)+1){
 								_char_proc+=1;
 							}
 							
-							while(string_char_at(text,_char_proc)==" "&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
+							while(_skip_space&&(string_char_at(text,_char_proc)==" "||string_char_at(text,_char_proc)=="　")&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
 								_char=" ";
 								event_user(0);
 								_char_proc+=1;
@@ -110,7 +114,7 @@ if(_char_proc<string_length(text)+1){
 
 if(instance_exists(_face)){
 	_face.gui=_gui;
-	_face.depth=_depth;
+	_face.depth=depth;
 	_face.talking=(!_sleep&&!_paused&&_char_proc<=string_length(text));
 }
 
@@ -138,17 +142,21 @@ if(_char_linked!=-1){
 	}
 }
 
-if(is_real(alpha_override)){
-	if(alpha_override!=_alpha_override_previous){
-		_alpha_override_previous=alpha_override;
-		
-		var proc=0;
-		repeat(ds_list_size(_list_inst)){
-			var INST=ds_list_find_value(_list_inst,proc);
-			if(instance_exists(INST)){
-				INST.alpha=alpha_override;
+if(override_alpha_enabled||override_color_text_enabled){
+	var proc=0;
+	repeat(ds_list_size(_list_inst)){
+		var INST=ds_list_find_value(_list_inst,proc);
+		if(instance_exists(INST)){
+			if(override_alpha_enabled){
+				INST.alpha=override_alpha;
 			}
-			proc+=1;
+			if(override_color_text_enabled){
+				INST.color_text[0]=override_color_text[0];
+				INST.color_text[1]=override_color_text[1];
+				INST.color_text[2]=override_color_text[2];
+				INST.color_text[3]=override_color_text[3];
+			}
 		}
+		proc+=1;
 	}
 }

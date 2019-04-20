@@ -8,9 +8,10 @@ while(!ds_queue_empty(_queue_text)){
 	with(inst){
 		event_user(15);
 	}
-	inst.alpha_override=0;
-	Anim_Stop(inst,"alpha_override");
-	Anim_New(inst,"alpha_override",0,0,0,1,10,5);
+	inst.override_alpha_enabled=true;
+	inst.override_alpha=0;
+	Anim_Stop(inst,"override_alpha");
+	Anim_New(inst,"override_alpha",0,0,0,1,10,5);
 	ds_list_add(_list_inst,inst);
 	ds_list_add(_list_time,duration);
 }
@@ -34,8 +35,8 @@ repeat(ds_list_size(_list_inst)){
 	if(_list_time[|proc]<=0){
 		var inst=_list_inst[|proc];
 		if(instance_exists(inst)){
-			Anim_Stop(inst,"alpha_override");
-			Anim_New(inst,"alpha_override",0,0,1,-1,10);
+			Anim_Stop(inst,"override_alpha");
+			Anim_New(inst,"override_alpha",0,0,1,-1,10);
 			ds_list_add(_list_destroy_inst,inst);
 			ds_list_add(_list_destroy_time,10);
 		}
