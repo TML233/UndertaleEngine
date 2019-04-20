@@ -2,7 +2,7 @@
 var PHONE=argument[0];
 
 if(object_exists(PHONE)){
-	return (PHONE==phone || object_get_parent(PHONE)==phone);
+	return (PHONE==phone || Object_GetBaseParent(PHONE)==phone);
 }else{
 	return false;
 }
