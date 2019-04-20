@@ -16,8 +16,10 @@ if(_choice!=-1){
 		audio_play_sound(snd_menu_switch,0,false);
 	}
 	if(Input_CheckPressed(INPUT.CONFIRM)){
-		ds_map_delete(_map_macro,_choice_macro);
-		ds_map_add(_map_macro,_choice_macro,_choice);
+		if(is_string(_choice_macro)){
+			ds_map_delete(_map_macro,_choice_macro);
+			ds_map_add(_map_macro,_choice_macro,_choice);
+		}
 		Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TEXT_TYPER_CHOICE,_choice);
 		_choice=-1;
 		audio_play_sound(snd_menu_confirm,0,false);
@@ -34,7 +36,7 @@ if(_char_proc<string_length(text)+1){
 			}else{
 				do{
 					repeat(_char_per_frame){
-						while((string_char_at(text,_char_proc)=="{"||string_char_at(text,_char_proc)=="&"||string_char_at(text,_char_proc)==" ")&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
+						while((string_char_at(text,_char_proc)=="{"||string_char_at(text,_char_proc)=="&"||(_skip_space&&(string_char_at(text,_char_proc)==" "||string_char_at(text,_char_proc)=="　")))&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
 							while(string_char_at(text,_char_proc)=="{"&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
 								_char_proc+=1;
 								ds_list_clear(_list_cmd);
@@ -42,7 +44,7 @@ if(_char_proc<string_length(text)+1){
 								var cmd="";
 								var str_mode=false;
 								var str_input=false;
-								while(loop){
+								while(_char_proc<=string_length(text)&&loop){
 									var cmd_char=string_char_at(text,_char_proc);
 									if((cmd_char==" "||cmd_char=="}")&&!str_input){
 										if(!str_mode){
@@ -76,6 +78,9 @@ if(_char_proc<string_length(text)+1){
 									}
 									_char_proc+=1;
 								}
+								if(loop){
+									Console_OutputLine("WARNING! Text typer command is not valid in \""+text+"\"!");
+								}
 							}
 							
 							while(string_char_at(text,_char_proc)=="&"&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
@@ -83,7 +88,7 @@ if(_char_proc<string_length(text)+1){
 								_char_proc+=1;
 							}
 							
-							while(string_char_at(text,_char_proc)==" "&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
+							while(_skip_space&&(string_char_at(text,_char_proc)==" "||string_char_at(text,_char_proc)=="　")&&((_sleep==0||_skipping||_instant)&&!_paused&&_char_proc<=string_length(text))){
 								_char=" ";
 								event_user(0);
 								_char_proc+=1;

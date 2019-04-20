@@ -15,6 +15,8 @@ _char_frame_remain=0;
 _char_x=0;
 _char_y=0;
 _char="";
+_char_sprite=-1;
+_char_sprite_image=0;
 _char_proc=1;
 _voice_played=false;
 _list_inst=ds_list_create();
@@ -23,6 +25,7 @@ _map_macro=ds_map_create();
 _face=noone;
 _face_linked=-1;
 _char_linked=-1;
+_skip_space=true;
 
 _choice=-1;
 _choice_x[0]=0;
