@@ -285,11 +285,9 @@ switch(cmd[|0]){
 				_choice_x[cmd[|1]]=_char_x-string_width(" ")*_group_font_scale_x[_font,0]*_scale_x;
 				_choice_y[cmd[|1]]=_char_y+string_height(" ")/2*_group_font_scale_y[_font,0]*_scale_y;
 			}
-		}else if(is_string(cmd[|1])){
-			if(cmd[|1]!=""){
-				_choice_macro=cmd[|1];
-				_choice=0;
-			}
+		}else if(is_string(cmd[|1])||is_undefined(cmd[|1])){
+			_choice_macro=cmd[|1];
+			_choice=0;
 		}
 		break;
 	
@@ -349,7 +347,7 @@ switch(cmd[|0]){
 					x+=58*_scale_x;
 					event_user(4);
 				}
-				_face=instance_create_depth(x-35*_scale_x,y+25*_scale_y,_depth,_group_face[fface]);
+				_face=instance_create_depth(x-35*_scale_x,y+25*_scale_y,depth,_group_face[fface]);
 				_face.gui=_gui;
 				_face.image_xscale=_scale_x;
 				_face.image_yscale=_scale_y;
@@ -398,7 +396,7 @@ switch(cmd[|0]){
 		
 	case "depth":
 		if(is_real(cmd[|1])){
-			_depth=cmd[|1];
+			depth=cmd[|1];
 		}
 		break;
 		
@@ -525,6 +523,33 @@ switch(cmd[|0]){
 			if(instance_exists(char_player)){
 				char_player.moveable=cmd[1];
 			}
+		}
+		break;
+		
+	case "sprite":
+		var spr=cmd[|1];
+		if(is_string(spr)){
+			spr=asset_get_index(spr);
+		}
+		if(is_real(spr)){
+			if(sprite_exists(spr)){
+				var img=0;
+				if(is_real(cmd[|2])){
+					img=cmd[|2];
+				}
+				_char_sprite=spr;
+				_char_sprite_image=img;
+				_char="";
+				event_user(0);
+				_char_sprite=-1;
+				_char_sprite_image=0;
+			}
+		}
+		break;
+		
+	case "skip_space":
+		if(is_real(cmd[|1])){
+			_skip_space=cmd[|1];
 		}
 		break;
 }

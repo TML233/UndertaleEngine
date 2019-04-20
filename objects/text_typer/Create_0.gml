@@ -15,6 +15,8 @@ _char_frame_remain=0;
 _char_x=0;
 _char_y=0;
 _char="";
+_char_sprite=-1;
+_char_sprite_image=0;
 _char_proc=1;
 _voice_played=false;
 _list_inst=ds_list_create();
@@ -23,6 +25,7 @@ _map_macro=ds_map_create();
 _face=noone;
 _face_linked=-1;
 _char_linked=-1;
+_skip_space=true;
 
 _choice=-1;
 _choice_x[0]=0;
@@ -58,12 +61,16 @@ _shadow_x=0.5;
 _shadow_y=0.5;
 _effect=-1;
 _gui=false;
-_depth=0;
 
 //group init
 event_user(5);
 
 width=0;
 height=0;
-alpha_override=undefined;
-_alpha_override_previous=-1;
+override_alpha_enabled=false;
+override_alpha=1;
+override_color_text_enabled=false;
+override_color_text[0]=c_white;
+override_color_text[1]=c_white;
+override_color_text[2]=c_white;
+override_color_text[3]=c_white;
