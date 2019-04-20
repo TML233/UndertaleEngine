@@ -349,7 +349,7 @@ switch(cmd[|0]){
 					x+=58*_scale_x;
 					event_user(4);
 				}
-				_face=instance_create_depth(x-35*_scale_x,y+25*_scale_y,_depth,_group_face[fface]);
+				_face=instance_create_depth(x-35*_scale_x,y+25*_scale_y,depth,_group_face[fface]);
 				_face.gui=_gui;
 				_face.image_xscale=_scale_x;
 				_face.image_yscale=_scale_y;
@@ -398,7 +398,7 @@ switch(cmd[|0]){
 		
 	case "depth":
 		if(is_real(cmd[|1])){
-			_depth=cmd[|1];
+			depth=cmd[|1];
 		}
 		break;
 		
