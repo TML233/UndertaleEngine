@@ -1,3 +1,3 @@
 event_inherited();
 
-sprite_index=(Item_GetNumber()>0) ? Lang_GetSprite("spr_battle_button_item",spr_default) : Lang_GetSprite("spr_battle_button_item_empty",spr_default);
+sprite_index=(Item_GetNumber()>0) ? Lang_GetSprite("battle.button.item",spr_default) : Lang_GetSprite("battle.button.item.empty",spr_default);
