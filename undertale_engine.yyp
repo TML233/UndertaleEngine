@@ -1207,6 +1207,14 @@
             }
         },
         {
+            "Key": "3e497a6d-8fe9-48f1-9ea9-85c4047ad2e7",
+            "Value": {
+                "id": "791b5041-3d79-48a7-be35-ed0d16fcbf48",
+                "resourcePath": "scripts\\Game_SetFrameSkip\\Game_SetFrameSkip.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3f50e639-cf08-4d09-8a83-ccd8237006da",
             "Value": {
                 "id": "e91fa573-8cdd-4c68-8e0b-5e99321361ae",
@@ -1963,6 +1971,14 @@
             "Value": {
                 "id": "04326e55-25cb-49a2-9bb2-70fbd341f7c3",
                 "resourcePath": "scripts\\Battle_SetPlayerTempDef\\Battle_SetPlayerTempDef.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "688abbdd-da12-4c6d-9bc7-55be58cef783",
+            "Value": {
+                "id": "87808629-7dfa-4c25-a6fd-c6b84730c76c",
+                "resourcePath": "scripts\\Game_GetFrameSkip\\Game_GetFrameSkip.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4079,6 +4095,14 @@
             }
         },
         {
+            "Key": "d8c6c5cc-0e1d-4951-b97a-f44c5f9478d1",
+            "Value": {
+                "id": "0b2b40d9-b90c-4112-b18f-406ccca24cb8",
+                "resourcePath": "views\\d8c6c5cc-0e1d-4951-b97a-f44c5f9478d1.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "d920f24a-98bb-4a24-b495-fabfd2b50ffd",
             "Value": {
                 "id": "1210725e-50da-4375-8189-09db09e39398",
@@ -5059,7 +5083,9 @@
         "c0eb0dad-cbb0-46ee-a553-ee98b73a603f",
         "c5e930c3-112f-4d63-a968-3f620963e6fc",
         "71a1ee7e-fba2-48ef-aebe-69423159c404",
-        "9d3cce8a-61a4-445b-9224-43a01ac0b882"
+        "9d3cce8a-61a4-445b-9224-43a01ac0b882",
+        "3e497a6d-8fe9-48f1-9ea9-85c4047ad2e7",
+        "688abbdd-da12-4c6d-9bc7-55be58cef783"
     ],
     "tutorial": ""
 }
