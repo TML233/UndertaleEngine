@@ -124,9 +124,11 @@ if(_menu==0){
 				}
 			}
 			if(_choice_naming_command==2){
-				event_user(4);
-				_menu=2;
-				event_user(0);
+				if(_naming_name!=""){
+					event_user(4);
+					_menu=2;
+					event_user(0);
+				}
 			}
 		}else if(Input_CheckPressed(INPUT.CANCEL)){
 			if(string_length(_naming_name)>0){
