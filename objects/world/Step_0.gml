@@ -13,6 +13,8 @@ if(Game_GetFrameSkip()>0){
 		_frame_skip+=1;
 		draw_enable_drawevent(false);
 	}
+}else{
+	draw_enable_drawevent(true);
 }
 
 if(keyboard_check_pressed(vk_f2)){
