@@ -13,64 +13,57 @@ if(!file_exists(GMU_LANG_PATH_BASE+LANG+"/"+GMU_LANG_PATH_FONT)){
 	return false;
 }
 
-var STR=Lang_LoadFileToString(GMU_LANG_PATH_BASE+LANG+"/"+GMU_LANG_PATH_FONT);
-
-var proc=0;
-var str_mode=false;
-var str_input_name=true;
-var str_name="";
-var str_text="";
-while(string_length(STR)>proc){
-	proc+=1;
-	var CHAR=string_char_at(STR,proc);
-	if(CHAR="\""){
-		str_mode=!str_mode;
+var LIST=Lang_LoadFileToString(GMU_LANG_PATH_BASE+LANG+"/"+GMU_LANG_PATH_FONT);
+var FILE=file_text_open_from_string(LIST);
+while(!file_text_eof(FILE)){
+	var TARGET=file_text_read_string(FILE);
+	file_text_readln(FILE);
+	var PATH=GMU_LANG_PATH_BASE+LANG+"/"+TARGET;
+	if(file_exists(PATH)){
+		ini_open(PATH);
+		var key=ini_read_string("font","key","");
+		var src=ini_read_string("font","source","");
+		var is_sprite=ini_read_real("font","is_sprite",false);
 		
-		if(!str_mode){
-			str_input_name=!str_input_name;
-			
-			if(str_input_name){
-				var FILE_NAME=GMU_LANG_PATH_BASE+LANG+"/"+str_text;
-				if(file_exists(FILE_NAME+".ttf")){
-					var size=12;
-					var bold=false;
-					var italic=false;
-					var first=32;
-					var last=128;
-					if(file_exists(FILE_NAME+".ini")){
-						ini_open(FILE_NAME+".ini");
-						size=ini_read_real("font","size",12);
-						bold=ini_read_real("font","bold",false);
-						italic=ini_read_real("font","italic",false);
-						first=ini_read_real("font","first",32);
-						last=ini_read_real("font","last",128);
-						ini_close();
-					}
-					var FONT=font_add(FILE_NAME+".ttf",size,bold,italic,first,last);
-					if(font_exists(FONT)){
-						var VALUE=ds_map_find_value(global._gmu_lang_font,str_name);
-						if(VALUE!=undefined){
-							if(font_exists(VALUE)){
-								font_delete(VALUE);
-							}
-							ds_map_delete(global._gmu_lang_font,str_name);
-						}
-						ds_map_add(global._gmu_lang_font,str_name,FONT);
+		var size=ini_read_real("font","size",12);
+		var bold=ini_read_real("font","bold",false);
+		var italic=ini_read_real("font","italic",false);
+		var first=ini_read_real("font","first",32);
+		var last=ini_read_real("font","last",128);
+		
+		var string_map=ini_read_string("font","string_map","");
+		var is_proportional=ini_read_real("font","is_proportional",false);
+		var separation=ini_read_real("font","separation",0);
+		ini_close();
+		
+		if(key!=""){
+			var FONT=-1;
+			if(!is_sprite){
+				var src_path=filename_path(PATH)+src;
+				if(file_exists(src_path)){
+					FONT=font_add(src_path,size,bold,italic,first,last);
+				}
+			}else{
+				if(Lang_IsSpriteExists(src)){
+					if(string_map==""){
+						FONT=font_add_sprite(Lang_GetSprite(src),first,is_proportional,separation);
+					}else{
+						FONT=font_add_sprite_ext(Lang_GetSprite(src),string_map,is_proportional,separation);
 					}
 				}
-				str_name="";
-				str_text="";
 			}
-		}
-	}else if(str_mode){
-		if(CHAR!="\t" && CHAR!="\n" && CHAR!="\r"){
-			if(str_input_name){
-				str_name+=CHAR;
-			}else{
-				str_text+=CHAR;
+			if(font_exists(FONT)){
+				var VALUE=ds_map_find_value(global._gmu_lang_font,key);
+				if(is_real(VALUE)){
+					if(font_exists(VALUE)){
+						font_delete(VALUE);
+					}
+					ds_map_delete(global._gmu_lang_font,key);
+				}
+				ds_map_add(global._gmu_lang_font,key,FONT);
 			}
 		}
 	}
 }
-
+file_text_close(FILE);
 return true;

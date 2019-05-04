@@ -10,7 +10,7 @@ if(sprite_exists(sprite)){
 	part_type_direction(_p,70,110,0,0);
 	part_type_speed(_p,0.1,0.5,0.2,0);
 
-	_inst=instance_create_depth(x,y,0,battle_effect_enemy_death_collision);
+	_inst=instance_create_depth(x,y,0,battle_death_particle_collision);
 	_inst.sprite_index=sprite;
 	_inst.image_xscale=scale_x;
 	_inst.image_yscale=scale_y;

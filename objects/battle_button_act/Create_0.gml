@@ -2,4 +2,4 @@ event_inherited();
 
 _button_slot=1;
 
-sprite_index=Lang_GetSprite("spr_battle_button_act",spr_default);
+sprite_index=Lang_GetSprite("battle.button.act",spr_default);

@@ -2,7 +2,6 @@
 ///@arg enemy_slot*
 var EVENT=argument[0];
 var ENEMY=-1;
-var NUM=Battle_GetEnemyNumber();
 if(argument_count>=2){
 	ENEMY=argument[1];
 }

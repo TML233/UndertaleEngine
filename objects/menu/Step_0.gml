@@ -20,7 +20,6 @@ if(_menu==0){
 		}
 	}
 }else if(_menu==1){
-	_update_naming=false;
 	if(_choice_naming==0){
 		if(Input_CheckPressed(INPUT.RIGHT)){
 			if(_choice_naming_letter<51){
@@ -124,9 +123,11 @@ if(_menu==0){
 				}
 			}
 			if(_choice_naming_command==2){
-				event_user(4);
-				_menu=2;
-				event_user(0);
+				if(_naming_name!=""){
+					event_user(4);
+					_menu=2;
+					event_user(0);
+				}
 			}
 		}else if(Input_CheckPressed(INPUT.CANCEL)){
 			if(string_length(_naming_name)>0){

@@ -1,5 +1,5 @@
-#include "./string/battle.txt"
-#include "./string/ui.txt"
-#include "./string/item.txt"
-#include "./string/menu.txt"
-#include "./string/font.txt"
+./string/battle.txt
+./string/ui.txt
+./string/item.txt
+./string/menu.txt
+./string/font.txt
