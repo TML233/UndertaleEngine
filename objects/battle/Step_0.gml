@@ -171,7 +171,7 @@ if(_state==BATTLE_STATE.MENU){
 			Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
 		}else if(Input_CheckPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
-			Battle_EndMenu(BATTLE_MENU_RESULT.ACT);
+			Battle_EndMenu();
 		}
 	}else
 	
@@ -194,7 +194,7 @@ if(_state==BATTLE_STATE.MENU){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
 		}else if(Input_CheckPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
-			Battle_EndMenu(BATTLE_MENU_RESULT.ITEM);
+			Battle_EndMenu();
 		}
 		
 		battle_soul.x=battle_board.x-battle_board.left-5+40;
@@ -227,13 +227,7 @@ if(_state==BATTLE_STATE.MENU){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
 		}else if(Input_CheckPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
-			if(_menu_choice_mercy==0){
-				Battle_EndMenu(BATTLE_MENU_RESULT.SPARE);
-			}else if(_menu_choice_mercy==1){
-				Battle_EndMenu(BATTLE_MENU_RESULT.FLEE);
-			}else{
-				Battle_EndMenu(BATTLE_MENU_RESULT.SPARE);
-			}
+			Battle_EndMenu();
 		}
 	}
 }

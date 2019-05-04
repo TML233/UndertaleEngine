@@ -4231,14 +4231,6 @@
             }
         },
         {
-            "Key": "e4815482-1951-4a02-94a1-2194af2c243a",
-            "Value": {
-                "id": "bbc56c72-d463-46fb-b39d-5ee708e41353",
-                "resourcePath": "scripts\\Battle_GetMenuResult\\Battle_GetMenuResult.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "e48fa714-3070-4c2c-9a39-4dfd42a40ffe",
             "Value": {
                 "id": "fe231b6b-2773-4235-8a63-b036ed648e72",
@@ -4808,7 +4800,6 @@
         "4cbf393d-b2e8-4676-8567-90645e3a7f4f",
         "bff3e6b6-5c40-4042-847d-dfc59bd7beff",
         "08dc5d52-9c1a-41c3-8a8c-3bb7bfa02c5d",
-        "e4815482-1951-4a02-94a1-2194af2c243a",
         "8d0bb248-6f1a-46f3-bb15-87c4ca8d9dd3",
         "2d3a0498-850a-4a78-ac22-fcb846a29b42",
         "5fb21b81-c621-4677-ae06-a98b011c81dd",

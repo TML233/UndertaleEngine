@@ -53,7 +53,6 @@ _state=-1;
 _state_next=-1;
 //菜单
 _menu=-1;
-_menu_result=-1;
 _menu_choice_button=0;
 _menu_choice_enemy=0;
 _menu_choice_action=0;
