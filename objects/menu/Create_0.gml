@@ -41,10 +41,6 @@ _confirm_name_update=true;
 
 _naming_name="";
 
-_update=false;
-_update_naming=false;
-_update_confirm=false;
-
 _change_inst=noone;
 _change_color=c_white;
 _change_id=-1;

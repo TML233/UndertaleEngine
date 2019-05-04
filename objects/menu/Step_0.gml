@@ -20,7 +20,6 @@ if(_menu==0){
 		}
 	}
 }else if(_menu==1){
-	_update_naming=false;
 	if(_choice_naming==0){
 		if(Input_CheckPressed(INPUT.RIGHT)){
 			if(_choice_naming_letter<51){

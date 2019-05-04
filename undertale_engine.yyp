@@ -119,14 +119,6 @@
             }
         },
         {
-            "Key": "05721e56-6b5c-4e03-8b20-9d5458a8991a",
-            "Value": {
-                "id": "eca1aaee-ee02-4dbd-9b2d-e8ef05a0623c",
-                "resourcePath": "objects\\shop_vendor\\shop_vendor.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "05857894-fdb1-4fdc-beb0-725607e94885",
             "Value": {
                 "id": "42307082-3625-450f-9528-bbe9fdbb47c3",
@@ -2423,14 +2415,6 @@
             }
         },
         {
-            "Key": "833de99a-8ded-4d81-809e-9d54f315d81d",
-            "Value": {
-                "id": "48ebf032-0aea-4c1b-bf32-8b114da0536b",
-                "resourcePath": "views\\833de99a-8ded-4d81-809e-9d54f315d81d.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "83ad2a3b-5c55-4d35-aa70-a0b1b63838db",
             "Value": {
                 "id": "0fe294d6-2f54-4302-80d8-edecad71a0bc",
@@ -2748,14 +2732,6 @@
                 "id": "469b7f91-316a-4cfe-abd3-7cc486dba8c6",
                 "resourcePath": "scripts\\Battle_EndMenuFightDamage\\Battle_EndMenuFightDamage.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "920c3e85-ddbe-47b7-90c4-3e0f41e28812",
-            "Value": {
-                "id": "17f66f75-0ecd-4859-9329-e170b933a08d",
-                "resourcePath": "views\\920c3e85-ddbe-47b7-90c4-3e0f41e28812.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -3319,14 +3295,6 @@
             }
         },
         {
-            "Key": "b1a18afe-8437-4fd2-8ceb-733f4311b2ba",
-            "Value": {
-                "id": "da2ba9e3-6bf4-4c55-b26d-96b1136d283b",
-                "resourcePath": "scripts\\Macro_Shop\\Macro_Shop.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b2a1a3df-3f38-404a-b467-254b9d7beb9e",
             "Value": {
                 "id": "936d0dcc-f0ef-4b12-a14a-d00aa1d86b79",
@@ -3695,14 +3663,6 @@
             }
         },
         {
-            "Key": "c624ad36-5c70-4c6b-a94c-f8b30da6a031",
-            "Value": {
-                "id": "649f1073-ff3d-4b32-886f-f7f7027e0b93",
-                "resourcePath": "objects\\shop\\shop.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "c6c5b731-f7c8-4d30-9a30-ebe2d1d551ed",
             "Value": {
                 "id": "c602128a-bf0d-4e93-afde-86bf1f95962d",
@@ -3908,14 +3868,6 @@
                 "id": "433361cd-07b5-467b-9b44-395db694da37",
                 "resourcePath": "sounds\\snd_flee\\snd_flee.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "d153dea7-8f2c-45db-b923-4b6a9b34ba60",
-            "Value": {
-                "id": "97c46185-cefe-4131-bf01-ac0c061b00f8",
-                "resourcePath": "views\\d153dea7-8f2c-45db-b923-4b6a9b34ba60.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -4503,14 +4455,6 @@
             }
         },
         {
-            "Key": "f0b6d990-964a-4a4d-9e4d-08fa039b943d",
-            "Value": {
-                "id": "36c932ca-0b63-4d46-b82e-929de5fea859",
-                "resourcePath": "objects\\face_flowey\\face_flowey.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "f1219eeb-1723-4d00-8cd0-2f8d84e1bd01",
             "Value": {
                 "id": "c4b4c748-02e3-428a-aebd-f3c11e17e106",
@@ -4779,6 +4723,7 @@
         "cb30ac41-085b-4e50-b618-eb521ed89f4c",
         "251bbc82-4032-4a58-a758-e0c4d23b93cf",
         "9c7a3da5-4d2a-4fdc-bd10-62ad73a72f5f",
+        "9d3cce8a-61a4-445b-9224-43a01ac0b882",
         "b17a191f-75a1-406c-9984-2c616d345922",
         "3539a799-1d0e-49b5-8c88-511215da7b19",
         "3ab51fa2-1d90-4d68-b265-c6438b3f2bb5",
@@ -4789,7 +4734,6 @@
         "c325d165-7cbc-4335-b9ae-1965b700a7c3",
         "19d5a14d-4399-4c43-b5d9-47975392bb2b",
         "e59c9d69-8508-4725-addd-93fc346c80bd",
-        "b1a18afe-8437-4fd2-8ceb-733f4311b2ba",
         "dc17382a-d891-458a-bcb1-aec09ded7513",
         "ab1fcfc5-4bb9-4b9a-8cce-72f995d9e389",
         "29b41c86-6f0b-48b3-b024-bcec742f89c5",
@@ -5074,7 +5018,6 @@
         "c0eb0dad-cbb0-46ee-a553-ee98b73a603f",
         "c5e930c3-112f-4d63-a968-3f620963e6fc",
         "71a1ee7e-fba2-48ef-aebe-69423159c404",
-        "9d3cce8a-61a4-445b-9224-43a01ac0b882",
         "3e497a6d-8fe9-48f1-9ea9-85c4047ad2e7",
         "688abbdd-da12-4c6d-9bc7-55be58cef783"
     ],

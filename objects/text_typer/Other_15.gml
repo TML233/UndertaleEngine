@@ -40,4 +40,4 @@ _group_voice[0,0]=snd_text_voice_default;
 _group_voice[1,0]=snd_text_voice_typer;
 _group_voice[2,0]=snd_text_voice_toriel;
 
-_group_face[0]=face_flowey;
+_group_face[0]=face;

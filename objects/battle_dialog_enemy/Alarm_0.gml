@@ -47,7 +47,7 @@ switch(template){
 		down=2;
 		left=24;
 		right=24;
-		offset_y=-6;
+		text_offset_y=-6;
 		break;
 }
 
