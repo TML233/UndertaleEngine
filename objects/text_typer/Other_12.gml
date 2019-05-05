@@ -212,6 +212,14 @@ switch(cmd[|0]){
 		}
 		break;
 		
+	case "voice_single":
+		if(is_real(cmd[|1])){
+			if(cmd[|1]==-1 || cmd[|1]>=0 && cmd[|1]<array_length_2d(_group_voice,_voice)){
+				_voice_single=cmd[|1];
+			}
+		}
+		break;
+		
 	case "font":
 		if(is_real(cmd[|1])){
 			if(cmd[|1]>=0&&cmd[|1]<array_height_2d(_group_font)){

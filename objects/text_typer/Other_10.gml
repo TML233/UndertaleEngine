@@ -51,7 +51,12 @@ if(_char!=" "&&_char!="　"){
 	ds_list_add(_list_inst,INST);
 	
 	if(!_voice_played&&!_skipping&&!_instant&&_voice>=0){
-		var sound=_group_voice[_voice,irandom(array_length_2d(_group_voice,_voice)-1)];
+		var sound=-1;
+		if(_voice_single>=0&&_voice_single<array_length_2d(_group_voice,_voice)){
+			sound=_group_voice[_voice,_voice_single];
+		}else{
+			sound=_group_voice[_voice,irandom(array_length_2d(_group_voice,_voice)-1)];
+		}
 		if(audio_exists(sound)){
 			audio_stop_sound(sound);
 			audio_play_sound(sound,0,false);
