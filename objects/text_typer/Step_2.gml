@@ -151,10 +151,17 @@ if(override_alpha_enabled||override_color_text_enabled){
 				INST.alpha=override_alpha;
 			}
 			if(override_color_text_enabled){
-				INST.color_text[0]=override_color_text[0];
-				INST.color_text[1]=override_color_text[1];
-				INST.color_text[2]=override_color_text[2];
-				INST.color_text[3]=override_color_text[3];
+				if(is_array(override_color_text)){
+					INST.color_text[0]=override_color_text[0];
+					INST.color_text[1]=override_color_text[1];
+					INST.color_text[2]=override_color_text[2];
+					INST.color_text[3]=override_color_text[3];
+				}else{
+					INST.color_text[0]=override_color_text;
+					INST.color_text[1]=override_color_text;
+					INST.color_text[2]=override_color_text;
+					INST.color_text[3]=override_color_text;
+				}
 			}
 		}
 		proc+=1;

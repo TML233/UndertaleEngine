@@ -1,10 +1,19 @@
 ///@desc Group & Macro
 ds_map_add(_map_macro,"true",true);
 ds_map_add(_map_macro,"false",false);
+
 ds_map_add(_map_macro,"DIR.UP",DIR.UP);
 ds_map_add(_map_macro,"DIR.DOWN",DIR.DOWN);
 ds_map_add(_map_macro,"DIR.LEFT",DIR.LEFT);
 ds_map_add(_map_macro,"DIR.RIGHT",DIR.RIGHT);
+
+ds_map_add(_map_macro,"FONT.DIALOG",0);
+ds_map_add(_map_macro,"FONT.MENU",1);
+ds_map_add(_map_macro,"FONT.BATTLE",2);
+
+ds_map_add(_map_macro,"VOICE.NULL",-1);
+ds_map_add(_map_macro,"VOICE.DEFAULT",0);
+ds_map_add(_map_macro,"VOICE.TYPER",1);
 
 _group_font[0,0]=Lang_GetFont(Lang_GetString("font.dialog.0"));
 _group_font_scale_x[0,0]=real(Lang_GetString("font.dialog.0.scale.x"));
@@ -38,6 +47,5 @@ _group_font_space_y[2]=real(Lang_GetString("font.battle.space.y"));
 
 _group_voice[0,0]=snd_text_voice_default;
 _group_voice[1,0]=snd_text_voice_typer;
-_group_voice[2,0]=snd_text_voice_toriel;
 
 _group_face[0]=face;
