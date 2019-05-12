@@ -1,18 +1,17 @@
 _menu=0;
-_mode=file_exists(Flag_GetSavePath(FLAG_TYPE.INFO));
 _mode=0;
 
 _prefix="{gui true}{instant true}{shadow false}{font 1}{scale 2}";
 _inst_instruction=noone;
 _inst_begin=noone;
 _inst_settings=noone;
-_inst_save_name=noone;
-_inst_save_lv=noone;
-_inst_save_time=noone;
-_inst_save_room=noone;
-_inst_save_continue=noone;
-_inst_save_reset=noone;
-_inst_save_settings=noone;
+_inst_name=noone;
+_inst_lv=noone;
+_inst_time=noone;
+_inst_room=noone;
+_inst_continue=noone;
+_inst_reset=noone;
+_inst_settings=noone;
 _inst_naming_title=noone;
 _inst_naming_letters=noone;
 _inst_naming_quit=noone;
