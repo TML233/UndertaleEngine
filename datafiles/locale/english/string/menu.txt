@@ -8,7 +8,7 @@
 "menu.naming.backspace"				"Backspace"
 "menu.naming.done"					"Done"
 "menu.confirm.title"				"Is this name correct?"
-"menu.confirm.title.reset"			"Already chose a name."
+"menu.confirm.title.reset"			"A name has already&been chosen."
 "menu.confirm.title.aaaaaa"			"Not very creative...?"
 "menu.confirm.title.alphys"			"D-don't do that."
 "menu.confirm.title.alphy"			"Uh.... OK?"
