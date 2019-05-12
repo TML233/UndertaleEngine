@@ -17,3 +17,4 @@ _moveable_menu=true;
 _moveable_save=true;
 _moveable_warp=true;
 _moveable_encounter=true;
+_moveable_box=true;
