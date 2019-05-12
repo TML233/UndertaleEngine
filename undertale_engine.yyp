@@ -2623,6 +2623,14 @@
             }
         },
         {
+            "Key": "8b6b4324-4f2e-4781-ad5f-03d864a9ce43",
+            "Value": {
+                "id": "5fc87371-e63e-4160-9cdd-79ba3d820bea",
+                "resourcePath": "views\\8b6b4324-4f2e-4781-ad5f-03d864a9ce43.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8bf37910-8bc0-4129-b691-4a7c1027b832",
             "Value": {
                 "id": "74e498db-dd73-4c7a-b63a-5470a80a2de4",
@@ -4260,6 +4268,14 @@
                 "id": "6322ff33-d213-44c3-b1ec-6ed190fb525e",
                 "resourcePath": "scripts\\Dialog_Add\\Dialog_Add.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e7e49581-65f0-465f-a672-a93ccf17ec36",
+            "Value": {
+                "id": "17ad22c1-d7f3-450d-9c8c-2b2d5bf54e15",
+                "resourcePath": "sprites\\spr_bg_area_1\\spr_bg_area_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
