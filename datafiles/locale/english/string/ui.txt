@@ -12,3 +12,7 @@
 "ui.save.save"						"Save"
 "ui.save.return"					"Return"
 "ui.save.saved"						"File Saved."
+
+"ui.box.inventory"					"INVENTORY"
+"ui.box.box"						"BOX"
+"ui.box.finish"						"Press [X] to finish"

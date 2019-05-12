@@ -1,0 +1,18 @@
+if(instance_exists(_inst_inventory)){
+	instance_destroy(_inst_inventory);
+}
+if(instance_exists(_inst_box)){
+	instance_destroy(_inst_box);
+}
+if(instance_exists(_inst_item_inventory)){
+	instance_destroy(_inst_item_inventory);
+}
+if(instance_exists(_inst_item_box)){
+	instance_destroy(_inst_item_box);
+}
+if(instance_exists(_inst_finish)){
+	instance_destroy(_inst_finish);
+}
+if(instance_exists(char_player)){
+	char_player._moveable_box=true;
+}
