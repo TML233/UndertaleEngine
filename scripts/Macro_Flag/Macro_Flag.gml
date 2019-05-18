@@ -3,7 +3,8 @@ enum FLAG_TYPE{
 	DYNAMIC,
 	TEMP,
 	INFO,
-	SETTINGS
+	SETTINGS,
+	DEMO
 };
 
 #region static
@@ -74,5 +75,11 @@ enum FLAG_SETTINGS{
 	GAMEPAD_CONFIRM,
 	GAMEPAD_CANCEL,
 	GAMEPAD_MENU
+};
+#endregion
+
+#region demo
+enum FLAG_DEMO{
+	DATA
 };
 #endregion

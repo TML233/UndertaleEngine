@@ -4,5 +4,5 @@ repeat(ds_map_size(map)){
 	Input_Unbind(key);
 }
 ds_map_destroy(map);
-
+ds_map_destroy(global._gmu_input_state_override);
 return true;
