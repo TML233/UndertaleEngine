@@ -1,8 +1,8 @@
 {
-    "id": "490015ca-8ebc-4e5c-b04d-e9e15fc19ccc",
+    "id": "4ba87b4d-dee3-45d0-89ae-917639ef20cc",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Input_CheckPressed",
+    "name": "Input_IsHeld",
     "IsCompatibility": false,
     "IsDnD": false
 }
