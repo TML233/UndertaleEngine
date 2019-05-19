@@ -4,22 +4,22 @@ if(_state==-1){
 		event_user(0);
 	}
 }else if(_state==0){
-	if(Input_CheckPressed(INPUT.UP)){
+	if(Input_IsPressed(INPUT.UP)){
 		if(_choice_item>0){
 			_choice_item-=1;
 		}
-	}else if(Input_CheckPressed(INPUT.DOWN)){
+	}else if(Input_IsPressed(INPUT.DOWN)){
 		if((_choice_mode==0 && _choice_item<7) || (_choice_mode==1 && _choice_item<9)){
 			_choice_item+=1;
 		}
-	}else if(Input_CheckPressed(INPUT.RIGHT)){
+	}else if(Input_IsPressed(INPUT.RIGHT)){
 		_choice_mode=1;
-	}else if(Input_CheckPressed(INPUT.LEFT)){
+	}else if(Input_IsPressed(INPUT.LEFT)){
 		_choice_mode=0;
 		if(_choice_item>7){
 			_choice_item=7;
 		}
-	}else if(Input_CheckPressed(INPUT.CONFIRM)){
+	}else if(Input_IsPressed(INPUT.CONFIRM)){
 		if(_choice_mode==0){
 			var target=Item_Get(_choice_item);
 			if(Item_IsValid(target) && Box_GetNumber(box_slot)<10){
@@ -35,7 +35,7 @@ if(_state==-1){
 				event_user(1);
 			}
 		}
-	}else if(Input_CheckPressed(INPUT.CANCEL)){
+	}else if(Input_IsPressed(INPUT.CANCEL)){
 		instance_destroy();
 	}
 }

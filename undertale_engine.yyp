@@ -1466,7 +1466,7 @@
             "Key": "490015ca-8ebc-4e5c-b04d-e9e15fc19ccc",
             "Value": {
                 "id": "5ec56457-0ce5-41b4-b05d-794e96581355",
-                "resourcePath": "scripts\\Input_CheckPressed\\Input_CheckPressed.yy",
+                "resourcePath": "scripts\\Input_IsPressed\\Input_IsPressed.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1514,7 +1514,7 @@
             "Key": "4ba87b4d-dee3-45d0-89ae-917639ef20cc",
             "Value": {
                 "id": "e0670623-219e-47e1-b7e6-5c5dc3a52133",
-                "resourcePath": "scripts\\Input_Check\\Input_Check.yy",
+                "resourcePath": "scripts\\Input_IsHeld\\Input_IsHeld.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2986,7 +2986,7 @@
             "Key": "95596dec-9774-4b92-9a20-e56021ca945b",
             "Value": {
                 "id": "4a703077-1f7b-4b73-ab5e-8e56c754836c",
-                "resourcePath": "scripts\\Input_CheckReleased\\Input_CheckReleased.yy",
+                "resourcePath": "scripts\\Input_IsReleased\\Input_IsReleased.yy",
                 "resourceType": "GMScript"
             }
         },

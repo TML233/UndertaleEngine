@@ -1,4 +1,4 @@
-if(fast&&Input_CheckPressed(INPUT.CONFIRM)){
+if(fast&&Input_IsPressed(INPUT.CONFIRM)){
 	instance_destroy();
 }else if(instance_exists(_inst)){
 	_inst.x=x-left+text_offset_x;

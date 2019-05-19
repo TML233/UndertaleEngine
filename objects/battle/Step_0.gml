@@ -3,7 +3,7 @@ if(_state==BATTLE_STATE.MENU){
 	//按钮
 	if(_menu==BATTLE_MENU.BUTTON){
 		//左/右
-		if(Input_CheckPressed(INPUT.LEFT)){
+		if(Input_IsPressed(INPUT.LEFT)){
 			var button=_menu_choice_button;
 			button-=1;
 			if(button<0){
@@ -11,7 +11,7 @@ if(_state==BATTLE_STATE.MENU){
 			}
 			audio_play_sound(snd_menu_switch,0,false);
 			Battle_SetMenuChoiceButton(button);
-		}else if(Input_CheckPressed(INPUT.RIGHT)){
+		}else if(Input_IsPressed(INPUT.RIGHT)){
 			var button=_menu_choice_button;
 			button+=1;
 			if(button>3){
@@ -22,7 +22,7 @@ if(_state==BATTLE_STATE.MENU){
 		}
 		
 		//确定
-		if(Input_CheckPressed(INPUT.CONFIRM)){
+		if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			switch(_menu_choice_button){
 				case 0:
@@ -48,13 +48,13 @@ if(_state==BATTLE_STATE.MENU){
 	//战斗目标
 	if(_menu==BATTLE_MENU.FIGHT_TARGET){
 		//上/下
-		if(Input_CheckPressed(INPUT.UP)){
+		if(Input_IsPressed(INPUT.UP)){
 			var enemy=_menu_choice_enemy-1;
 			if(enemy>=0){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceEnemy(enemy);
 			}
-		}else if(Input_CheckPressed(INPUT.DOWN)){
+		}else if(Input_IsPressed(INPUT.DOWN)){
 			var enemy=_menu_choice_enemy+1;
 			if(enemy<Battle_GetEnemyNumber()){
 				audio_play_sound(snd_menu_switch,0,false);
@@ -67,11 +67,11 @@ if(_state==BATTLE_STATE.MENU){
 		battle_soul.y=battle_board.y-battle_board.up-5+36+32*_menu_choice_enemy;
 		
 		//返回
-		if(Input_CheckPressed(INPUT.CANCEL)){
+		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
 		}
 		//确定
-		if(Input_CheckPressed(INPUT.CONFIRM)){
+		if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_SetMenu(BATTLE_MENU.FIGHT_AIM);
 		}
@@ -98,13 +98,13 @@ if(_state==BATTLE_STATE.MENU){
 	//行动目标
 	if(_menu==BATTLE_MENU.ACT_TARGET){
 		//上/下
-		if(Input_CheckPressed(INPUT.UP)){
+		if(Input_IsPressed(INPUT.UP)){
 			var enemy=_menu_choice_enemy-1;
 			if(enemy>=0){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceEnemy(enemy);
 			}
-		}else if(Input_CheckPressed(INPUT.DOWN)){
+		}else if(Input_IsPressed(INPUT.DOWN)){
 			var enemy=_menu_choice_enemy+1;
 			if(enemy<Battle_GetEnemyNumber()){
 				audio_play_sound(snd_menu_switch,0,false);
@@ -117,11 +117,11 @@ if(_state==BATTLE_STATE.MENU){
 		battle_soul.y=battle_board.y-battle_board.up-5+36+32*_menu_choice_enemy;
 		
 		//返回
-		if(Input_CheckPressed(INPUT.CANCEL)){
+		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
 		}
 		//确定
-		if(Input_CheckPressed(INPUT.CONFIRM)){
+		if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_SetMenu(BATTLE_MENU.ACT_ACTION);
 		}
@@ -130,13 +130,13 @@ if(_state==BATTLE_STATE.MENU){
 	//行动内容
 	if(_menu==BATTLE_MENU.ACT_ACTION){
 		//上/下
-		if(Input_CheckPressed(INPUT.UP)){
+		if(Input_IsPressed(INPUT.UP)){
 			var action=_menu_choice_action-2;
 			if(action>=0){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceAction(action);
 			}
-		}else if(Input_CheckPressed(INPUT.DOWN)){
+		}else if(Input_IsPressed(INPUT.DOWN)){
 			var action=_menu_choice_action+2;
 			if(action<_enemy_action_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
 				audio_play_sound(snd_menu_switch,0,false);
@@ -144,7 +144,7 @@ if(_state==BATTLE_STATE.MENU){
 			}
 		}
 		//左/右
-		if(Input_CheckPressed(INPUT.LEFT)){
+		if(Input_IsPressed(INPUT.LEFT)){
 			if(_menu_choice_action%2==1){
 				var action=_menu_choice_action-1;
 				if(action>=0){
@@ -152,7 +152,7 @@ if(_state==BATTLE_STATE.MENU){
 					Battle_SetMenuChoiceAction(action);
 				}
 			}
-		}else if(Input_CheckPressed(INPUT.RIGHT)){
+		}else if(Input_IsPressed(INPUT.RIGHT)){
 			if(_menu_choice_action%2==0){
 				var action=_menu_choice_action+1;
 				if(action<_enemy_action_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
@@ -167,9 +167,9 @@ if(_state==BATTLE_STATE.MENU){
 		battle_soul.y=battle_board.y-battle_board.up-5+36+32*floor(_menu_choice_action/2);
 		
 		//返回/确定
-		if(Input_CheckPressed(INPUT.CANCEL)){
+		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
-		}else if(Input_CheckPressed(INPUT.CONFIRM)){
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_EndMenu();
 		}
@@ -178,21 +178,21 @@ if(_state==BATTLE_STATE.MENU){
 	//物品
 	if(_menu==BATTLE_MENU.ITEM){
 		//上/下
-		if(Input_CheckPressed(INPUT.UP)){
+		if(Input_IsPressed(INPUT.UP)){
 			var slot=Battle_GetMenuChoiceItem()-1;
 			if(slot>=0){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceItem(slot);
 			}
-		}else if(Input_CheckPressed(INPUT.DOWN)){
+		}else if(Input_IsPressed(INPUT.DOWN)){
 			var slot=Battle_GetMenuChoiceItem()+1;
 			if(slot<Item_GetNumber()){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceItem(slot);
 			}
-		}else if(Input_CheckPressed(INPUT.CANCEL)){
+		}else if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
-		}else if(Input_CheckPressed(INPUT.CONFIRM)){
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_EndMenu();
 		}
@@ -204,13 +204,13 @@ if(_state==BATTLE_STATE.MENU){
 	//仁慈
 	if(_menu==BATTLE_MENU.MERCY){
 		//上/下
-		if(Input_CheckPressed(INPUT.UP)){
+		if(Input_IsPressed(INPUT.UP)){
 			var mercy=Battle_GetMenuChoiceMercy()-1;
 			if(mercy>=0){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceMercy(mercy);
 			}
-		}else if(Input_CheckPressed(INPUT.DOWN)){
+		}else if(Input_IsPressed(INPUT.DOWN)){
 			var mercy=Battle_GetMenuChoiceMercy()+1;
 			if((!Battle_IsMenuChoiceMercyOverride()&&mercy<=_menu_mercy_flee_enabled) || (Battle_IsMenuChoiceMercyOverride()&&mercy<Battle_GetMenuChoiceMercyOverrideNumber())){
 				audio_play_sound(snd_menu_switch,0,false);
@@ -223,9 +223,9 @@ if(_state==BATTLE_STATE.MENU){
 		battle_soul.y=battle_board.y-battle_board.up-5+36+32*_menu_choice_mercy;
 		
 		//取消/确定
-		if(Input_CheckPressed(INPUT.CANCEL)){
+		if(Input_IsPressed(INPUT.CANCEL)){
 			Battle_SetMenu(BATTLE_MENU.BUTTON);
-		}else if(Input_CheckPressed(INPUT.CONFIRM)){
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			audio_play_sound(snd_menu_confirm,0,false);
 			Battle_EndMenu();
 		}
