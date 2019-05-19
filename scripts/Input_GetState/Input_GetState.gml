@@ -2,6 +2,10 @@
 var INPUT=argument[0];
 
 var map=global._gmu_input;
+var override=global._gmu_input_state_override;
+if(ds_map_exists(override,INPUT)){
+	return override[?INPUT];
+}
 if(ds_map_exists(map,INPUT)){
 	var list=ds_map_find_value(map,INPUT);
 	var result=INPUT_STATE.NULL;
