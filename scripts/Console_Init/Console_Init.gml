@@ -1,6 +1,6 @@
 if(GMU_CONSOLE_ENABLED){
-	global._gmu_console_list_cmd=ds_list_create();
 	global._gmu_console_map_macro=ds_map_create();
+	global._gmu_console_cmd_split="";
 	
 	var dll=GMU_CONSOLE_CONFIG_DLL;
 	var call=dll_cdecl;
