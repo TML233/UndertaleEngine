@@ -1,16 +1,33 @@
-var r=0;
-var t=_time;
-var b=_start;
-var c=_change;
-var d=_duration;
+///@arg tween
+///@arg ease
+///@arg time
+///@arg arg_0*
+///@arg arg_1*
+var TWEEN=argument[0];
+var EASE=argument[1];
+var TIME=argument[2];
+var ARG_0=0;
+var ARG_1=0;
+if(argument_count>=4){
+	ARG_0=argument[3];
+}
+if(argument_count>=5){
+	ARG_1=argument[4];
+}
 
-switch(_tween){
+var r=0;
+var t=TIME;
+var b=0;
+var c=1;
+var d=1;
+
+switch(TWEEN){
 	case ANIM_TWEEN.LINEAR:
 		r=(t/d)*c+b;
 		break;
 		
 	case ANIM_TWEEN.SINE:
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				r=-c*cos(t/d*(pi/2))+c+b;
 				break;
@@ -24,7 +41,7 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.QUAD:
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				t/=d;
 				r=c*t*t+b;
@@ -45,7 +62,7 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.CUBIC:
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				t/=d;
 				r=c*t*t*t+b;
@@ -67,7 +84,7 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.QUART:
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				t/=d;
 				r=c*t*t*t*t+b;
@@ -89,7 +106,7 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.QUINT:
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				t/=d;
 				r=c*t*t*t*t*t + b;
@@ -111,7 +128,7 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.EXPO:
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				if(t==0){
 					r=b;
@@ -144,7 +161,7 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.CIRC:
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				t/=d;
 				r=-c*(sqrt(1-t*t)-1)+b;
@@ -166,12 +183,12 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.BACK:
-		if(_arg1>0){
-			var s=_arg1;
+		if(ARG_0>0){
+			var s=ARG_0;
 		}else{
 			var s=1.70158;
 		}
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				t/=d;
 				r=c*t*t*((s+1)*t-s)+b;
@@ -194,9 +211,9 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.ELASTIC:
-		var a=_arg1;
-		var p=_arg2;
-		switch(_ease){
+		var a=ARG_0;
+		var p=ARG_1;
+		switch(EASE){
 			case ANIM_EASE.IN:
 				if(t==0){
 					r=b;
@@ -270,7 +287,7 @@ switch(_tween){
 		break;
 		
 	case ANIM_TWEEN.BOUNCE:
-		switch(_ease){
+		switch(EASE){
 			case ANIM_EASE.IN:
 				t=d-t;
 				t/=d;
@@ -338,8 +355,4 @@ switch(_tween){
 		break;
 }
 
-if(_inst!=global){
-	variable_instance_set(_inst,_var_name,r);
-}else{
-	variable_global_set(_var_name,r);
-}
+return r;

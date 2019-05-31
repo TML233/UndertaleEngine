@@ -1,8 +1,8 @@
 {
-    "id": "3433905f-44a8-4389-a7ba-c80000643aa6",
+    "id": "1dffb5c6-dc96-49b9-aebb-24c87c337c20",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Anim_New",
+    "name": "Anim_Destroy",
     "IsCompatibility": false,
     "IsDnD": false
 }

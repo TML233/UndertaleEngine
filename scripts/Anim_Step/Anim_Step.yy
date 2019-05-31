@@ -1,8 +1,8 @@
 {
-    "id": "1dffb5c6-dc96-49b9-aebb-24c87c337c20",
+    "id": "8e1ce631-efd8-4185-ab26-4cb29ea46b2b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Anim_Stop",
+    "name": "Anim_Step",
     "IsCompatibility": false,
     "IsDnD": false
 }
