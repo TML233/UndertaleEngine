@@ -57,6 +57,7 @@ if(DURATION>=0){
 					map[?ANIM_DATA.ARG_0]=ARG_0;
 					map[?ANIM_DATA.ARG_1]=ARG_1;
 					map[?ANIM_DATA.TIME]=0;
+					
 					proc_result+=1;
 				}
 			}
@@ -79,6 +80,7 @@ if(DURATION>=0){
 			map[?ANIM_DATA.DELAY]=DELAY;
 			map[?ANIM_DATA.ARG_0]=ARG_0;
 			map[?ANIM_DATA.ARG_1]=ARG_1;
+			map[?ANIM_DATA.TIME]=0;
 			
 			proc_result+=1;
 		}
