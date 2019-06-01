@@ -1,3 +1,5 @@
+Anim_Init();
+
 Console_Init();
 Console_SetStatusNumber(3);
 Console_SetStatusRatio(0,2/11);
