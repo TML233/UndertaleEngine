@@ -1,7 +1,7 @@
-var key=ds_map_find_first(global._gmu_anim);
-var key_previous=undefined;
-while(!is_undefined(key)){
-	var map=global._gmu_anim[?key];
+var proc=0;
+repeat(ds_list_size(global._gmu_anim_list)){
+	var key=global._gmu_anim_list[|proc];
+	var map=global._gmu_anim_data[?key];
 	if(instance_exists(map[?ANIM_DATA.TARGET]) || map[?ANIM_DATA.TARGET]==global){
 		if(map[?ANIM_DATA.TIME] < map[?ANIM_DATA.DURATION]){
 			if(map[?ANIM_DATA.DELAY]<=0){
@@ -24,28 +24,17 @@ while(!is_undefined(key)){
 			}
 			
 			ds_map_destroy(map);
-			ds_map_delete(global._gmu_anim,key);
-			if(ds_map_exists(global._gmu_anim,key_previous)){
-				key=key_previous;
-			}else{
-				key_previous=undefined;
-				key=ds_map_find_first(global._gmu_anim);
-				continue;
-			}
+			ds_map_delete(global._gmu_anim_data,key);
+			ds_list_delete(global._gmu_anim_list,proc);
+			proc-=1;
 		}
 	}else{
 		ds_map_destroy(map);
-		ds_map_delete(global._gmu_anim,key);
-		if(ds_map_exists(global._gmu_anim,key_previous)){
-			key=key_previous;
-		}else{
-			key_previous=undefined;
-			key=ds_map_find_first(global._gmu_anim);
-			continue;
-		}
+		ds_map_delete(global._gmu_anim_data,key);
+		ds_list_delete(global._gmu_anim_list,proc);
+		proc-=1;
 	}
-	key_previous=key;
-	key=ds_map_find_next(global._gmu_anim,key);
+	proc+=1;
 }
 
 return true;

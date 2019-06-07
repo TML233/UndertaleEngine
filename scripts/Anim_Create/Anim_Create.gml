@@ -42,7 +42,8 @@ if(DURATION>=0){
 			if(instance_exists(inst_find)){
 				if(variable_instance_exists(inst_find,VAR_NAME)){
 					var map=ds_map_create();
-					ds_map_add(global._gmu_anim,global._gmu_anim_id,map);
+					ds_map_add(global._gmu_anim_data,global._gmu_anim_id,map);
+					ds_list_add(global._gmu_anim_list,global._gmu_anim_id);
 					inst_result[proc_result]=global._gmu_anim_id;
 					global._gmu_anim_id-=1;
 					
@@ -66,7 +67,8 @@ if(DURATION>=0){
 	}else if(TARGET==global){
 		if(variable_global_exists(VAR_NAME)){
 			var map=ds_map_create();
-			ds_map_add(global._gmu_anim,global._gmu_anim_id,map);
+			ds_map_add(global._gmu_anim_data,global._gmu_anim_id,map);
+			ds_list_add(global._gmu_anim_list,global._gmu_anim_id);
 			inst_result[0]=global._gmu_anim_id;
 			global._gmu_anim_id-=1;
 			
