@@ -16,6 +16,9 @@ switch(TYPE){
 	case FLAG_TYPE.SETTINGS:
 		result+="settings";
 		break;
+	case FLAG_TYPE.DEMO:
+		result+="demo/"+string(Flag_GetSaveSlot());
+		break;
 		
 	default:
 		result="";

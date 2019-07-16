@@ -1,16 +1,16 @@
 if(_menu==0){
 	if(_mode==0){
-		if(Input_CheckPressed(INPUT.DOWN)){
+		if(Input_IsPressed(INPUT.DOWN)){
 			if(_choice<1){
 				_choice=1;
 				event_user(2);
 			}
-		}else if(Input_CheckPressed(INPUT.UP)){
+		}else if(Input_IsPressed(INPUT.UP)){
 			if(_choice>0){
 				_choice=0;
 				event_user(2);
 			}
-		}else if(Input_CheckPressed(INPUT.CONFIRM)){
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			if(_choice==0){
 				_menu=1;
 				event_user(0);
@@ -19,27 +19,27 @@ if(_menu==0){
 			}
 		}
 	}else{
-		if(Input_CheckPressed(INPUT.LEFT)){
+		if(Input_IsPressed(INPUT.LEFT)){
 			if(_choice==1){
 				_choice=0;
 				event_user(2);
 			}
-		}else if(Input_CheckPressed(INPUT.RIGHT)){
+		}else if(Input_IsPressed(INPUT.RIGHT)){
 			if(_choice==0){
 				_choice=1;
 				event_user(2);
 			}
-		}else if(Input_CheckPressed(INPUT.DOWN)){
+		}else if(Input_IsPressed(INPUT.DOWN)){
 			if(_choice!=2){
 				_choice=2;
 				event_user(2);
 			}
-		}else if(Input_CheckPressed(INPUT.UP)){
+		}else if(Input_IsPressed(INPUT.UP)){
 			if(_choice==2){
 				_choice=0;
 				event_user(2);
 			}
-		}else if(Input_CheckPressed(INPUT.CONFIRM)){
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			if(_choice==0){
 				Flag_Load(FLAG_TYPE.STATIC);
 				Flag_Load(FLAG_TYPE.DYNAMIC);
@@ -61,17 +61,17 @@ if(_menu==0){
 	}
 }else if(_menu==1){
 	if(_choice_naming==0){
-		if(Input_CheckPressed(INPUT.RIGHT)){
+		if(Input_IsPressed(INPUT.RIGHT)){
 			if(_choice_naming_letter<51){
 				_choice_naming_letter+=1;
 				event_user(3);
 			}
-		}else if(Input_CheckPressed(INPUT.LEFT)){
+		}else if(Input_IsPressed(INPUT.LEFT)){
 			if(_choice_naming_letter>0){
 				_choice_naming_letter-=1;
 				event_user(3);
 			}
-		}else if(Input_CheckPressed(INPUT.UP)){
+		}else if(Input_IsPressed(INPUT.UP)){
 			if(_choice_naming_letter>=0&&_choice_naming_letter<=1){
 				_choice_naming=1;
 				_choice_naming_command=0;
@@ -89,7 +89,7 @@ if(_menu==0){
 				_choice_naming_letter-=7;
 			}
 			event_user(3);
-		}else if(Input_CheckPressed(INPUT.DOWN)){
+		}else if(Input_IsPressed(INPUT.DOWN)){
 			if(_choice_naming_letter>=21&&_choice_naming_letter<=25){
 				_choice_naming_letter+=5;
 			}else if(_choice_naming_letter>=19&&_choice_naming_letter<=20){
@@ -107,28 +107,28 @@ if(_menu==0){
 				_choice_naming_letter+=7;
 			}
 			event_user(3);
-		}else if(Input_CheckPressed(INPUT.CONFIRM)){
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			if(string_length(_naming_name)<6){
 				var inst=_inst_naming_letters._list_inst[|_choice_naming_letter];
 				_naming_name+=inst.text;
 			}
-		}else if(Input_CheckPressed(INPUT.CANCEL)){
+		}else if(Input_IsPressed(INPUT.CANCEL)){
 			if(string_length(_naming_name)>0){
 				_naming_name=string_delete(_naming_name,string_length(_naming_name),1);
 			}
 		}
 	}else{
-		if(Input_CheckPressed(INPUT.RIGHT)){
+		if(Input_IsPressed(INPUT.RIGHT)){
 			if(_choice_naming_command<2){
 				_choice_naming_command+=1;
 				event_user(3);
 			}
-		}else if(Input_CheckPressed(INPUT.LEFT)){
+		}else if(Input_IsPressed(INPUT.LEFT)){
 			if(_choice_naming_command>0){
 				_choice_naming_command-=1;
 				event_user(3);
 			}
-		}else if(Input_CheckPressed(INPUT.UP)){
+		}else if(Input_IsPressed(INPUT.UP)){
 			if(_choice_naming_command==0){
 				_choice_naming=0;
 				_choice_naming_letter=47;
@@ -140,7 +140,7 @@ if(_menu==0){
 				_choice_naming_letter=45;
 			}
 			event_user(3);
-		}else if(Input_CheckPressed(INPUT.DOWN)){
+		}else if(Input_IsPressed(INPUT.DOWN)){
 			if(_choice_naming_command==0){
 				_choice_naming=0;
 				_choice_naming_letter=0;
@@ -152,7 +152,7 @@ if(_menu==0){
 				_choice_naming_letter=5;
 			}
 			event_user(3);
-		}else if(Input_CheckPressed(INPUT.CONFIRM)){
+		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			if(_choice_naming_command==0){
 				_menu=0;
 				event_user(0);
@@ -169,24 +169,24 @@ if(_menu==0){
 					event_user(0);
 				}
 			}
-		}else if(Input_CheckPressed(INPUT.CANCEL)){
+		}else if(Input_IsPressed(INPUT.CANCEL)){
 			if(string_length(_naming_name)>0){
 				_naming_name=string_delete(_naming_name,string_length(_naming_name),1);
 			}
 		}
 	}
 }else if(_menu==2){
-	if(Input_CheckPressed(INPUT.LEFT)){
+	if(Input_IsPressed(INPUT.LEFT)){
 		if(_choice_confirm>0){
 			_choice_confirm=0;
 			event_user(5);
 		}
-	}else if(Input_CheckPressed(INPUT.RIGHT)){
+	}else if(Input_IsPressed(INPUT.RIGHT)){
 		if(_choice_confirm<1&&_confirm_valid){
 			_choice_confirm=1;
 			event_user(5);
 		}
-	}else if(Input_CheckPressed(INPUT.CONFIRM)){
+	}else if(Input_IsPressed(INPUT.CONFIRM)){
 		if(_choice_confirm==0){
 			_menu=(_mode==0 ? 1 : 0);
 			event_user(0);

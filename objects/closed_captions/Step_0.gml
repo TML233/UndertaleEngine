@@ -10,8 +10,8 @@ while(!ds_queue_empty(_queue_text)){
 	}
 	inst.override_alpha_enabled=true;
 	inst.override_alpha=0;
-	Anim_Stop(inst,"override_alpha");
-	Anim_New(inst,"override_alpha",0,0,0,1,10,5);
+	Anim_Destroy(inst,"override_alpha");
+	Anim_Create(inst,"override_alpha",0,0,0,1,10,5);
 	ds_list_add(_list_inst,inst);
 	ds_list_add(_list_time,duration);
 }
@@ -35,8 +35,8 @@ repeat(ds_list_size(_list_inst)){
 	if(_list_time[|proc]<=0){
 		var inst=_list_inst[|proc];
 		if(instance_exists(inst)){
-			Anim_Stop(inst,"override_alpha");
-			Anim_New(inst,"override_alpha",0,0,1,-1,10);
+			Anim_Destroy(inst,"override_alpha");
+			Anim_Create(inst,"override_alpha",0,0,1,-1,10);
 			ds_list_add(_list_destroy_inst,inst);
 			ds_list_add(_list_destroy_time,10);
 		}
@@ -64,8 +64,8 @@ if(_up_previous!=height){
 	if(height<_up_previous){
 		delay=10;
 	}
-	Anim_Stop(self,"_up");
-	Anim_New(self,"_up",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,_up,height-_up,10,delay);
+	Anim_Destroy(self,"_up");
+	Anim_Create(self,"_up",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,_up,height-_up,10,delay);
 	_up_previous=height;
 }
 
@@ -114,10 +114,10 @@ repeat(ds_list_size(_list_destroy_inst)){
 
 if(!_showed&&!ds_list_empty(_list_inst)){
 	_showed=true;
-	Anim_Stop(self,"_alpha");
-	Anim_New(self,"_alpha",0,0,0,1,10);
+	Anim_Destroy(self,"_alpha");
+	Anim_Create(self,"_alpha",0,0,0,1,10);
 }else if(_showed&&ds_list_empty(_list_inst)){
 	_showed=false;
-	Anim_Stop(self,"_alpha");
-	Anim_New(self,"_alpha",0,0,1,-1,10,5);
+	Anim_Destroy(self,"_alpha");
+	Anim_Create(self,"_alpha",0,0,1,-1,10,5);
 }

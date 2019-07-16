@@ -1,3 +1,5 @@
+Anim_Init();
+
 Console_Init();
 Console_SetStatusNumber(3);
 Console_SetStatusRatio(0,2/11);
@@ -29,6 +31,8 @@ Encounter_Init();
 BGM_Init();
 
 Dialog_Init();
+
+Demo_Init();
 
 instance_create_depth(0,0,0,camera);
 instance_create_depth(0,0,0,fader);
