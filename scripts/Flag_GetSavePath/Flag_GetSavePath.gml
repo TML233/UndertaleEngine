@@ -1,7 +1,7 @@
 ///@arg type
 var TYPE=argument[0];
 
-var result="./"+GAME_SAVE_NAME+"/"+GAME_GUID+"/";
+var result="./flag/";
 switch(TYPE){
 	case FLAG_TYPE.STATIC:
 		result+=string(Flag_GetSaveSlot())+"/static";
