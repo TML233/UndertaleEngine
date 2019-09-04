@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "1b277540-a7ea-4a6c-908c-23d26e9843b4",
+            "Value": {
+                "id": "18c8eaa1-8909-4a62-91a1-2d25baf43a53",
+                "resourcePath": "scripts\\Flag_GetRaw\\Flag_GetRaw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1b2d5e16-a2ec-408a-9be8-3790ec2e637f",
             "Value": {
                 "id": "92cc0cae-baa8-4249-a560-75eb6d781d06",
@@ -3223,6 +3231,14 @@
             }
         },
         {
+            "Key": "a0b6b01f-34d7-405e-8eb0-b54a14743e51",
+            "Value": {
+                "id": "ec15bf17-d131-4a4e-a790-97c1d81c1d50",
+                "resourcePath": "scripts\\Flag_SetRaw\\Flag_SetRaw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a0e08a0d-19c3-42b5-ad86-a13dae12f7f5",
             "Value": {
                 "id": "d0068a36-b258-4101-912d-91dd4cabe3d4",
@@ -5272,6 +5288,8 @@
         "9b075008-df8e-4d74-9286-2415c88765c3",
         "a2d010f3-93da-47fb-b7d4-923a87c08ccb",
         "cdf7ddf4-5a68-4d9e-9ac5-79c27ab9314d",
+        "1b277540-a7ea-4a6c-908c-23d26e9843b4",
+        "a0b6b01f-34d7-405e-8eb0-b54a14743e51",
         "7bbed1e0-9089-4242-b968-dceb9037aef9",
         "3110079d-22ac-498c-be19-8d86d02b441e",
         "bfcc815c-ae54-4cfd-9be1-df0d03096fb9",

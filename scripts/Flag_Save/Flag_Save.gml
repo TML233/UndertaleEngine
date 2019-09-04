@@ -1,23 +1,21 @@
 ///@arg type
+///@arg path*
 var TYPE=argument[0];
-
-var map=global._flag;
-var map_f=-1;
-if(ds_map_exists(map,TYPE)){
-	map_f=ds_map_find_value(map,TYPE);
-}else{
-	Console_OutputLine("Attempted to save non-existing flag type "+string(TYPE)+"!");
-	return false;
+var PATH="";
+if(argument_count>=2){
+	PATH=argument[1];
 }
 
-var path=Flag_GetSavePath(TYPE);
-var file=file_text_open_write(path);
+if(PATH==""){
+	PATH=Flag_GetSavePath(TYPE);
+}
+var file=file_text_open_write(PATH);
 
-var str=ds_map_write(map_f);
+var str=Flag_GetRaw(TYPE);
 file_text_write_string(file,str);
 
 file_text_close(file);
 
-Console_OutputLine("Flag type "+string(TYPE)+" saved to \""+path+"\".");
+Console_OutputLine("Flag type "+string(TYPE)+" saved to \""+PATH+"\".");
 
 return true;

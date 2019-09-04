@@ -8,9 +8,5 @@
 #macro GAME_VERSION "v0.0.0"
 
 //Anything you want, must be a string.
-//Can only contain letters numbers and underscores(_).
+//Can only contain letters, numbers and underscores.
 #macro GAME_SAVE_NAME "undertale_engine"
-
-//A GUID, must be a string.
-//Generate GUID here: https://www.guidgen.com/
-#macro GAME_GUID "{"+string_upper("00000000-0000-0000-0000-000000000000")+"}"
