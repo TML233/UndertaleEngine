@@ -39,6 +39,8 @@ if(GMU_CONSOLE_ENABLED){
 				}
 				ds_list_add(list_cmd,cmd);
 				str_mode=false;
+				str_cmd=false;
+				str_no_escape=false;
 				cmd="";
 			}
 		}else if(cmd_char=="\""&&!str_mode){

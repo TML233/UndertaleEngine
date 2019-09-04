@@ -49,7 +49,6 @@ Console_OutputLine("Engine Version: "+ENGINE_VERSION);
 Console_OutputLine("Game Name: "+GAME_NAME);
 Console_OutputLine("Game Author: "+GAME_AUTHOR);
 Console_OutputLine("Game Version: "+GAME_VERSION);
-Console_OutputLine("Game GUID: "+GAME_GUID);
 
 //show_debug_overlay(true);
 
