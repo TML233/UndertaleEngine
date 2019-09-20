@@ -1,1 +1,1 @@
-#macro ENGINE_VERSION "v0.5.1"
+#macro ENGINE_VERSION "v0.6.0"
