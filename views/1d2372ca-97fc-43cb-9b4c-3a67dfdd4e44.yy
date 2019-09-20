@@ -15,8 +15,8 @@
         "784ce4fe-7afb-474a-906e-cda2559e1961",
         "b92ff91b-e6e5-4d1f-b019-ce595e907bdd",
         "8c6b7d44-b4d1-4805-aff7-55dc30dd569d",
-        "d860e9dd-790d-4eb1-85b8-dbbe8c5eeb64",
-        "1c851e96-e70f-40a6-9e51-effe5f07e4d8"
+        "1c851e96-e70f-40a6-9e51-effe5f07e4d8",
+        "a93203bf-575e-4332-88b0-45cbe88366f4"
     ],
     "filterType": "GMScript",
     "folderName": "BGM",
