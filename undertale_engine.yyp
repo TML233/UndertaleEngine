@@ -3359,6 +3359,14 @@
             }
         },
         {
+            "Key": "a93203bf-575e-4332-88b0-45cbe88366f4",
+            "Value": {
+                "id": "158c4c19-26a2-4b7a-a067-2481247e198c",
+                "resourcePath": "scripts\\BGM_Step\\BGM_Step.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9bd20ba-6a00-4de6-b1ff-df13734ff8b4",
             "Value": {
                 "id": "859a27ab-f8d9-41e6-83bf-09bd7e943e05",
@@ -4315,14 +4323,6 @@
             "Value": {
                 "id": "b4a2eb66-88c6-441c-90b8-b4ed0100d3ef",
                 "resourcePath": "scripts\\Battle_GetMenuChoiceMercyOverrideNumber\\Battle_GetMenuChoiceMercyOverrideNumber.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d860e9dd-790d-4eb1-85b8-dbbe8c5eeb64",
-            "Value": {
-                "id": "03e6bd49-b674-42a3-ac24-3d9cab3e5678",
-                "resourcePath": "scripts\\BGM_Fade\\BGM_Fade.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5364,8 +5364,8 @@
         "784ce4fe-7afb-474a-906e-cda2559e1961",
         "b92ff91b-e6e5-4d1f-b019-ce595e907bdd",
         "8c6b7d44-b4d1-4805-aff7-55dc30dd569d",
-        "d860e9dd-790d-4eb1-85b8-dbbe8c5eeb64",
         "1c851e96-e70f-40a6-9e51-effe5f07e4d8",
+        "a93203bf-575e-4332-88b0-45cbe88366f4",
         "0f02929d-7c23-4060-8e6a-d9dd4e54cdd7",
         "aca76236-2c67-44dd-ac16-aed1885167c8",
         "c0eb0dad-cbb0-46ee-a553-ee98b73a603f",

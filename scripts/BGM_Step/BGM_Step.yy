@@ -1,8 +1,8 @@
 {
-    "id": "d860e9dd-790d-4eb1-85b8-dbbe8c5eeb64",
+    "id": "a93203bf-575e-4332-88b0-45cbe88366f4",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "BGM_Fade",
+    "name": "BGM_Step",
     "IsCompatibility": false,
     "IsDnD": false
 }
