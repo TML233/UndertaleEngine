@@ -24,9 +24,7 @@ if(_state==0){
 	_inst_return.text=_prefix+Lang_GetString("ui.save.return");
 }
 if(_state==1){
-	Flag_Save(FLAG_TYPE.STATIC);
-	Player_UpdateSaveInfo();
-	Flag_Save(FLAG_TYPE.INFO);
+	Player_Save(0);
 	
 	audio_play_sound(snd_save,0,false);
 	
