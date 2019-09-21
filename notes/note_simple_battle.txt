@@ -1,5 +1,5 @@
 If you want to try this example,
-Goto the default view, and move the [room_simple_battle] below [room_init]
+Goto the default view, and move the [room_simple_battle] below [room_init].
 
 Create your own encounter group in the script [Encounter_Custom],
 and then use [Encounter_Start(id)] to start a battle.
