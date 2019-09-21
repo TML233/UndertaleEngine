@@ -1,8 +1,8 @@
 {
-    "id": "d860e9dd-790d-4eb1-85b8-dbbe8c5eeb64",
+    "id": "07f5542b-95fb-496b-a098-b421ca5dd453",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "BGM_Fade",
+    "name": "Player_Load",
     "IsCompatibility": false,
     "IsDnD": false
 }

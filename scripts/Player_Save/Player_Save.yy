@@ -1,8 +1,8 @@
 {
-    "id": "0b0d069a-2ee3-4fb2-b77f-e7062c4f48cd",
+    "id": "78eb2428-ffd4-4cbd-95c5-3921bf9e2964",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Player_UpdateSaveInfo",
+    "name": "Player_Save",
     "IsCompatibility": false,
     "IsDnD": false
 }
