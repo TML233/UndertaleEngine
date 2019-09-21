@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0156de2a-abf1-4f3e-8880-9646f932f087",
+            "Value": {
+                "id": "3b488289-116b-4f24-a764-05d19d05b28a",
+                "resourcePath": "notes\\note_simple_battle.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "01c37379-6d2b-4099-8d07-0f1edbd8ee03",
             "Value": {
                 "id": "f26602ac-685d-4a6c-bcb5-b55bf3c85405",
@@ -479,6 +487,14 @@
             }
         },
         {
+            "Key": "15e853f0-6acf-41e9-8343-4aa19621d475",
+            "Value": {
+                "id": "48e4bb13-abe5-41fc-a60a-6853662e4f5a",
+                "resourcePath": "views\\15e853f0-6acf-41e9-8343-4aa19621d475.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "16bba332-16ff-4146-aa42-a857f41babb4",
             "Value": {
                 "id": "1dd4417b-df04-4fc0-99ea-0cbde73389a2",
@@ -540,6 +556,14 @@
                 "id": "53898c10-04c5-4426-b27f-f5155ff55590",
                 "resourcePath": "sounds\\snd_phone_status\\snd_phone_status.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "1a4e33b3-bdfc-4bd2-9ff0-4e1983387c83",
+            "Value": {
+                "id": "5e1bdeef-8cb6-4345-b3b8-2a6bdad17571",
+                "resourcePath": "objects\\battle_bullet_simple_inside\\battle_bullet_simple_inside.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1263,6 +1287,14 @@
             }
         },
         {
+            "Key": "3bb98b4a-6403-4e13-aba2-f74463ed0853",
+            "Value": {
+                "id": "8c87647a-f87b-4ca6-897c-2c65559c37ac",
+                "resourcePath": "objects\\battle_enemy_simple\\battle_enemy_simple.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3bda3abe-408c-4d7d-86ff-734c2097c1f1",
             "Value": {
                 "id": "ae07ce93-6be9-40c6-b51f-8d681c3c5595",
@@ -1436,6 +1468,14 @@
                 "id": "59c8e435-491d-4b81-a2bc-408b8d8ae3e0",
                 "resourcePath": "datafiles_yy\\locale\\english\\font\\dotumche.ini.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "467ac854-b4cd-4629-bd97-fcdd980bb53a",
+            "Value": {
+                "id": "3a3c2211-b244-4142-bde9-174f12fde152",
+                "resourcePath": "views\\467ac854-b4cd-4629-bd97-fcdd980bb53a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -2095,6 +2135,14 @@
             }
         },
         {
+            "Key": "67a0e103-ca49-4ee2-84e2-66f12f5ca424",
+            "Value": {
+                "id": "173bb67a-acb0-4b9f-8b65-9ea8de41e00f",
+                "resourcePath": "views\\67a0e103-ca49-4ee2-84e2-66f12f5ca424.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "67e615fb-9187-4e83-9148-78d1f93040a5",
             "Value": {
                 "id": "e0008ad5-f852-4a10-b071-79f2338b6902",
@@ -2292,6 +2340,14 @@
                 "id": "60dc076d-3b59-44b0-9833-155b8b0a7995",
                 "resourcePath": "scripts\\Lang_IsExists\\Lang_IsExists.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "737d5ee7-73c8-4227-9558-5a1869b9aa4c",
+            "Value": {
+                "id": "dfe85678-dd56-43ce-8468-897368654df9",
+                "resourcePath": "objects\\battle_turn_simple\\battle_turn_simple.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2724,6 +2780,14 @@
                 "id": "698b6b63-8450-4c10-91ef-10d149e4c932",
                 "resourcePath": "scripts\\Player_GetPlot\\Player_GetPlot.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "88ab1499-5580-4cdb-bb89-e42680ca91dc",
+            "Value": {
+                "id": "360db8be-acd6-4b8a-836c-20cff0cd9352",
+                "resourcePath": "views\\88ab1499-5580-4cdb-bb89-e42680ca91dc.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3191,6 +3255,14 @@
             }
         },
         {
+            "Key": "9e58445d-f0c1-4f3d-983a-68b82c3293c5",
+            "Value": {
+                "id": "5d101745-0713-4bfc-9dd6-82742f6c4bb1",
+                "resourcePath": "rooms\\room_simple_battle\\room_simple_battle.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "9e8e3d45-efa8-4643-8c8e-d2a589c29c0f",
             "Value": {
                 "id": "f2c878ea-a6c0-4fd2-9ebe-aec3653f88ca",
@@ -3292,6 +3364,14 @@
                 "id": "ec281b04-ada1-488b-9afa-c733a8db2150",
                 "resourcePath": "datafiles_yy\\locale\\english\\font.txt.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "a4c13caa-28de-4c05-93d4-e3fbc2342dea",
+            "Value": {
+                "id": "f07d58ac-4712-4f0d-a301-a8c4faf8702e",
+                "resourcePath": "views\\a4c13caa-28de-4c05-93d4-e3fbc2342dea.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -3940,6 +4020,14 @@
                 "id": "c602128a-bf0d-4e93-afde-86bf1f95962d",
                 "resourcePath": "datafiles_yy\\locale\\english\\sprite\\battle_button_item.ini.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "c713ab0e-1e48-4455-938e-66f7426bb4ae",
+            "Value": {
+                "id": "77495769-f6bb-43cb-bf06-9fe9c4474afc",
+                "resourcePath": "sprites\\spr_test_monster\\spr_test_monster.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4751,6 +4839,14 @@
             }
         },
         {
+            "Key": "ee6c078b-4cc9-48e6-8d51-29e3aff6f766",
+            "Value": {
+                "id": "5bffe305-c78e-469a-a5a6-1cef198be008",
+                "resourcePath": "objects\\battle_bullet_simple_outside\\battle_bullet_simple_outside.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "eeabcff6-c88b-41ce-9950-95f43cd8ae17",
             "Value": {
                 "id": "139f7373-cf30-4e5c-8370-bda2ba975289",
@@ -5012,6 +5108,14 @@
                 "id": "bc86b8ae-e988-4d4e-83e0-8d92e52f59bd",
                 "resourcePath": "datafiles_yy\\locale\\english\\string\\font.txt.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "fc203cfc-6b2b-464a-bb66-5685b4452d6c",
+            "Value": {
+                "id": "7bedf9a4-f94a-4983-82aa-6dbeb15b32fd",
+                "resourcePath": "sprites\\spr_bullet_simple\\spr_bullet_simple.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
