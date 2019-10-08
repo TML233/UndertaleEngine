@@ -999,14 +999,6 @@
             }
         },
         {
-            "Key": "2fdd5e9d-342f-4e88-b4ff-2e4681c212ca",
-            "Value": {
-                "id": "f65be7ca-e206-4629-ae0a-fc2900e8c0db",
-                "resourcePath": "objects\\item_tml\\item_tml.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "2fe2cd81-407f-4c43-8204-243fe71fc8f2",
             "Value": {
                 "id": "f9f5c3a8-510e-4d87-99e4-0284a1f76bae",
@@ -4743,6 +4735,14 @@
             }
         },
         {
+            "Key": "ed9af173-9808-4f6c-8359-60d7ed33af18",
+            "Value": {
+                "id": "d18b740d-5d8a-48bc-a332-0b129dfe999a",
+                "resourcePath": "scripts\\Player_SetBattleMenuFight\\Player_SetBattleMenuFight.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "edac1655-d923-4d01-bab6-b440e1fc4b6e",
             "Value": {
                 "id": "97d4eca6-03e2-4e46-ac84-9a81c77006bc",
@@ -5348,6 +5348,7 @@
         "d6528e52-b252-4e7f-b035-3f4f8d18f93e",
         "78eb2428-ffd4-4cbd-95c5-3921bf9e2964",
         "07f5542b-95fb-496b-a098-b421ca5dd453",
+        "ed9af173-9808-4f6c-8359-60d7ed33af18",
         "9f8cca73-7064-4df7-a0d9-183eb8469fd9",
         "73f3215e-7994-434d-b78f-77ff4f280a80",
         "c1099f20-0cfa-4dfd-9b77-8af3d002680f",
