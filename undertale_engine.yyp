@@ -1231,14 +1231,6 @@
             }
         },
         {
-            "Key": "3addad71-5cac-4d02-bc14-d986dc9e5a63",
-            "Value": {
-                "id": "d9eb121f-f48e-4784-8af4-b1d8bdca7261",
-                "resourcePath": "tilesets\\tile_ruins\\tile_ruins.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "3b4812ab-30ae-4413-b192-41a6b44cae9f",
             "Value": {
                 "id": "e5cd6304-6bbf-4f61-85fc-860ee07d5cfe",
