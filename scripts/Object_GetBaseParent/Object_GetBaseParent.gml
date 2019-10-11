@@ -1,4 +1,4 @@
-//@arg object
+///@arg object
 var OBJ=argument[0];
 
 if(object_exists(OBJ)){
