@@ -1,7 +1,6 @@
 # UNDERTALE Engine
 ## Warning
-This project is **canceled**!
-The new engine which will include the content of Undertale and Deltarune will be published in the future.
+This project was cancled, but is being resurected. Yay
 
 ## About
 ![](https://img.shields.io/github/release-pre/TML233/undertale_engine.svg?style=flat-square ":no-zoom")
