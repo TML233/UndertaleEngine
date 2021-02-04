@@ -1,7 +1,7 @@
 alarm[0]=1;
 
-var warp_landmark=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_LANDMARK);
-var warp_dir=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_DIR);
+var warp_landmark=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_LANDMARK,-1);
+var warp_dir=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_DIR,-1);
 
 if(warp_landmark!=-1&&instance_exists(hint_landmark)){
 	var lx=x;

@@ -20,5 +20,4 @@
 "item.toy_knife.info"					"* Toy Knife - Weapon AT 3&* Made of plastic.&* A rarity nowadays."
 
 "item.faded_ribbon.name"				"Faded Ribbon"
-"item.faded_ribbon.name.short"			"Ribbon"
 "item.faded_ribbon.info"				"* Faded Ribbon - Armor DF 3&* If you're cuter,{sleep 20} monsters&  won't hit you as hard."
