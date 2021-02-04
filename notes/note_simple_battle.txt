@@ -1,0 +1,11 @@
+If you want to try this example,
+Goto the default view, and move the [room_simple_battle] below [room_init].
+
+Create your own encounter group in the script [Encounter_Custom],
+and then use [Encounter_Start(id)] to start a battle.
+
+In the creation code of [room_simple_battle],
+we wrote a line of code to start the battle when the room loads.
+
+When creating an enemy/turn/bullet object,
+always select the parent object first!

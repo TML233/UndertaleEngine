@@ -1,0 +1,4 @@
+If you want to try this example,
+Goto the default view, and move the [room_gb] below [room_init];
+
+Make sure the Collision Type of [spr_gb_beam] is Rectangle with rotation!
