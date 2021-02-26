@@ -8,7 +8,7 @@ if(room_exists(target_room)){
 		char_player._moveable_warp=false;
 	}
 	if(bgm_fade){
-		BGM_SetVolume(0,0,bgm_fade_time);
+		Music_SetVolume(0,0,bgm_fade_time);
 	}
 	alarm[0]=fade_in_time+warp_wait+1;
 }else{

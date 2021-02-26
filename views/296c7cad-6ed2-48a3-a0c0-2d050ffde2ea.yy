@@ -8,7 +8,7 @@
         "721d43a8-5528-47bb-a304-0318a5f21367"
     ],
     "filterType": "GMIncludedFile",
-    "folderName": "locale",
+    "folderName": "localization",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

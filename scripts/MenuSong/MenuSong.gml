@@ -1,1 +1,1 @@
-return bgm_menu0;
+return "menu0";

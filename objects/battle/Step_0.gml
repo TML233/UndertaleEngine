@@ -291,7 +291,7 @@ if(_state==BATTLE_STATE.RESULT){
 if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	Battle_SetState(BATTLE_STATE.RESULT);
 	Battle_SetNextState(BATTLE_STATE.RESULT);
-	BGM_Stop(5);
+	Music_Stop(5);
 	var text="{define `EXP` "+string(Battle_GetRewardExp())+"}{define `GOLD` "+string(Battle_GetRewardGold())+"}";
 	text+=Lang_GetString("battle.result.won");
 	Player_SetExp(Player_GetExp()+Battle_GetRewardExp());

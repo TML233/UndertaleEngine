@@ -9,7 +9,7 @@ if(instance_exists(char_player)){
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_DIR,pdir);
 }
 if(bgm_fade){
-	BGM_Stop(0);
+	Music_Stop(0);
 }
 room_goto(target_room);
 fader.color=fade_out_color;

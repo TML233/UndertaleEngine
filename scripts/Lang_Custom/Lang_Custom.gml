@@ -1,4 +1,4 @@
-#macro GMU_LANG_PATH_BASE "./locale/"
+#macro GMU_LANG_PATH_BASE "./data/localization/"
 #macro GMU_LANG_PATH_LIST "list.txt"
 #macro GMU_LANG_PATH_STRING	"string.txt"
 #macro GMU_LANG_PATH_SPRITE "sprite.txt"

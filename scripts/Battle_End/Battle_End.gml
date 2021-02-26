@@ -3,7 +3,7 @@ if(room_exists(room_return)){
 	fader.alpha=1;
 	room_goto(room_return);
 	Fader_Fade(-1,0,room_speed/2);
-	BGM_Resume(0);
-	BGM_SetVolume(0,0);
-	BGM_SetVolume(0,1,50);
+	Music_Resume(0);
+	Music_SetVolume(0,0);
+	Music_SetVolume(0,1,50);
 }

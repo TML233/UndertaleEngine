@@ -11,8 +11,8 @@ Battle_SetSoul(battle_soul_red);
 
 var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);
 var BGM=Encounter_GetBGM(ENCOUNTER);
-if(audio_exists(BGM)){
-	BGM_Play(5,BGM);
+if(BGM!=-1){
+	Music_Play(5,BGM);
 }
 
 //初始化敌人

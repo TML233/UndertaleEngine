@@ -19,7 +19,7 @@
         "a93203bf-575e-4332-88b0-45cbe88366f4"
     ],
     "filterType": "GMScript",
-    "folderName": "BGM",
+    "folderName": "Music",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

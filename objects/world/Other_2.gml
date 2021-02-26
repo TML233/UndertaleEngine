@@ -28,7 +28,7 @@ Flag_Init();
 
 Encounter_Init();
 
-BGM_Init();
+Music_Init();
 
 Dialog_Init();
 
