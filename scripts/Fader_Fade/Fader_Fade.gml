@@ -9,6 +9,7 @@ var DELAY=0;
 if(argument_count>=4){
 	DELAY=argument[3];
 }
+
 if(START==-1){
 	START=fader.alpha;
 }

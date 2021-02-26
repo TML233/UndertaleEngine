@@ -70,6 +70,7 @@ _menu_dialog=Encounter_GetMenuDialog(ENCOUNTER);
 
 _menu_fight_damage=0;
 _menu_fight_anim_time=0;
+_menu_fight_damage_time_start=room_speed;
 _menu_fight_damage_time=0;
 
 _menu_item_used_last=-1;
@@ -89,3 +90,5 @@ _player_temp_atk=0;
 _player_temp_def=0;
 _player_temp_spd=0;
 _player_temp_inv=0;
+
+_bg_index=0;

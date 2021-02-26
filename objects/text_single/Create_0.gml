@@ -1,3 +1,5 @@
+_siner=0;
+
 text="";
 sprite=-1;
 sprite_image=0;
@@ -32,3 +34,5 @@ _offset_x=0;
 _offset_y=0;
 
 _effect_shook=false;
+_effect_wavy=false;
+_effect_partly_shook=false;

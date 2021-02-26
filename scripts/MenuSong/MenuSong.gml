@@ -1,0 +1,1 @@
+return bgm_menu0;

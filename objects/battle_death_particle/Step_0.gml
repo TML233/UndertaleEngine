@@ -1,3 +1,5 @@
+randomize();
+
 if(_line<480){
 	repeat(4){
 		var X=0;

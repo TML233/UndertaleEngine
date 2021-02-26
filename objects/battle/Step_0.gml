@@ -1,3 +1,4 @@
+battle_bg.image_index=_bg_index;
 //菜单
 if(_state==BATTLE_STATE.MENU){
 	//按钮
@@ -23,6 +24,9 @@ if(_state==BATTLE_STATE.MENU){
 		
 		//确定
 		if(Input_IsPressed(INPUT.CONFIRM)){
+			instance_destroy(_dialog[0]);
+			instance_destroy(_dialog[1]);
+			
 			audio_play_sound(snd_menu_confirm,0,false);
 			switch(_menu_choice_button){
 				case 0:
@@ -92,6 +96,9 @@ if(_state==BATTLE_STATE.MENU){
 			_menu_fight_damage_time-=1;
 		}else if(_menu_fight_damage_time==0){
 			Battle_EndMenuFightDamage();
+		}
+		if(!instance_exists(shaker)){
+			Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MONSTER_REAPPEAR);
 		}
 	}else
 	
@@ -273,7 +280,10 @@ if(_state==BATTLE_STATE.BOARD_RESETTING){
 
 if(_state==BATTLE_STATE.RESULT){
 	if(!instance_exists(_dialog[0])){
-		Battle_End();
+		if (fader.alpha<1)
+			fader.alpha+=0.1;
+		else
+			Battle_End();
 	}
 }
 

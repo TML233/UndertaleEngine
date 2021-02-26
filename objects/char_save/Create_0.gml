@@ -1,6 +1,6 @@
 event_inherited();
 
-var spd=1/3;
+var spd=1/2;
 res_idle_speed[0]=spd;
 res_idle_speed[90]=spd;
 res_idle_speed[180]=spd;

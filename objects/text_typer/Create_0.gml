@@ -25,7 +25,7 @@ _map_macro=ds_map_create();
 _face=noone;
 _face_linked=-1;
 _char_linked=-1;
-_skip_space=true;
+_skip_space=false;
 
 _choice=-1;
 _choice_x[0]=0;
@@ -33,6 +33,8 @@ _choice_y[0]=0;
 _choice_x[1]=0;
 _choice_y[0]=0;
 _choice_macro="";
+
+_writing=true;
 
 //text_single args
 _font=0;
@@ -74,3 +76,7 @@ override_color_text[0]=c_white;
 override_color_text[1]=c_white;
 override_color_text[2]=c_white;
 override_color_text[3]=c_white;
+
+_current_height=0;
+_done[0]=false;
+_done[1]=false;

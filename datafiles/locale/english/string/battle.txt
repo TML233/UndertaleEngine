@@ -1,6 +1,6 @@
 "battle.menu.mercy.spare"				"* Spare"
 "battle.menu.mercy.flee"				"* Flee"
-"battle.result.won"						"* You WON!&* You earned {insert EXP} EXP and {insert GOLD} GOLD."
+"battle.result.won"						"* You WON!{sleep 20}&* You earned {insert EXP} EXP and {insert GOLD} GOLD."
 "battle.result.fled.0"					"* Escaped..."
 "battle.result.fled.1"					"* I'm outta here."
 "battle.result.fled.2"					"* I've got better to do."

@@ -11,7 +11,7 @@ repeat(4){
 		}else if(proc==DIR.LEFT || proc==DIR.RIGHT){
 			move_x=0.05*(proc==DIR.LEFT ? -1 : 1);
 		}
-		repeat(move_speed[proc]*20){
+		repeat(move_speed[proc]*30){
 			var cmove=true;
 			if(collision){
 				var list=_collision_list;

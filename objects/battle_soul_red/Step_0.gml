@@ -4,7 +4,7 @@ event_inherited();
 if(Battle_GetState()==BATTLE_STATE.IN_TURN && moveable){
 	var SPD=Player_GetSpdTotal()
 	var SPD=(Input_IsHeld(INPUT.CANCEL) ? SPD/2 : SPD);
-	repeat(SPD*10){
+	repeat(SPD*20){
 		if(Input_IsHeld(INPUT.UP)){
 			if(!position_meeting(x,y-sprite_height/2,block)){
 				y-=0.1;

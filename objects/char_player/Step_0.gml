@@ -35,6 +35,39 @@ if(can_move){
 			instance_create_depth(0,0,0,ui_menu);
 		}
 	}
+	
+	if (place_meeting(x,y,block_corner_topleft)) {
+		if (Input_IsHeld(INPUT.LEFT)) {
+			y+=(move_speed[DIR.DOWN]*0.05)*30;
+		}
+		if (Input_IsHeld(INPUT.UP)) {
+			x+=(move_speed[DIR.RIGHT]*0.05)*30;
+		}
+	}
+	if (place_meeting(x,y,block_corner_topright)) {
+		if (Input_IsHeld(INPUT.RIGHT)) {
+			y+=(move_speed[DIR.DOWN]*0.05)*30;
+		}
+		if (Input_IsHeld(INPUT.UP)) {
+			x-=(move_speed[DIR.LEFT]*0.05)*30;
+		}
+	}
+	if (place_meeting(x,y,block_corner_bottomleft)) {
+		if (Input_IsHeld(INPUT.LEFT)) {
+			y-=(move_speed[DIR.UP]*0.05)*30;
+		}
+		if (Input_IsHeld(INPUT.DOWN)) {
+			x+=(move_speed[DIR.RIGHT]*0.05)*30;
+		}
+	}
+	if (place_meeting(x,y,block_corner_bottomright)) {
+		if (Input_IsHeld(INPUT.RIGHT)) {
+			y-=(move_speed[DIR.UP]*0.05)*30;
+		}
+		if (Input_IsHeld(INPUT.DOWN)) {
+			x-=(move_speed[DIR.LEFT]*0.05)*30;
+		}
+	}
 }
 
 event_inherited();

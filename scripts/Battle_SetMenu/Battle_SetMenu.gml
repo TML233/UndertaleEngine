@@ -13,7 +13,7 @@ Battle_SetDialog("",false,true);
 ////////////////////////////////////////
 //按钮
 if(MENU==BATTLE_MENU.BUTTON){
-	Battle_SetDialog(Battle_GetMenuDialog());
+	Battle_SetDialog(Battle_GetMenuDialog(),false);
 }
 	
 ////////////////////////////////////////

@@ -1,5 +1,5 @@
-depth=-1600;
+depth=-4000;
 image_speed=0;
 
-time=60;
+time=room_speed;
 _time=0;

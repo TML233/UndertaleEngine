@@ -44,6 +44,7 @@ if(_menu==0){
 				Player_Load(0);
 				var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,-1);
 				if(room_exists(target)){
+					BGM_Stop(0);
 					room_goto(target);
 				}else{
 					show_message("ERROR:\nAttempt to goto an unexisting room "+string(target));

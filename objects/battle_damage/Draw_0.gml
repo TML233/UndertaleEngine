@@ -8,11 +8,11 @@ if(damage<=0){
 }else{
 	var STR=string(damage);
 	var LEN=string_length(STR);
-	var SPR_W=sprite_get_width(spr_battle_damage);
+	var SPR_W=sprite_get_width(spr_battle_damage)+2;
 	var draw_x=x;
 	
 	if(LEN%2!=0){
-		draw_x-=(LEN-1)*((SPR_W+1)/2);
+		draw_x-=(LEN-1)*((SPR_W+1)/3);
 	}else{
 		draw_x-=((SPR_W)/2)+(LEN/2-1)*(SPR_W+1);
 	}

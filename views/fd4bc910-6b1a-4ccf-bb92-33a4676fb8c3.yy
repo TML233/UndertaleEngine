@@ -10,7 +10,11 @@
         "b608acc4-32c1-498f-9f34-877b6a6c13af",
         "d6d4b42d-0d14-4937-950e-ca1352429f6f",
         "a0e08a0d-19c3-42b5-ad86-a13dae12f7f5",
-        "a1094546-51ab-449c-aaa1-e1a7df9da88a"
+        "42ff9ba4-4683-48ef-a4e7-5d3d2684bdb0",
+        "af6988eb-38b3-496b-b50e-13a41938c7da",
+        "3cec8c80-1721-4463-9de2-20053830d483",
+        "a1094546-51ab-449c-aaa1-e1a7df9da88a",
+        "9977801e-ed7b-4ef0-903a-05d8b236bb59"
     ],
     "filterType": "GMSprite",
     "folderName": "Dev",

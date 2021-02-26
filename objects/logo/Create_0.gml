@@ -1,5 +1,5 @@
 _hint=false;
-alarm[0]=200;
-alarm[1]=1200;
-
-audio_play_sound(snd_logo,0,false);
+_show=false;
+alarm[0]=room_speed;
+alarm[1]=room_speed*5;
+alarm[2]=room_speed*16;

@@ -1,5 +1,5 @@
 {
-    "id": "1ae7e884-c81e-4608-8021-e9df711184bf",
+    "id": "f07244a8-8f86-45a3-9c16-1efb01041756",
     "modelName": "GMObject",
     "mvc": "1.0",
     "name": "battle_death_particle_collision",
@@ -25,5 +25,5 @@
     "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
-    "visible": false
+    "visible": true
 }

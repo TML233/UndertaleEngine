@@ -3,13 +3,13 @@ visible=false;
 
 damage=0;
 color=c_red;
-display_time=60;
+display_time=room_speed*1.75;
 bar_visible=true;
 bar_width=100;
 bar_hp_max=0;
 bar_hp_original=0;
 bar_hp_target=0;
-bar_duration=45;
+bar_duration=display_time/1.5;
 _bar_hp=0;
 
 alarm[0]=1;

@@ -4,7 +4,8 @@ enum FLAG_TYPE{
 	TEMP,
 	INFO,
 	SETTINGS,
-	DEMO
+	DEMO,
+	MONSTER_INFO
 };
 
 #region static
@@ -81,5 +82,13 @@ enum FLAG_SETTINGS{
 #region demo
 enum FLAG_DEMO{
 	DATA
+};
+#endregion
+
+#region monster data
+enum FLAG_MONSTER_DATA{
+	MONSTER_SPARED_0 = false,
+	MONSTER_SPARED_1 = false,
+	MONSTER_SPARED_2 = false,
 };
 #endregion

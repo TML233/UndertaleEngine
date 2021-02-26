@@ -2,18 +2,43 @@ _voice_played=false;
 
 event_user(4);
 
+if (!_done[0])&&(instance_exists(ui_dialog)){
+	for (var i=_char_proc; i<string_length(text); i++;){
+		if(string_char_at(text,i)=="&"){
+			_current_height++;
+		}
+		var cmd="{pause}";
+			
+		if (string_pos(cmd,text)!=0)||(i>=string_length(text)) {
+			_done[0]=true;
+		}
+	}
+}
+
 if(_paused&&Input_IsPressed(INPUT.CONFIRM)){
 	_paused=false;
+	_done[0]=false;
+	_done[1]=false;
+	_current_height=0;
 }
 if(_skippable&&!_paused&&Input_IsPressed(INPUT.CANCEL)){
 	_skipping=true;
 	_sleep=0;
 	_char_frame_remain=0;
+	
+	var sound=-1;
+	if(_voice_single>=0&&_voice_single<array_length_2d(_group_voice,_voice)){
+		sound=_group_voice[_voice,_voice_single];
+	}else{
+		sound=_group_voice[_voice,irandom(array_length_2d(_group_voice,_voice)-1)];
+	}
+	if(audio_exists(sound)){
+		audio_stop_sound(sound);
+	}
 }
 if(_choice!=-1){
 	if((_choice==0&&Input_IsPressed(INPUT.RIGHT))||(_choice==1&&Input_IsPressed(INPUT.LEFT))){
 		_choice=!_choice;
-		audio_play_sound(snd_menu_switch,0,false);
 	}
 	if(Input_IsPressed(INPUT.CONFIRM)){
 		if(is_string(_choice_macro)){
@@ -22,17 +47,17 @@ if(_choice!=-1){
 		}
 		Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TEXT_TYPER_CHOICE,_choice);
 		_choice=-1;
-		audio_play_sound(snd_menu_confirm,0,false);
 	}
 }
 
 if(_char_proc<string_length(text)+1){
+	_writing=true;
 	if(!_paused){
 		if(_sleep>0){
-			_sleep-=1;
+			_sleep-=2;
 		}else{
 			if(_char_frame_remain>0){
-				_char_frame_remain-=1;
+				_char_frame_remain-=2;
 			}else{
 				do{
 					repeat(_char_per_frame){
@@ -102,7 +127,7 @@ if(_char_proc<string_length(text)+1){
 								_char=string_char_at(text,_char_proc);
 							}
 							event_user(0);
-							_char_frame_remain=_speed;
+							_char_frame_remain=_speed/2;
 							_char_proc+=1;
 						}
 					}
@@ -111,6 +136,8 @@ if(_char_proc<string_length(text)+1){
 		}
 	}
 }
+else
+	_writing=false;
 
 if(instance_exists(_face)){
 	_face.gui=_gui;
@@ -165,5 +192,13 @@ if(override_alpha_enabled||override_color_text_enabled){
 			}
 		}
 		proc+=1;
+	}
+}
+
+if (!_done[1]) {
+	if (_current_height > 2)&&(instance_exists(ui_dialog)) {
+		y-=10;
+		
+		_done[1]=true;
 	}
 }

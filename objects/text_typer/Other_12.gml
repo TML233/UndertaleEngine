@@ -395,9 +395,25 @@ switch(cmd[|0]){
 		break;
 		
 	case "effect":
-		if(is_real(cmd[|1])){
-			if(cmd[|1]>=-1){
-				_effect=cmd[|1];
+		if (is_string(cmd[|1])) {
+			switch (cmd[|1]){
+				case "none":
+					_effect=-1;
+					_char_per_frame=1;
+					break;
+				case "shaky":
+					_effect=0;
+					break;
+				case "wavy":
+					_effect=1;
+					break;
+				case "partly_shaky":
+					_effect=2;
+					break;
+				case "mettaton":
+					randomize();
+					_char_per_frame=choose(1,2,3);
+					break;
 			}
 		}
 		break;
