@@ -1,4 +1,6 @@
 //text_typer args
+_siner=0;
+
 text="";
 _speed=0;
 _char_per_frame=1;

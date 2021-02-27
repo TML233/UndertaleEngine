@@ -3695,6 +3695,14 @@
             }
         },
         {
+            "Key": "a469f3bf-af9c-4653-9398-d5775352ce5b",
+            "Value": {
+                "id": "467615ef-5260-4292-b1c8-a08ae6019534",
+                "resourcePath": "objects\\battle_death_particle_pixel\\battle_death_particle_pixel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a47af869-15f1-4796-b64f-bbec8c2bf877",
             "Value": {
                 "id": "ec281b04-ada1-488b-9afa-c733a8db2150",

@@ -1,5 +1,6 @@
 ///@desc New Char
 var font=0;
+_siner++;
 
 if(ord(_char)<128){
 	font=0;
@@ -14,6 +15,7 @@ var H2=string_height(" ");
 var OFFSET=(H1-H2)/2*_scale_y;
 	
 var INST=instance_create_depth(x+_char_x,y+_char_y+OFFSET,depth,text_single);
+INST._siner=_siner;
 INST.text=_char;
 INST.font=_group_font[_font,font];
 INST.scale_x=_scale_x*_group_font_scale_x[_font,font];
