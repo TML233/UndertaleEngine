@@ -25,5 +25,8 @@ switch(Battle_GetMenuChoiceButton()){
 			case 0:
 				Dialog_Add("* TEST MONSTER - AT 0 DF 0&* Croaks for no reason.");
 				break;
+			case 1:
+				Dialog_Add("* You can now {color_text `yellow`}SPARE{color_text `white`} the monster!");
+				break;
 		}
 }

@@ -32,7 +32,7 @@ if(TEXT!=""){
 	battle._dialog[LINE2]=instance_create_depth(tx,ty,0,text_typer);
 	
 	//更改文字
-	var text_prefix="{scale 2}{voice 1}{speed 0}{effect `partly_shaky`}{shadow false}{gui false}{depth "+string(DEPTH_BATTLE.UI_HIGH)+"}";
+	var text_prefix="{scale 2}{voice 1}{speed 0}{effect `partly_shaky`}{clear}{shadow false}{gui false}{depth "+string(DEPTH_BATTLE.UI_HIGH)+"}";
 	if(CHOICE){
 		text_prefix+="{instant true}";
 	}

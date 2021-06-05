@@ -1359,6 +1359,22 @@
             }
         },
         {
+            "Key": "3a5af38c-757d-41ae-98c0-5d4b09e14e6a",
+            "Value": {
+                "id": "cb371364-4a5a-4f6c-b97d-a855f287abeb",
+                "resourcePath": "options\\switch\\options_switch.yy",
+                "resourceType": "GMSwitchOptions"
+            }
+        },
+        {
+            "Key": "3a5af38c-757d-44ae-98c0-5d4b09e14e6a",
+            "Value": {
+                "id": "770d627b-c130-4940-b9d9-a4f95b27669f",
+                "resourcePath": "options\\ps4\\options_ps4.yy",
+                "resourceType": "GMPS4Options"
+            }
+        },
+        {
             "Key": "3ab51fa2-1d90-4d68-b265-c6438b3f2bb5",
             "Value": {
                 "id": "8e3b64df-570f-4dcc-bcc9-cfc0ea451e12",
@@ -2639,6 +2655,14 @@
             }
         },
         {
+            "Key": "75ac291e-7061-4bcb-8e8a-3b3545332d41",
+            "Value": {
+                "id": "984e9855-b652-46f9-9901-f862c811ee9d",
+                "resourcePath": "options\\html5\\options_html5.yy",
+                "resourceType": "GMHtml5Options"
+            }
+        },
+        {
             "Key": "75bd8c63-aec9-44f7-ad5b-ba6cf3db622c",
             "Value": {
                 "id": "cfe1cb39-316c-4acb-9891-383b148c57e5",
@@ -2831,6 +2855,14 @@
             }
         },
         {
+            "Key": "7e093a2a-e51c-4a1e-9a53-f9080d38730b",
+            "Value": {
+                "id": "7538d9d2-f6ee-4ace-821c-aa5d18a0148b",
+                "resourcePath": "options\\windowsuap\\options_windowsuap.yy",
+                "resourceType": "GMWindowsUAPOptions"
+            }
+        },
+        {
             "Key": "7e635053-7374-4271-bc78-7d8a5ecb01e0",
             "Value": {
                 "id": "61cc1510-09e3-4b3d-a708-8985a2fb99cb",
@@ -2940,6 +2972,14 @@
                 "id": "52eb2fb1-4865-4f3c-a064-e173e6cb2e13",
                 "resourcePath": "objects\\logo\\logo.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8427047f-9ef8-4c77-89f3-9c20623d07b6",
+            "Value": {
+                "id": "8e33dc9d-a48a-4679-8ac9-c8f81e1263d9",
+                "resourcePath": "options\\ios\\options_ios.yy",
+                "resourceType": "GMiOSOptions"
             }
         },
         {
@@ -3359,6 +3399,14 @@
             }
         },
         {
+            "Key": "93566aad-c3b3-48a9-8fa7-9c5ee19f74ac",
+            "Value": {
+                "id": "b85a0643-2ea6-4fca-bdf6-caaa9a8d5869",
+                "resourcePath": "options\\tvos\\options_tvos.yy",
+                "resourceType": "GMtvOSOptions"
+            }
+        },
+        {
             "Key": "93b9c18d-ff1b-465b-a50d-0558fe3353b4",
             "Value": {
                 "id": "813530c9-d487-408b-805c-11677e238d39",
@@ -3668,6 +3716,14 @@
                 "id": "6e312b10-ef71-44df-9df2-2c5d580b5450",
                 "resourcePath": "sprites\\spr_trigger\\spr_trigger.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
+            "Value": {
+                "id": "62ac37e4-bf26-4fb0-9b6a-074124325e2f",
+                "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
+                "resourceType": "GMAmazonFireOptions"
             }
         },
         {
@@ -5047,6 +5103,14 @@
             }
         },
         {
+            "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
+            "Value": {
+                "id": "b01a2e37-3a97-4035-9567-0b43d3e9c7f1",
+                "resourcePath": "options\\android\\options_android.yy",
+                "resourceType": "GMAndroidOptions"
+            }
+        },
+        {
             "Key": "e48fa714-3070-4c2c-9a39-4dfd42a40ffe",
             "Value": {
                 "id": "fe231b6b-2773-4235-8a63-b036ed648e72",
@@ -5572,6 +5636,14 @@
                 "id": "d03bcd52-f355-462f-bc94-3c1465de1ffb",
                 "resourcePath": "scripts\\Player_GetRoomName\\Player_GetRoomName.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f85efd3d-bcec-4ec0-8226-da808afda79d",
+            "Value": {
+                "id": "0c6e2838-8a4b-425c-8401-dec01fff8bed",
+                "resourcePath": "options\\xboxone\\options_xboxone.yy",
+                "resourceType": "GMXBoxOneOptions"
             }
         },
         {
