@@ -1,9 +1,14 @@
 ///@arg menu
-///@arg call_event*
+///@arg call_event_safe*
+///@arg call_event_allenemies*
 var MENU=argument[0];
-var CALL=true;
+var CALL_SAFE=true;
+var CALL_ALL=false;
 if(argument_count>=2){
-	CALL=argument[1];
+	CALL_SAFE=argument[1];
+}
+if(argument_count>=3){
+	CALL_ALL=argument[2];
 }
 
 battle._menu=MENU;
@@ -14,10 +19,13 @@ Battle_SetDialog("",false,true);
 //战斗/行动目标
 if(MENU==BATTLE_MENU.FIGHT_TARGET || MENU==BATTLE_MENU.ACT_TARGET){
 	//越界归零
-	if(Battle_GetMenuChoiceEnemy()>=Battle_GetEnemyNumber()){
+	if(_enemy[0]!=noone)
 		Battle_SetMenuChoiceEnemy(0,false);
-	}
-		
+	else if(_enemy[1]!=noone)&&(_enemy[0]==noone)
+		Battle_SetMenuChoiceEnemy(1,false);
+	else if(_enemy[2]!=noone)&&(_enemy[1]==noone)&&(_enemy[0]==noone)
+		Battle_SetMenuChoiceEnemy(2,false);
+	
 	var text="";
 	var proc=0;
 	//创建敌人列表文字
@@ -27,8 +35,8 @@ if(MENU==BATTLE_MENU.FIGHT_TARGET || MENU==BATTLE_MENU.ACT_TARGET){
 			if(Battle_IsEnemySpareable(proc)){
 				text+="{color `yellow`}"
 			}
-			text+=Battle_GetEnemyName(proc)+"{color `white`}&";
 		}
+		text+=Battle_GetEnemyName(proc)+"{color `white`}&";
 		proc+=1;
 	}
 	Battle_SetDialog(text,true);
@@ -123,7 +131,10 @@ if(MENU==BATTLE_MENU.MERCY){
 }
 	
 ////////////////////////////////////////
-if(CALL){
+if(CALL_SAFE){
+	Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_SWITCH, Battle_GetMenuChoiceEnemy());
+}
+if(CALL_ALL){
 	Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.MENU_SWITCH);
 }
 

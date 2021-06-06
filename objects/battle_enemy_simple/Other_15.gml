@@ -27,6 +27,21 @@ switch(Battle_GetMenuChoiceButton()){
 				break;
 			case 1:
 				Dialog_Add("* You can now {color_text `yellow`}SPARE{color_text `white`} the monster!");
+				Battle_SetEnemySpareable(_enemy_slot,true);
 				break;
 		}
+		break;
+	case BATTLE_MENU_CHOICE_BUTTON.MERCY:
+		switch(Battle_GetMenuChoiceMercy()){
+			case BATTLE_MENU_CHOICE_MERCY.SPARE:
+				image_alpha=0.5;
+				_head.visible=false;
+				sprite_index=_sprite_hurt;
+				audio_play_sound(snd_vaporize,0,false);
+				
+				repeat(12)
+					instance_create_depth(x,y-(sprite_width/2),DEPTH_BATTLE.UI_HIGH,battle_spare_particle);
+				break;
+		}
+		break;
 }

@@ -1855,6 +1855,14 @@
             }
         },
         {
+            "Key": "5245a414-9c67-43b0-a2fe-51a242044647",
+            "Value": {
+                "id": "d99d16bb-0e45-4cdf-9ec3-52425dcc0da1",
+                "resourcePath": "objects\\battle_spare_particle\\battle_spare_particle.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "5270396c-77fc-43a5-b94a-490479d8a287",
             "Value": {
                 "id": "04f9af52-54e5-4af3-98b6-ee116c49c0da",
@@ -4231,6 +4239,14 @@
             }
         },
         {
+            "Key": "bc41b880-5447-47a2-83ad-0c7cbbc01d93",
+            "Value": {
+                "id": "15ed6953-3c97-4df6-9734-3f5d9ef41004",
+                "resourcePath": "views\\bc41b880-5447-47a2-83ad-0c7cbbc01d93.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bca1ab9a-8c75-4374-8f70-47118caaaa30",
             "Value": {
                 "id": "357d4f42-8183-4586-92c6-a0414a800187",
@@ -5036,6 +5052,14 @@
                 "id": "f9d6f858-1131-416e-a8b7-3fde3bfab453",
                 "resourcePath": "scripts\\Player_SetSpdItem\\Player_SetSpdItem.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "df8d1a9e-263c-46aa-aae1-83435be3e577",
+            "Value": {
+                "id": "38ae793b-b2c7-4607-b858-de4ef55b0e3c",
+                "resourcePath": "sprites\\spr_battle_spare_particle\\spr_battle_spare_particle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
