@@ -70,10 +70,10 @@ if(_state==BATTLE_STATE.MENU){
 					audio_play_sound(snd_menu_switch,0,false);
 			}
 		}else if(Input_IsPressed(INPUT.DOWN)){
-			if(_menu_choice_enemy<Battle_GetEnemyNumber()){
+			if(_menu_choice_enemy<Battle_GetEnemyNumber()-(_enemy[0]!=noone ? 1 : 0)){
 				if(_enemy[1]==noone){
 					if(_enemy[2]!=noone){
-						_menu_choice_enemy=Battle_GetEnemyNumber()+1;
+						_menu_choice_enemy=Battle_GetEnemyNumber();
 					}
 					else {
 						_menu_choice_enemy=0;
@@ -143,10 +143,10 @@ if(_state==BATTLE_STATE.MENU){
 					audio_play_sound(snd_menu_switch,0,false);
 			}
 		}else if(Input_IsPressed(INPUT.DOWN)){
-			if(_menu_choice_enemy<Battle_GetEnemyNumber()){
+			if(_menu_choice_enemy<Battle_GetEnemyNumber()-(_enemy[0]!=noone ? 1 : 0)){
 				if(_enemy[1]==noone){
 					if(_enemy[2]!=noone){
-						_menu_choice_enemy=Battle_GetEnemyNumber()+1;
+						_menu_choice_enemy=Battle_GetEnemyNumber();
 					}
 					else {
 						_menu_choice_enemy=0;
@@ -186,7 +186,7 @@ if(_state==BATTLE_STATE.MENU){
 			}
 		}else if(Input_IsPressed(INPUT.DOWN)){
 			var action=_menu_choice_action+2;
-			if(action<_enemy_action_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
+			if(action<_enemy_action_number[Battle_GetMenuChoiceEnemy()]){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceAction(action);
 			}
@@ -203,7 +203,7 @@ if(_state==BATTLE_STATE.MENU){
 		}else if(Input_IsPressed(INPUT.RIGHT)){
 			if(_menu_choice_action%2==0){
 				var action=_menu_choice_action+1;
-				if(action<_enemy_action_number[Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy())]){
+				if(action<_enemy_action_number[Battle_GetMenuChoiceEnemy()]){
 					audio_play_sound(snd_menu_switch,0,false);
 					Battle_SetMenuChoiceAction(action);
 				}

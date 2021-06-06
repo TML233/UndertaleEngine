@@ -31,10 +31,9 @@ if(Battle_GetState()==BATTLE_STATE.MENU){
 		else if(MERCY==BATTLE_MENU_CHOICE_MERCY.SPARE){
 			for(var i=0; i<3; i++){
 				if(Battle_IsEnemySpareable(i)&&Battle_GetEnemy(i)._enemy_slot!=-1){
-					show_debug_message("one down");
 					with(Battle_GetEnemy(i))
 						event_user(BATTLE_ENEMY_EVENT.MENU_END);
-					Battle_RemoveEnemy(Battle_ConvertMenuChoiceEnemyToEnemySlot(Battle_GetMenuChoiceEnemy()));
+					Battle_RemoveEnemy(i);
 				}
 			}
 		}

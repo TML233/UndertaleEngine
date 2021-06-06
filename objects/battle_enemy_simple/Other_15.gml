@@ -12,6 +12,7 @@ switch(Battle_GetMenuChoiceButton()){
 			inst.sprite=_sprite_hurt;
 			inst.color=image_blend;
 			
+			Battle_RemoveEnemy(_enemy_slot);
 			instance_destroy();
 		}
 		else {
