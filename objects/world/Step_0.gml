@@ -38,3 +38,10 @@ if(keyboard_check_pressed(vk_f4)&&!keyboard_check(vk_alt)&&!keyboard_check(vk_co
 	window_set_fullscreen(!window_get_fullscreen());
 	//display_set_gui_maximize();
 }
+
+if(Player_GetKills()>=Player_GetKillsMax()) {
+	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.GENOCIDE,true);
+	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER,9999)
+}
+else
+	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.GENOCIDE,false);

@@ -1,1 +1,1 @@
-return Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.KILLS);
+return global.kills[Player_GetPlot()];

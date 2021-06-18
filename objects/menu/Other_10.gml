@@ -73,11 +73,11 @@ if(_menu==1){
 	_inst_naming_letters=instance_create_depth(120,152,0,text_typer);
 	_inst_naming_letters.text=_prefix+"{font 0}{effect 0}{space_x 24}{space_y -2}ABCDEFG&HIJKLMN&OPQRSTU&VWXYZ{space_y -7}&&{space_y -2}abcdefg&hijklmn&opqrstu&vwxyz";
 	_inst_naming_quit=instance_create_depth(120,400,0,text_typer);
-	_inst_naming_quit.text=_prefix+"Quit";
+	_inst_naming_quit.text=_prefix+Lang_GetString("menu.naming.quit");
 	_inst_naming_backspace=instance_create_depth(240,400,0,text_typer);
-	_inst_naming_backspace.text=_prefix+"Backspace";
+	_inst_naming_backspace.text=_prefix+Lang_GetString("menu.naming.backspace");
 	_inst_naming_done=instance_create_depth(440,400,0,text_typer);
-	_inst_naming_done.text=_prefix+"Done";
+	_inst_naming_done.text=_prefix+Lang_GetString("menu.naming.done");
 	with(text_typer){
 		event_user(15);
 	}
@@ -104,9 +104,9 @@ if(_menu==2){
 	_inst_confirm_title=instance_create_depth(180,60,0,text_typer);
 	_inst_confirm_title.text=_prefix+_confirm_title;
 	_inst_confirm_no=instance_create_depth(146,400,0,text_typer);
-	_inst_confirm_no.text=_prefix+"No";
+	_inst_confirm_no.text=_prefix+Lang_GetString("ui.choice.no");
 	_inst_confirm_yes=instance_create_depth(460,400,0,text_typer);
-	_inst_confirm_yes.text=_prefix+"Yes";
+	_inst_confirm_yes.text=_prefix+Lang_GetString("ui.choice.yes");
 	_confirm_name_x=280;
 	_confirm_name_y=110;
 	_confirm_name_scale=2;

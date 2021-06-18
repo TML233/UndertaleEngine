@@ -7,7 +7,8 @@
         "cb0c5a94-cf09-46a7-8e2a-89417580a365",
         "b1035071-e196-4f46-999c-c6d6b0355533",
         "3faa5fb2-034f-429b-9366-32273e5f9170",
-        "846cedfd-b150-431e-bf01-f38a8620e57c"
+        "846cedfd-b150-431e-bf01-f38a8620e57c",
+        "d11e3fc5-7b8b-4208-8246-4d5dfe92a947"
     ],
     "filterType": "GMObject",
     "folderName": "Hint",

@@ -4,6 +4,9 @@ var ENEMY=argument[0];
 if(Battle_IsEnemySlotValid(ENEMY)){
 	var INST=Battle_GetEnemy(ENEMY);
 	if(instance_exists(INST)){
+		Battle_RewardExp(INST._exp_reward);
+		if(INST._hp<=0)
+			battle.COUNT++;
 		INST._enemy_slot=-1;
 	}
 	battle._enemy[ENEMY]=noone;

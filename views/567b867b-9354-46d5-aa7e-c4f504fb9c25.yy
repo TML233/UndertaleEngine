@@ -16,7 +16,9 @@
         "a2d010f3-93da-47fb-b7d4-923a87c08ccb",
         "cdf7ddf4-5a68-4d9e-9ac5-79c27ab9314d",
         "1b277540-a7ea-4a6c-908c-23d26e9843b4",
-        "a0b6b01f-34d7-405e-8eb0-b54a14743e51"
+        "a0b6b01f-34d7-405e-8eb0-b54a14743e51",
+        "ad6ea63f-b864-484a-8adc-38d24ca303a0",
+        "af4be408-9100-4e19-a339-a26ad76c06a7"
     ],
     "filterType": "GMScript",
     "folderName": "Flag",

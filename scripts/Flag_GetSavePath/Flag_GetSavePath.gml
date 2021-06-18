@@ -19,8 +19,8 @@ switch(TYPE){
 	case FLAG_TYPE.DEMO:
 		result+="demo/"+string(Flag_GetSaveSlot());
 		break;
-	case FLAG_TYPE.MONSTER_INFO:
-		result+="monster_info/"+string(Flag_GetSaveSlot());
+	case FLAG_TYPE.KILLS:
+		result+=string(Flag_GetSaveSlot())+"/kills";
 		break;
 	default:
 		result="";

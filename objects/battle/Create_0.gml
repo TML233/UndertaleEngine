@@ -1,4 +1,13 @@
-var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);
+if(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GENOCIDE)==true) {
+	var ENCOUNTER=9999;
+}
+else {
+	var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);
+}
+
+//A really hacky fix
+COUNT=0;
+
 _enemy_object[0]=Encounter_GetEnemy(ENCOUNTER,0);
 _enemy_object[1]=Encounter_GetEnemy(ENCOUNTER,1);
 _enemy_object[2]=Encounter_GetEnemy(ENCOUNTER,2);

@@ -17,7 +17,8 @@
         "1cdeafdd-1f63-4af7-847d-e13939a2f492",
         "1345da38-1e5e-4318-b7b4-201e22886166",
         "e4a4e198-02f4-4cac-8c0a-a7d5702f3095",
-        "e22834ce-25ec-4942-a579-4d4a7f21b475"
+        "e22834ce-25ec-4942-a579-4d4a7f21b475",
+        "52766079-93ba-4493-bde8-acf3e0dd0610"
     ],
     "filterType": "GMScript",
     "folderName": "Encounter",

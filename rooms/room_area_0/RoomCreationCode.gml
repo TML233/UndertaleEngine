@@ -1,0 +1,1 @@
+Console_OutputLine("Current kills: "+string(Player_GetKills())+"\nCurrent maximum kills: "+string(Player_GetKillsMax()))

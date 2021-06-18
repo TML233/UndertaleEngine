@@ -1,0 +1,1 @@
+return global.max_kills[Player_GetPlot()];

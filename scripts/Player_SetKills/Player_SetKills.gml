@@ -1,6 +1,7 @@
+///@arg current_plot
 ///@arg kills
-var KILLS=argument[0];
 
-var result=Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.KILLS,KILLS);
+var CURRENT_PLOT=argument[0];
+var KILLS=argument[1];
 
-return result;
+global.kills[CURRENT_PLOT]=KILLS;

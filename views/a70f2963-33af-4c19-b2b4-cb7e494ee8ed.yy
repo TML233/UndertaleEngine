@@ -37,7 +37,10 @@
         "819e2889-5497-4301-acf6-f12ea95dd756",
         "e7782594-8c95-4b5f-b112-290f5bfbac5d",
         "424dd0d1-051c-472e-8c8b-edcfad472fd5",
-        "61253022-5476-485e-b9ee-b8443c131f68"
+        "67e92aa0-9e6a-4669-81b2-11c3526e18a4",
+        "61253022-5476-485e-b9ee-b8443c131f68",
+        "953bb755-bf76-4b9c-8ce8-4314b0b769be",
+        "e997ef73-a61a-4777-9bb5-d9042cba6dff"
     ],
     "filterType": "GMScript",
     "folderName": "Stat",

@@ -59,7 +59,7 @@ if(_menu==3){
 		var xp=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.EXP);
 		var lv=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.LV);
 		var lv_xp=Player_GetLvExp(lv+1);
-		var kills=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.KILLS);
+		var kills=Player_GetKillsTotal();
 		_inst_stat_1.text=_prefix+"{define `EXP` "+string(xp)+"}{define `EXP_NEXT` "+(lv_xp!=-1 ? string(lv_xp-xp) : "`N/A`")+"}"+Lang_GetString("ui.menu.stat.1")+(kills>0 ? "{define `KILLS` "+string(kills)+"}"+Lang_GetString("ui.menu.stat.2") : "");
 	}
 }else{

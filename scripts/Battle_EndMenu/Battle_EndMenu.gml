@@ -70,6 +70,11 @@ if(Battle_GetState()==BATTLE_STATE.MENU){
 				text+=Lang_GetString("battle.result.fled.reward");
 				Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
 				Player_SetGold(Player_GetGold()+Battle_GetRewardGold());
+				
+				Player_SetKills(Player_GetPlot(),Player_GetKills()+COUNT);
+				Console_OutputLine(string(COUNT));
+				Console_OutputLine(string(Player_GetKills())+"/"+string(Player_GetKillsMax()));
+				
 				if(Player_UpdateLv()){
 					//text+="&"+Lang_GetString("battle.result.lv_up");
 					audio_play_sound(snd_level_up,0,false);
