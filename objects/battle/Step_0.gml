@@ -333,7 +333,7 @@ if(Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER) != 9999) {
 	if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 		Battle_SetState(BATTLE_STATE.RESULT);
 		Battle_SetNextState(BATTLE_STATE.RESULT);
-		Music_Stop(5);
+		BGM_Stop(5);
 		var text="{define `EXP` "+string(Battle_GetRewardExp())+"}{define `GOLD` "+string(Battle_GetRewardGold())+"}";
 		text+=Lang_GetString("battle.result.won");
 		Player_SetExp(Player_GetExp()+Battle_GetRewardExp());
@@ -358,7 +358,7 @@ else {
 	if(Input_IsPressed(INPUT.CONFIRM)) {
 		Battle_End();
 		for (var i = 0; i < 5; i++;) {
-			Music_Stop(i);
+			BGM_Stop(i);
 		}
 	}
 }

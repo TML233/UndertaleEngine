@@ -1,1 +1,1 @@
-bgm="ruins";
+bgm=bgm_ruins;

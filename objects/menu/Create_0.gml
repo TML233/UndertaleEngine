@@ -44,5 +44,5 @@ _change_inst=noone;
 _change_color=c_white;
 _change_id=-1;
 
-Music_Play(0, MenuSong());
+BGM_Play(0, MenuSong());
 event_user(0);

@@ -20,7 +20,7 @@ else {
 	BGM=Encounter_GetBGM(ENCOUNTER);
 }
 if(BGM!=-1){
-	Music_Play(5,BGM);
+	BGM_Play(5,BGM);
 }
 
 //初始化敌人
@@ -38,9 +38,9 @@ Battle_GotoNextState();
 Console_OutputLine("Battle initialized. Encounter ID "+string(ENCOUNTER)+".");
 
 if(Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER) == 9999) {
-	Music_Stop(5);
-	if(!Music_IsPlaying(5)) {
-		Music_Stop(5);
-		Music_Play(5, "toomuch", true);
+	BGM_Stop(5);
+	if(!BGM_IsPlaying(5)) {
+		BGM_Stop(5);
+		BGM_Play(5, bgm_toomuch, true);
 	}
 }

@@ -17,7 +17,7 @@ if(Encounter_IsExists(ENCOUNTER)){
 	}
 	if(!ANIM){
 		if(Encounter_IsPauseBGM(ENCOUNTER)){
-			Music_Pause(0);
+			BGM_Pause(0);
 		}
 		Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER,ENCOUNTER);
 		if(!Player_IsInBattle()){

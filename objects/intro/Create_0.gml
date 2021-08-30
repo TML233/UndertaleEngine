@@ -19,5 +19,5 @@ _draw_y[0] = 0;
 _timer = 0;
 
 alarm[2] = 8;
-Music_Play(0, "story", false);
-Music_SetPitch(0, 0.91);
+BGM_Play(0, bgm_story, false);
+BGM_SetPitch(0, 0.91);

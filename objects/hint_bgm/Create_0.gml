@@ -3,6 +3,6 @@ bgm=-1;
 pitch=1;
 
 if (Player_IsInGenocide())
-	bgm="toomuch";
+	bgm=bgm_toomuch;
 
 alarm[0]=1;

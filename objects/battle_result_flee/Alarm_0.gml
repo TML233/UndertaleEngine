@@ -1,2 +1,2 @@
 Battle_SetDialog("");
-Music_Stop(5);
+BGM_Stop(5);

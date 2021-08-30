@@ -30,7 +30,7 @@ switch (_text_no) {
 
 if (Input_IsPressed(INPUT.CONFIRM)) && (!_fading) && (_write) {
 	_fading = true;
-	Music_SetVolume(0, 0, room_speed / 2);
+	BGM_SetVolume(0, 0, room_speed / 2);
 	instance_destroy(text_typer);
 }
 
@@ -50,11 +50,11 @@ if (!instance_exists(text_typer)) && (_write) {
 				if (alarm[1] < 0)
 					alarm[1] = 1;
 				
-				Music_SetVolume(0, 0, room_speed / 2);
+				BGM_SetVolume(0, 0, room_speed / 2);
 			}
 			else {
 				room_goto_next();
-				Music_Stop(0);
+				BGM_Stop(0);
 			}
 	    }
 	}
@@ -67,6 +67,6 @@ if (_fading) {
 	}
 	else {
 		room_goto_next();
-		Music_Stop(0);
+		BGM_Stop(0);
 	}
 }

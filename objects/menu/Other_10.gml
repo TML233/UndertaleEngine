@@ -134,8 +134,8 @@ if(_menu==2){
 }
 
 if(_menu==3){
-	Music_Stop(0);
-	Music_Play(0,"cymbal",false);
+	BGM_Stop(0);
+	BGM_Play(0,bgm_cymbal,false);
 	
 	fader.color=c_white;
 	Fader_Fade(-1,1,room_speed*5);

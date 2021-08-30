@@ -1,5 +1,5 @@
 Anim_Step();
-Music_Step();
+BGM_Step();
 
 if(_time>=60){
 	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.TIME,Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.TIME)+1);
