@@ -64,8 +64,8 @@ if(_up_previous!=height){
 	if(height<_up_previous){
 		delay=10;
 	}
-	Anim_Destroy(self,"_up");
-	Anim_Create(self,"_up",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,_up,height-_up,10,delay);
+	Anim_Destroy(id,"_up");
+	Anim_Create(id,"_up",ANIM_TWEEN.CUBIC,ANIM_EASE.OUT,_up,height-_up,10,delay);
 	_up_previous=height;
 }
 
@@ -114,10 +114,10 @@ repeat(ds_list_size(_list_destroy_inst)){
 
 if(!_showed&&!ds_list_empty(_list_inst)){
 	_showed=true;
-	Anim_Destroy(self,"_alpha");
-	Anim_Create(self,"_alpha",0,0,0,1,10);
+	Anim_Destroy(id,"_alpha");
+	Anim_Create(id,"_alpha",0,0,0,1,10);
 }else if(_showed&&ds_list_empty(_list_inst)){
 	_showed=false;
-	Anim_Destroy(self,"_alpha");
-	Anim_Create(self,"_alpha",0,0,1,-1,10,5);
+	Anim_Destroy(id,"_alpha");
+	Anim_Create(id,"_alpha",0,0,1,-1,10,5);
 }

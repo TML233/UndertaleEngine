@@ -6,7 +6,7 @@ if(_input_acceptable){
 	}
 	
 	if(Input_IsPressed(INPUT.CONFIRM)&&_input_acceptable){
-		Anim_Destroy(self,"_aim_x");
+		Anim_Destroy(id,"_aim_x");
 		alarm[0]=1;
 		
 		var ATK=Player_GetAtkTotal();

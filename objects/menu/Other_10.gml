@@ -110,12 +110,12 @@ if(_menu==2){
 	_confirm_name_x=280;
 	_confirm_name_y=110;
 	_confirm_name_scale=2;
-	Anim_Destroy(self,"_confirm_name_x");
-	Anim_Destroy(self,"_confirm_name_y");
-	Anim_Destroy(self,"_confirm_name_scale");
-	Anim_Create(self,"_confirm_name_x",0,0,280,-80,270);
-	Anim_Create(self,"_confirm_name_y",0,0,110,120,270);
-	Anim_Create(self,"_confirm_name_scale",0,0,2,5,270);
+	Anim_Destroy(id,"_confirm_name_x");
+	Anim_Destroy(id,"_confirm_name_y");
+	Anim_Destroy(id,"_confirm_name_scale");
+	Anim_Create(id,"_confirm_name_x",0,0,280,-80,270);
+	Anim_Create(id,"_confirm_name_y",0,0,110,120,270);
+	Anim_Create(id,"_confirm_name_scale",0,0,2,5,270);
 	_choice_confirm=0;
 	with(text_typer){
 		event_user(15);
