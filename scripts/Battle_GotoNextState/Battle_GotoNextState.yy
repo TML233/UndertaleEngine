@@ -1,8 +1,12 @@
 {
-    "id": "74dcc02c-e87b-4f86-8705-ff1234a94c9f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_GotoNextState",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Next",
+    "path": "folders/Scripts/Battle/State/Next.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_GotoNextState",
+  "tags": [],
+  "resourceType": "GMScript",
 }

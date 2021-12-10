@@ -1,6 +1,10 @@
 ///@arg gold
-var GOLD=argument[0];
+function Player_SetGold() {
+	var GOLD=argument[0];
 
-var result=Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD,GOLD);
+	var result=Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD,GOLD);
 
-return result;
+	return result;
+
+
+}

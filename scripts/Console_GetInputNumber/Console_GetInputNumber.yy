@@ -1,8 +1,12 @@
 {
-    "id": "b8a4e912-9112-43af-97d3-7b1f6214e8fc",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Console_GetInputNumber",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Console",
+    "path": "folders/Scripts/GMU/Console.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Console_GetInputNumber",
+  "tags": [],
+  "resourceType": "GMScript",
 }

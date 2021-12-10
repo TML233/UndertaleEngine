@@ -1,2 +1,6 @@
 ///@arg lang_name
-return ds_list_find_index(global._gmu_lang_list,argument[0]);
+function Lang_GetID() {
+	return ds_list_find_index(global._gmu_lang_list,argument[0]);
+
+
+}

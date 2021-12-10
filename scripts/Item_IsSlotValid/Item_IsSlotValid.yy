@@ -1,8 +1,12 @@
 {
-    "id": "3f50e639-cf08-4d09-8a83-ccd8237006da",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Item_IsSlotValid",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Item",
+    "path": "folders/Scripts/Item.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Item_IsSlotValid",
+  "tags": [],
+  "resourceType": "GMScript",
 }

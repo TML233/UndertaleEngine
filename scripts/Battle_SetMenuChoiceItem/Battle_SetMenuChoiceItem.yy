@@ -1,8 +1,12 @@
 {
-    "id": "8b2e7c3d-3a84-42be-80bb-fea18de60190",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_SetMenuChoiceItem",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Choice",
+    "path": "folders/Scripts/Battle/Menu/Choice.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_SetMenuChoiceItem",
+  "tags": [],
+  "resourceType": "GMScript",
 }

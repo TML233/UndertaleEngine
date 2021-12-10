@@ -1,8 +1,12 @@
 {
-    "id": "595e38b8-3c8d-40c9-8827-8aacf8f17146",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Player_GetLvDef",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "LV Up",
+    "path": "folders/Scripts/Player/LV Up.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Player_GetLvDef",
+  "tags": [],
+  "resourceType": "GMScript",
 }

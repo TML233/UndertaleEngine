@@ -1,8 +1,12 @@
 {
-    "id": "c5d973c0-6bc2-4fe8-a9af-22fd6f821435",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Box_Update",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Box",
+    "path": "folders/Scripts/Box.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Box_Update",
+  "tags": [],
+  "resourceType": "GMScript",
 }

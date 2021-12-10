@@ -1,8 +1,12 @@
 {
-    "id": "158d6e24-38a2-45eb-86c7-a9848faeaaf1",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_GetMenuChoiceEnemy",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Choice",
+    "path": "folders/Scripts/Battle/Menu/Choice.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_GetMenuChoiceEnemy",
+  "tags": [],
+  "resourceType": "GMScript",
 }

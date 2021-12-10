@@ -1,8 +1,12 @@
 {
-    "id": "b739541a-12ca-4dc0-a951-289a28e9e387",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_IsEnemyValid",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Enemy",
+    "path": "folders/Scripts/Battle/Enemy.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_IsEnemyValid",
+  "tags": [],
+  "resourceType": "GMScript",
 }

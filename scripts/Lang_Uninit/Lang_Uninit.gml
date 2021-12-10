@@ -1,8 +1,12 @@
-ds_list_destroy(global._gmu_lang_list);
-ds_map_destroy(global._gmu_lang_string);
+function Lang_Uninit() {
+	ds_list_destroy(global._gmu_lang_list);
+	ds_map_destroy(global._gmu_lang_string);
 
-Lang_ClearSprite();
-ds_map_destroy(global._gmu_lang_sprite);
+	Lang_ClearSprite();
+	ds_map_destroy(global._gmu_lang_sprite);
 
-Lang_ClearFont();
-ds_map_destroy(global._gmu_lang_font);
+	Lang_ClearFont();
+	ds_map_destroy(global._gmu_lang_font);
+
+
+}

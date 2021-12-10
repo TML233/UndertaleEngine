@@ -1,8 +1,12 @@
 {
-    "id": "557f8672-f085-4edd-af85-54448ac24fff",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Item_GetArmor",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Item",
+    "path": "folders/Scripts/Item.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Item_GetArmor",
+  "tags": [],
+  "resourceType": "GMScript",
 }

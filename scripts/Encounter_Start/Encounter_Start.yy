@@ -1,8 +1,12 @@
 {
-    "id": "2f892e21-e8bc-4226-b296-9eea1b27fbd0",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Encounter_Start",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Encounter",
+    "path": "folders/Scripts/Encounter.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Encounter_Start",
+  "tags": [],
+  "resourceType": "GMScript",
 }

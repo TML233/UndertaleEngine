@@ -1,8 +1,12 @@
 {
-    "id": "ca28f372-65b0-40ba-9621-f59ee48a10f7",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Input_SetStateOverride",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Input",
+    "path": "folders/Scripts/GMU/Input.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Input_SetStateOverride",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "de9387cc-f43a-4e56-9809-7de0daf07e37",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Player_SetSpdItem",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Stat",
+    "path": "folders/Scripts/Player/Stat.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Player_SetSpdItem",
+  "tags": [],
+  "resourceType": "GMScript",
 }

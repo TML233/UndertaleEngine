@@ -1,8 +1,12 @@
 {
-    "id": "4ba87b4d-dee3-45d0-89ae-917639ef20cc",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Input_IsHeld",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Input",
+    "path": "folders/Scripts/GMU/Input.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Input_IsHeld",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "473f2e1f-7077-4d40-92d5-b6ec13722f08",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Flag_GetSavePath",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Flag",
+    "path": "folders/Scripts/Flag.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Flag_GetSavePath",
+  "tags": [],
+  "resourceType": "GMScript",
 }

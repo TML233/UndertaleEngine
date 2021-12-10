@@ -1,8 +1,12 @@
 {
-    "id": "dc17382a-d891-458a-bcb1-aec09ded7513",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_End",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Battle",
+    "path": "folders/Scripts/Battle.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_End",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "8e1ce631-efd8-4185-ab26-4cb29ea46b2b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Anim_Step",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Anim",
+    "path": "folders/Scripts/GMU/Anim.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Anim_Step",
+  "tags": [],
+  "resourceType": "GMScript",
 }

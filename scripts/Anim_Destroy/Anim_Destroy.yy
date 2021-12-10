@@ -1,8 +1,12 @@
 {
-    "id": "1dffb5c6-dc96-49b9-aebb-24c87c337c20",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Anim_Destroy",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Anim",
+    "path": "folders/Scripts/GMU/Anim.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Anim_Destroy",
+  "tags": [],
+  "resourceType": "GMScript",
 }

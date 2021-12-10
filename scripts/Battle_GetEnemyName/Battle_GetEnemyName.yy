@@ -1,8 +1,12 @@
 {
-    "id": "488bb17f-c8ae-4073-bccf-4204739be154",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_GetEnemyName",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Name",
+    "path": "folders/Scripts/Battle/Enemy/Name.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_GetEnemyName",
+  "tags": [],
+  "resourceType": "GMScript",
 }

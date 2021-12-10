@@ -1,1 +1,5 @@
-return border._sprite;
+function Border_GetSprite() {
+	return border._sprite;
+
+
+}

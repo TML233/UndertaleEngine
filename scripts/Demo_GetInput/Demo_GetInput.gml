@@ -1,8 +1,12 @@
 ///@arg pos
-var POS=argument[0];
+function Demo_GetInput() {
+	var POS=argument[0];
 
-if(POS>=0 && POS<Demo_GetInputNumber()){
-	return global._demo_input_list[|POS];
-}else{
-	return -1;
+	if(POS>=0 && POS<Demo_GetInputNumber()){
+		return global._demo_input_list[|POS];
+	}else{
+		return -1;
+	}
+
+
 }

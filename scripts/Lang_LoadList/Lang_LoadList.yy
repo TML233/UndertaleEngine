@@ -1,8 +1,12 @@
 {
-    "id": "1a4f539a-333e-417d-b567-6a5093acc636",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Lang_LoadList",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Lang",
+    "path": "folders/Scripts/GMU/Lang.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Lang_LoadList",
+  "tags": [],
+  "resourceType": "GMScript",
 }

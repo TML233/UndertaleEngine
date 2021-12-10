@@ -1,5 +1,9 @@
 ///@arg slot
-var SLOT=argument[0];
+function Flag_SetSaveSlot() {
+	var SLOT=argument[0];
 
-Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.SAVE_SLOT,SLOT);
-return true;
+	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.SAVE_SLOT,SLOT);
+	return true;
+
+
+}

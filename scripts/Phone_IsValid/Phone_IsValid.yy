@@ -1,8 +1,12 @@
 {
-    "id": "9476122c-dac8-41ea-9207-ce585e72502d",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Phone_IsValid",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Phone",
+    "path": "folders/Scripts/Phone.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Phone_IsValid",
+  "tags": [],
+  "resourceType": "GMScript",
 }

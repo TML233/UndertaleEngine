@@ -1,8 +1,12 @@
 {
-    "id": "745c456f-9db3-41c3-bbe4-8bf30da0c606",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_RemoveEnemy",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Enemy",
+    "path": "folders/Scripts/Battle/Enemy.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_RemoveEnemy",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "688abbdd-da12-4c6d-9bc7-55be58cef783",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Game_GetFrameSkip",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Game",
+    "path": "folders/Scripts/Game.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Game_GetFrameSkip",
+  "tags": [],
+  "resourceType": "GMScript",
 }

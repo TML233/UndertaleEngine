@@ -1,8 +1,12 @@
 {
-    "id": "e93f0948-f27c-4f13-a6ac-a074211d23a6",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_GetMenuFightAnimTime",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Fight",
+    "path": "folders/Scripts/Battle/Menu/Fight.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_GetMenuFightAnimTime",
+  "tags": [],
+  "resourceType": "GMScript",
 }

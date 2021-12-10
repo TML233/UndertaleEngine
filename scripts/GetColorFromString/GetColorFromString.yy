@@ -1,8 +1,12 @@
 {
-    "id": "9c7a3da5-4d2a-4fdc-bd10-62ad73a72f5f",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "GetColorFromString",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "GetColorFromString",
+  "tags": [],
+  "resourceType": "GMScript",
 }

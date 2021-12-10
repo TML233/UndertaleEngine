@@ -1,8 +1,12 @@
 {
-    "id": "f305c8d3-d2ec-4f5e-aa87-7dfa37334192",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Player_GetAtkTotal",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Stat",
+    "path": "folders/Scripts/Player/Stat.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Player_GetAtkTotal",
+  "tags": [],
+  "resourceType": "GMScript",
 }

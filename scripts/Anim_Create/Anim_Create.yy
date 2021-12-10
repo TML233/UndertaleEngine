@@ -1,8 +1,12 @@
 {
-    "id": "3433905f-44a8-4389-a7ba-c80000643aa6",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Anim_Create",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Anim",
+    "path": "folders/Scripts/GMU/Anim.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Anim_Create",
+  "tags": [],
+  "resourceType": "GMScript",
 }

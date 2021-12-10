@@ -1,3 +1,7 @@
-enum PLOT{
-	START
-};
+function Macro_Plot() {
+	enum PLOT{
+		START
+	};
+
+
+}

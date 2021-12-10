@@ -1,8 +1,12 @@
 {
-    "id": "15dc3346-2aad-4240-b9ce-9151e096749c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Demo_IsPlayingPaused",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Demo",
+    "path": "folders/Scripts/Demo.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Demo_IsPlayingPaused",
+  "tags": [],
+  "resourceType": "GMScript",
 }

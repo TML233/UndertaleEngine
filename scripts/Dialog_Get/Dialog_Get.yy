@@ -1,8 +1,12 @@
 {
-    "id": "78fcf92f-89da-4a1d-b117-1e443277558b",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Dialog_Get",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Dialog",
+    "path": "folders/Scripts/Dialog.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Dialog_Get",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "32522094-1147-4177-be36-d5fda6324547",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Console_Output",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Console",
+    "path": "folders/Scripts/GMU/Console.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Console_Output",
+  "tags": [],
+  "resourceType": "GMScript",
 }

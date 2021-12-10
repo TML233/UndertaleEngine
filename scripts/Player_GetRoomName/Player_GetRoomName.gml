@@ -1,11 +1,15 @@
 ///@arg room
-var ROOM=argument[0];
+function Player_GetRoomName() {
+	var ROOM=argument[0];
 
-var name="";
+	var name="";
 
-switch(ROOM){
-	case -1:
-		name="--";
-		break;
+	switch(ROOM){
+		case -1:
+			name="--";
+			break;
+	}
+	return name;
+
+
 }
-return name;

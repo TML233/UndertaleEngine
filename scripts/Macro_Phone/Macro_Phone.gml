@@ -1,3 +1,7 @@
-enum PHONE_EVENT{
-	CALL
-};
+function Macro_Phone() {
+	enum PHONE_EVENT{
+		CALL
+	};
+
+
+}

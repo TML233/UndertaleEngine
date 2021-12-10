@@ -1,8 +1,12 @@
 {
-    "id": "c3ccc43d-5634-4224-a7db-dfcb459a7ace",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Flag_Uninit",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Flag",
+    "path": "folders/Scripts/Flag.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Flag_Uninit",
+  "tags": [],
+  "resourceType": "GMScript",
 }

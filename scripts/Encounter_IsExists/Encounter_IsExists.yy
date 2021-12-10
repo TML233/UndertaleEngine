@@ -1,8 +1,12 @@
 {
-    "id": "1cdeafdd-1f63-4af7-847d-e13939a2f492",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Encounter_IsExists",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Encounter",
+    "path": "folders/Scripts/Encounter.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Encounter_IsExists",
+  "tags": [],
+  "resourceType": "GMScript",
 }

@@ -1,8 +1,12 @@
 {
-    "id": "927ca0a9-6cc5-4876-99f3-b3277e847d00",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Input_Bind",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Input",
+    "path": "folders/Scripts/GMU/Input.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Input_Bind",
+  "tags": [],
+  "resourceType": "GMScript",
 }

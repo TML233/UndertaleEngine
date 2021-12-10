@@ -1,1 +1,5 @@
-return battle._menu_fleeable;
+function Battle_IsFleeable() {
+	return battle._menu_fleeable;
+
+
+}

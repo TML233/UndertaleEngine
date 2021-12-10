@@ -1,8 +1,12 @@
 {
-    "id": "ec4ccfec-aec1-4c69-b24a-3e50bc473ffb",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Item_GetTextHeal",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Item",
+    "path": "folders/Scripts/Item.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Item_GetTextHeal",
+  "tags": [],
+  "resourceType": "GMScript",
 }

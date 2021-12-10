@@ -1,5 +1,9 @@
 ///@arg reward_gold
-var GOLD=argument[0];
+function Battle_RewardGold() {
+	var GOLD=argument[0];
 
-battle._reward_gold+=GOLD;
-return true;
+	battle._reward_gold+=GOLD;
+	return true;
+
+
+}

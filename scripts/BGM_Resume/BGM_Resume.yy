@@ -1,8 +1,12 @@
 {
-    "id": "784ce4fe-7afb-474a-906e-cda2559e1961",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "BGM_Resume",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "BGM",
+    "path": "folders/Scripts/BGM.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "BGM_Resume",
+  "tags": [],
+  "resourceType": "GMScript",
 }

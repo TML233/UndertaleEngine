@@ -1,8 +1,12 @@
 {
-    "id": "ec489797-0c91-48f6-b540-a1f0b5abb2c1",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Item_SetWeapon",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Item",
+    "path": "folders/Scripts/Item.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Item_SetWeapon",
+  "tags": [],
+  "resourceType": "GMScript",
 }

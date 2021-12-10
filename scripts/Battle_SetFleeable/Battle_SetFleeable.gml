@@ -1,6 +1,10 @@
 ///@arg fleeable
-var FLEEABLE=argument[0];
+function Battle_SetFleeable() {
+	var FLEEABLE=argument[0];
 
-battle._menu_fleeable=FLEEABLE;
+	battle._menu_fleeable=FLEEABLE;
 
-return true;
+	return true;
+
+
+}

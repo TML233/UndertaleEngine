@@ -1,8 +1,12 @@
 {
-    "id": "fcf53203-3503-48e8-96a6-8f12e680e084",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Box_Remove",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Box",
+    "path": "folders/Scripts/Box.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Box_Remove",
+  "tags": [],
+  "resourceType": "GMScript",
 }

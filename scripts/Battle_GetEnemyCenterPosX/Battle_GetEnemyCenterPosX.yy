@@ -1,8 +1,12 @@
 {
-    "id": "8844c061-f438-4aba-9e10-507073cd6834",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_GetEnemyCenterPosX",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Center Pos",
+    "path": "folders/Scripts/Battle/Enemy/Center Pos.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_GetEnemyCenterPosX",
+  "tags": [],
+  "resourceType": "GMScript",
 }

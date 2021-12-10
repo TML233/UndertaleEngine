@@ -1,1 +1,5 @@
-return battle._dialog_auto_end;
+function Battle_IsDialogAutoEnd() {
+	return battle._dialog_auto_end;
+
+
+}

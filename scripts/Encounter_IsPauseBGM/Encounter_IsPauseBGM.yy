@@ -1,8 +1,12 @@
 {
-    "id": "e2d7b789-f41c-4145-a276-e05646af1da8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Encounter_IsPauseBGM",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Encounter",
+    "path": "folders/Scripts/Encounter.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Encounter_IsPauseBGM",
+  "tags": [],
+  "resourceType": "GMScript",
 }

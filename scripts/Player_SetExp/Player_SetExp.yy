@@ -1,8 +1,12 @@
 {
-    "id": "4c95c379-dbd8-442e-9b9f-a80cdad077b9",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Player_SetExp",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Stat",
+    "path": "folders/Scripts/Player/Stat.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Player_SetExp",
+  "tags": [],
+  "resourceType": "GMScript",
 }

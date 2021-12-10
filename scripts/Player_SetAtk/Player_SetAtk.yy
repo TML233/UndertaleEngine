@@ -1,8 +1,12 @@
 {
-    "id": "6413da27-6eb4-474f-bcd4-feb6164baed8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Player_SetAtk",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Stat",
+    "path": "folders/Scripts/Player/Stat.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Player_SetAtk",
+  "tags": [],
+  "resourceType": "GMScript",
 }

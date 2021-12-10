@@ -1,1 +1,5 @@
-return battle._turn_number;
+function Battle_GetTurnNumber() {
+	return battle._turn_number;
+
+
+}

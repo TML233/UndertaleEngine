@@ -1,3 +1,7 @@
-global._encounter=ds_map_create();
+function Encounter_Init() {
+	global._encounter=ds_map_create();
 
-Encounter_Custom();
+	Encounter_Custom();
+
+
+}

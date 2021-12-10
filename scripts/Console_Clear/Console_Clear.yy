@@ -1,8 +1,12 @@
 {
-    "id": "f519ae52-0220-47ea-b540-66d7ddc6213c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Console_Clear",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Console",
+    "path": "folders/Scripts/GMU/Console.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Console_Clear",
+  "tags": [],
+  "resourceType": "GMScript",
 }

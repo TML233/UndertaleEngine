@@ -1,8 +1,12 @@
 {
-    "id": "2043a6a6-887d-49ae-9fcd-cdb524fa33c8",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_GetMenuChoiceMercyOverrideName",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Choice",
+    "path": "folders/Scripts/Battle/Menu/Choice.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_GetMenuChoiceMercyOverrideName",
+  "tags": [],
+  "resourceType": "GMScript",
 }

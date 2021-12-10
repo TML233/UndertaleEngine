@@ -1,8 +1,12 @@
 {
-    "id": "aa188c07-cc8c-49ba-9b3a-f796b08978bc",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Encounter_GetBGM",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Encounter",
+    "path": "folders/Scripts/Encounter.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Encounter_GetBGM",
+  "tags": [],
+  "resourceType": "GMScript",
 }

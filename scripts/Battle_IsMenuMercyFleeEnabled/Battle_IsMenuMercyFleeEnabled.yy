@@ -1,8 +1,12 @@
 {
-    "id": "e48fa714-3070-4c2c-9a39-4dfd42a40ffe",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_IsMenuMercyFleeEnabled",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Flee",
+    "path": "folders/Scripts/Battle/Menu/Flee.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_IsMenuMercyFleeEnabled",
+  "tags": [],
+  "resourceType": "GMScript",
 }

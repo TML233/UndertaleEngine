@@ -1,8 +1,12 @@
 {
-    "id": "bfc9c7b2-5559-42f0-8e05-3196431fa366",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Console_ExecuteCmd",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Console",
+    "path": "folders/Scripts/GMU/Console.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Console_ExecuteCmd",
+  "tags": [],
+  "resourceType": "GMScript",
 }

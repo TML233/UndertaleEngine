@@ -1,8 +1,12 @@
 {
-    "id": "f6a989eb-6a0f-42b1-b2cd-1de21765dedd",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_SetEnemyDEF",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "DEF",
+    "path": "folders/Scripts/Battle/Enemy/DEF.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_SetEnemyDEF",
+  "tags": [],
+  "resourceType": "GMScript",
 }

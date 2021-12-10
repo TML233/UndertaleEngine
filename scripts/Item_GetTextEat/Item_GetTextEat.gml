@@ -1,8 +1,12 @@
 ///@arg item_name
-var NAME=argument[0];
+function Item_GetTextEat() {
+	var NAME=argument[0];
 
-var result="";
-result+="{define `ITEM` `"+NAME+"`}";
-result+=Lang_GetString("item.eat");
+	var result="";
+	result+="{define `ITEM` `"+NAME+"`}";
+	result+=Lang_GetString("item.eat");
 
-return result;
+	return result;
+
+
+}

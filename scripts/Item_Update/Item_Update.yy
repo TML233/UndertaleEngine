@@ -1,8 +1,12 @@
 {
-    "id": "49eaf684-a20d-459a-8eb4-dbc14e134e20",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Item_Update",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Item",
+    "path": "folders/Scripts/Item.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Item_Update",
+  "tags": [],
+  "resourceType": "GMScript",
 }

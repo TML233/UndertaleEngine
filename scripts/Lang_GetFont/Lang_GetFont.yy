@@ -1,8 +1,12 @@
 {
-    "id": "1d4fd943-f6f0-4ce8-b460-fb88f591496d",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Lang_GetFont",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Lang",
+    "path": "folders/Scripts/GMU/Lang.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Lang_GetFont",
+  "tags": [],
+  "resourceType": "GMScript",
 }

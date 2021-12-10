@@ -1,6 +1,10 @@
 ///@arg inv
-var INV=argument[0];
+function Player_SetInv() {
+	var INV=argument[0];
 
-var result=Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.INV,INV);
+	var result=Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.INV,INV);
 
-return result;
+	return result;
+
+
+}

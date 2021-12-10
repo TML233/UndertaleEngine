@@ -1,8 +1,12 @@
 {
-    "id": "7b56ec5a-c6db-417b-b24d-5a5c367765b3",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_IsDialogAutoEnd",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Dialog",
+    "path": "folders/Scripts/Battle/Dialog.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_IsDialogAutoEnd",
+  "tags": [],
+  "resourceType": "GMScript",
 }

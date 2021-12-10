@@ -1,3 +1,7 @@
-global._flag=ds_map_create();
+function Flag_Init() {
+	global._flag=ds_map_create();
 
-Flag_Custom();
+	Flag_Custom();
+
+
+}

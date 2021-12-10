@@ -1,8 +1,12 @@
 {
-    "id": "d2516e46-1c17-4346-9207-7dbc4de93d08",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "BGM_IsPlaying",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "BGM",
+    "path": "folders/Scripts/BGM.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "BGM_IsPlaying",
+  "tags": [],
+  "resourceType": "GMScript",
 }

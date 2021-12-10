@@ -1,6 +1,10 @@
 ///@arg encounter_id
-var ENCOUNTER=argument[0];
+function Encounter_IsExists() {
+	var ENCOUNTER=argument[0];
 
-var map=global._encounter;
+	var map=global._encounter;
 
-return ds_map_exists(map,ENCOUNTER);
+	return ds_map_exists(map,ENCOUNTER);
+
+
+}

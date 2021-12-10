@@ -1,8 +1,12 @@
 {
-    "id": "f3497b7f-9048-449a-9c7e-074b94fec119",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Flag_Set",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Flag",
+    "path": "folders/Scripts/Flag.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Flag_Set",
+  "tags": [],
+  "resourceType": "GMScript",
 }

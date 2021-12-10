@@ -1,8 +1,12 @@
 {
-    "id": "09f404df-34cd-4b02-864a-f01b5f20527c",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Battle_SetTurnPreparationAutoEnd",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Turn",
+    "path": "folders/Scripts/Battle/Turn.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Battle_SetTurnPreparationAutoEnd",
+  "tags": [],
+  "resourceType": "GMScript",
 }

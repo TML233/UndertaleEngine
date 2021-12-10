@@ -1,8 +1,12 @@
 {
-    "id": "9b075008-df8e-4d74-9286-2415c88765c3",
-    "modelName": "GMScript",
-    "mvc": "1.0",
-    "name": "Flag_GetSaveSlot",
-    "IsCompatibility": false,
-    "IsDnD": false
+  "isDnD": false,
+  "isCompatibility": false,
+  "parent": {
+    "name": "Flag",
+    "path": "folders/Scripts/Flag.yy",
+  },
+  "resourceVersion": "1.0",
+  "name": "Flag_GetSaveSlot",
+  "tags": [],
+  "resourceType": "GMScript",
 }
