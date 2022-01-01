@@ -8,4 +8,4 @@ Battle_SetEnemyActionName(_enemy_slot,0,"* Check");
 Battle_SetEnemyDEF(_enemy_slot,-15);
 
 _hp_max=100;
-_hp=1;
+_hp=100;
