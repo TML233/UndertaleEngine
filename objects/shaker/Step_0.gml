@@ -23,7 +23,7 @@ if(instance_exists(target) && !object_exists(target) && variable_instance_exists
 	}
 	
 	if(_shake_time>0){
-		_shake_time-=1;
+		_shake_time-=2;
 	}else{
 		if(!shake_random){
 			if(_shake_positive){

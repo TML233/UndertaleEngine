@@ -36,7 +36,16 @@ function Anim_Init() {
 		DELAY,
 		ARG_0,
 		ARG_1,
-		TIME
+		TIME,
+		MODE,
+		SPEED,
+		PAUSED
+	};
+
+	enum ANIM_MODE{
+		ONESHOT,
+		REPEAT,
+		PINGPONG
 	};
 
 

@@ -29,10 +29,10 @@ if(_choice!=-1){
 if(_char_proc<string_length(text)+1){
 	if(!_paused){
 		if(_sleep>0){
-			_sleep-=1;
+			_sleep-=2;
 		}else{
 			if(_char_frame_remain>0){
-				_char_frame_remain-=1;
+				_char_frame_remain-=2;
 			}else{
 				do{
 					repeat(_char_per_frame){

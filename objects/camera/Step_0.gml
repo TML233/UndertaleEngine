@@ -1,6 +1,6 @@
 if(shake_x>0){
 	if(_shake_time_x>0){
-		_shake_time_x-=1;
+		_shake_time_x-=2;
 	}else{
 		if(!shake_random_x){
 			if(_shake_positive_x){

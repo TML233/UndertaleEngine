@@ -5,7 +5,7 @@ if(sprite_exists(sprite)){
 	part_type_alpha2(_p,1,0);
 	part_type_color1(_p,c_white);
 	part_type_shape(_p,pt_shape_pixel);
-	part_type_life(_p,20,60);
+	part_type_life(_p,0,30);
 	part_type_scale(_p,2,2);
 	part_type_direction(_p,70,110,0,0);
 	part_type_speed(_p,0.1,0.5,0.2,0);

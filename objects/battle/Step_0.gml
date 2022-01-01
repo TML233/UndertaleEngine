@@ -3,6 +3,9 @@ if(_state==BATTLE_STATE.MENU){
 	//按钮
 	if(_menu==BATTLE_MENU.BUTTON){
 		//左/右
+		if(!instance_exists(_dialog[0])){
+			Battle_SetDialog(Battle_GetMenuDialog());
+		}
 		if(Input_IsPressed(INPUT.LEFT)){
 			var button=_menu_choice_button;
 			button-=1;

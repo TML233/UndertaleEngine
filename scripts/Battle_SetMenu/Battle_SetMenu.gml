@@ -14,7 +14,7 @@ function Battle_SetMenu() {
 	////////////////////////////////////////
 	//按钮
 	if(MENU==BATTLE_MENU.BUTTON){
-		Battle_SetDialog(Battle_GetMenuDialog());
+		instance_destroy(battle._dialog[0]);
 	}
 	
 	////////////////////////////////////////

@@ -4,7 +4,7 @@
 function Border_SetSprite() {
 	var SPRITE=argument[0];
 	var FADE=true;
-	var TIME=60;
+	var TIME=30;
 	if(argument_count>=2){
 		FADE=argument[1];
 	}

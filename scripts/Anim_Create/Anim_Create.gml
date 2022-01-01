@@ -8,6 +8,7 @@
 ///@arg delay*
 ///@arg arg_0*
 ///@arg arg_1*
+///@arg mode*
 function Anim_Create() {
 	var TARGET=argument[0];
 	var VAR_NAME=argument[1];
@@ -19,6 +20,7 @@ function Anim_Create() {
 	var DELAY=0;
 	var ARG_0=0;
 	var ARG_1=0;
+	var MODE = ANIM_MODE.ONESHOT;
 
 	if(argument_count>=8){
 		DELAY=argument[7];
@@ -29,6 +31,7 @@ function Anim_Create() {
 	if(argument_count>=10){
 		ARG_1=argument[9];
 	}
+	if (argument_count > 10) MODE = argument[10];
 
 	var inst_result=-1;
 
@@ -59,6 +62,9 @@ function Anim_Create() {
 						map[?ANIM_DATA.ARG_0]=ARG_0;
 						map[?ANIM_DATA.ARG_1]=ARG_1;
 						map[?ANIM_DATA.TIME]=0;
+						map[?ANIM_DATA.MODE]=MODE;
+						map[?ANIM_DATA.SPEED]=1;
+						map[?ANIM_DATA.PAUSED]=false;
 					
 						proc_result+=1;
 					}
