@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Bullets",
+    "path": "folders/Sprites/Battle/Bullets.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_gb",

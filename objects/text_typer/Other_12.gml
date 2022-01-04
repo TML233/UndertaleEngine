@@ -10,6 +10,12 @@ switch(cmd[|0]){
 		}
 		break;
 		
+	case "event":
+		if(is_real(cmd[|1])){
+			global.event=cmd[|1];
+		}
+		break;
+		
 	case "color":
 		if(is_string(cmd[|1])){
 			var color=GetColorFromString(cmd[|1]);
