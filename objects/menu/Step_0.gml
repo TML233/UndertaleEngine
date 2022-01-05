@@ -16,6 +16,7 @@ if(_menu==0){
 				event_user(0);
 			}else{
 				room_goto(room_settings);
+				BGM_Stop(0);
 			}
 		}
 	}else{
@@ -45,6 +46,7 @@ if(_menu==0){
 				var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,-1);
 				if(room_exists(target)){
 					room_goto(target);
+					BGM_Stop(0);
 				}else{
 					show_message("ERROR:\nAttempt to goto an unexisting room "+string(target));
 				}
@@ -55,6 +57,7 @@ if(_menu==0){
 				event_user(0);
 			}else if(_choice==2){
 				room_goto(room_settings);
+				BGM_Stop(0);
 			}
 		}
 	}

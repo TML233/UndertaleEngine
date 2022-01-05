@@ -10,9 +10,6 @@ if (global.event == 0) {
 		
 		if (_text_no == array_length(text) - 1)
 			_last_frame = true;
-		else if (_text_no > array_length(text) - 1) {
-			
-		}
 		image_index++;
 		instance_destroy(_inst_typer);
 		

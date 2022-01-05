@@ -1,4 +1,5 @@
 Anim_Init();
+Cutscene_Init();
 
 Console_Init();
 Console_SetStatusNumber(3);
@@ -34,6 +35,7 @@ Dialog_Init();
 
 Demo_Init();
 
+instance_create_depth(0,0,0,cutscene);
 instance_create_depth(0,0,0,camera);
 instance_create_depth(0,0,0,fader);
 instance_create_depth(0,0,0,border);

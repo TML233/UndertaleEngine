@@ -45,3 +45,4 @@ _change_color=c_white;
 _change_id=-1;
 
 event_user(0);
+BGM_Play(0, bgm_menu0, false);
