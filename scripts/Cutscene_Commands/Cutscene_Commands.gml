@@ -14,8 +14,10 @@ function C_Wait(frames) {
 	with (cutscene) {
 		if (_sleep_timer < frames)
 			_sleep_timer++;
-		else
+		else {
 			Cutscene_EndOrder();
+			_sleep_timer = 0;
+		}
 	}
 }
 
