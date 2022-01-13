@@ -1,4 +1,4 @@
-_angle+=2;
+_angle+=4;
 _timer+=1;
 var inst=_inst[0];
 if(instance_exists(inst)){

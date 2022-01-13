@@ -26,7 +26,7 @@ if(shake_x>0){
 }
 if(shake_y>0){
 	if(_shake_time_y>0){
-		_shake_time_y-=1;
+		_shake_time_y-=2;
 	}else{
 		if(!shake_random_y){
 			if(_shake_positive_y){

@@ -33,7 +33,7 @@ function Battle_SetDialog() {
 		battle._dialog[LINE2]=instance_create_depth(tx,ty,0,text_typer);
 	
 		//更改文字
-		var text_prefix="{scale 2}{voice 1}{speed 0}{shadow true}{gui false}{depth "+string(DEPTH_BATTLE.UI_HIGH)+"}";
+		var text_prefix="{scale 2}{voice 1}{speed 0}{shadow false}{skip_space false}{gui false}{depth "+string(DEPTH_BATTLE.UI_HIGH)+"}";
 		if(CHOICE){
 			text_prefix+="{instant true}";
 		}

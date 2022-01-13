@@ -8,6 +8,7 @@ with (_moving_object) {
 		
 		x += ldirx;
 		y += ldiry;
+		moveable = false;
 		direction = direc;
 		image_index += 0.2;
 		dir = Char_ConvertDirection(id);
@@ -15,6 +16,7 @@ with (_moving_object) {
 	else {
 		image_speed = 0;
 		image_index = 0;
+		moveable = true;
 		x = xx;
 		y = yy;
 		

@@ -52,4 +52,4 @@ switch(template){
 }
 
 visible=true;
-_inst.text="{shadow false}{color_text `black`}{speed 2}{font 2}{depth "+string(DEPTH_BATTLE.UI_HIGH-10)+"}"+text+"{pause}{end}";
+_inst.text="{shadow false}{color_text `black`}{speed 1}{font 2}{depth "+string(DEPTH_BATTLE.UI_HIGH-10)+"}"+text+"{pause}{end}";

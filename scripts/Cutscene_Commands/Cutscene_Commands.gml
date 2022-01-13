@@ -5,8 +5,18 @@ function C_PlaySfx(soundid, pitch = 1, volume = 1, time = 0) {
 	Cutscene_EndOrder();
 }
 
+function C_ExecuteScript(name, arg0 = undefined, arg1 = undefined, arg2 = undefined, arg3 = undefined, arg4 = undefined, arg5 = undefined, arg6 = undefined, arg7 = undefined, arg8 = undefined, arg9 = undefined, arg10 = undefined, arg11 = undefined, arg12 = undefined, arg13 = undefined, arg14 = undefined) {
+	script_execute(name, arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14);
+	Cutscene_EndOrder();
+}
+
 function C_CreateAnim(target, var_name, tween, ease, start, change, duration, relative = true, delay = 0, mode = ANIM_MODE.ONESHOT) {
-	Anim_Create(target, var_name, tween, ease, start, (relative ? change : change - start), duration, delay, 0, 0, mode);
+	Anim_Create(target, var_name, tween, ease, start, change, duration, delay, 0, 0, mode, relative);
+	Cutscene_EndOrder();
+}
+
+function C_FadeFader(start, target, time, delay = 0) {
+	Fader_Fade(start, target, time, delay);
 	Cutscene_EndOrder();
 }
 

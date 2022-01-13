@@ -276,7 +276,10 @@ if(_state==BATTLE_STATE.BOARD_RESETTING){
 
 if(_state==BATTLE_STATE.RESULT){
 	if(!instance_exists(_dialog[0])){
-		Battle_End();
+		Cutscene_ChangeOrder(0, C_FadeFader, [0, 1, 10]);
+		Cutscene_ChangeOrder(1, C_Wait, [10]);
+		Cutscene_ChangeOrder(2, C_ExecuteScript, [Battle_End]);
+		Cutscene_Begin();
 	}
 }
 
