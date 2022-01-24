@@ -6,7 +6,7 @@ function Encounter_IsPauseBGM() {
 	if(ds_map_exists(map,ID)){
 		var map_e=ds_map_find_value(map,ID);
 		var result=ds_map_find_value(map_e,"pause_bgm");
-		return (is_real(result) ? result : true);
+		return (is_bool(result) ? result : true);
 	}else{
 		return true;
 	}
