@@ -9,7 +9,7 @@ draw_set_color(c_white);
 draw_text_ext_transformed(32+6+8,52+(_top ? 270 : 0)+6+42,"LV  "+string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.LV))+"\nHP  "+string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP))+"/"+string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX))+"\nG   "+string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD)),9,-1,2,2,0);
 
 if(_menu==0){
-	draw_sprite(spr_battle_soul_red,0,32+6+27,168+6+31+36*_choice);
+	draw_sprite_ext(spr_battle_soul_red_small,0,32+6+27,168+6+31+36*_choice,2,2,0,c_white,1);
 }
 
 //ITEM
@@ -19,7 +19,7 @@ if(_menu==1||_menu==2){
 }
 
 if(_menu==1){
-	draw_sprite(spr_battle_soul_red,0,188+6+23,52+6+39+32*_choice_item);
+	draw_sprite_ext(spr_battle_soul_red_small,0,188+6+23,52+6+39+32*_choice_item,2,2,0,c_white,1);
 }
 
 if(_menu==2){
@@ -35,7 +35,7 @@ if(_menu==2){
 			X=233;
 			break;
 	}
-	draw_sprite(spr_battle_soul_red,0,188+6+X,52+6+319);
+	draw_sprite_ext(spr_battle_soul_red_small,0,188+6+X,52+6+319,2,2,0,c_white,1);
 }
 
 //STAT
@@ -48,5 +48,5 @@ if(_menu==3){
 if(_menu==4){
 	draw_sprite_ext(spr_pixel,0,188,52,346,270,0,c_white,1);
 	draw_sprite_ext(spr_pixel,0,188+6,52+6,346-6*2,270-6*2,0,c_black,1);
-	draw_sprite(spr_battle_soul_red,0,188+6+23,52+6+39+32*_choice_phone);
+	draw_sprite_ext(spr_battle_soul_red_small,0,188+6+23,52+6+39+32*_choice_phone,2,2,0,c_white,1);
 }
