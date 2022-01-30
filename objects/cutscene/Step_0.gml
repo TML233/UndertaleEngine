@@ -1,4 +1,14 @@
-if (!global._gmu_cutscene) exit;
+if (_wait) {
+	if (_sleep_timer < _wait_frames)
+		_sleep_timer++;
+	else {
+		Cutscene_EndOrder();
+		_sleep_timer = 0;
+		_wait = false;
+	}
+}
+
+/*if (!global._gmu_cutscene) exit;
 
 var order = global._gmu_cutscene_order[_current_order];
 switch (array_length(order) - 1) {

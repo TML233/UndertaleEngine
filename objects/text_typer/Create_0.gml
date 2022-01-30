@@ -59,6 +59,7 @@ _alpha_shadow=1;
 _alpha_outline=1;
 _shadow_x=0.5;
 _shadow_y=0.5;
+_siner=0;
 _effect=-1;
 _gui=false;
 

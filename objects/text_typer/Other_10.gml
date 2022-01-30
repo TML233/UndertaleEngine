@@ -8,6 +8,7 @@ if(ord(_char)<128){
 }
 
 if(_char!=" "&&_char!="　"){
+	_siner++;
 	draw_set_font(_group_font[_font,0]);
 	var H1=string_height(" ");
 	draw_set_font(_group_font[_font,font]);
@@ -16,6 +17,7 @@ if(_char!=" "&&_char!="　"){
 	
 	var INST=instance_create_depth(x+_char_x,y+_char_y+OFFSET,depth,text_single);
 	INST.text=_char;
+	INST.siner=_siner;
 	INST.font=_group_font[_font,font];
 	INST.scale_x=_scale_x*_group_font_scale_x[_font,font];
 	INST.scale_y=_scale_y*_group_font_scale_y[_font,font];

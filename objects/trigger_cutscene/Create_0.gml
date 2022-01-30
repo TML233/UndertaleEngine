@@ -1,2 +1,5 @@
 event_inherited();
-_order_list = [];
+_start_cutscene = false;
+_cutscene_summary = function () {
+	return true;
+}

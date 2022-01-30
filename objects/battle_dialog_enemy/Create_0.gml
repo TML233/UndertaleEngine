@@ -11,8 +11,8 @@ left=0;
 right=0;
 template=0;
 
-text_offset_x=0;
-text_offset_y=0;
+text_offset_x=-3;
+text_offset_y=-3;
 
 fast=false;
 

@@ -23,9 +23,9 @@ draw_sprite_ext(spr_pixel,0,x+right+sprite_get_width(corner_spr)-1,y-up,1,up+dow
 
 //填充
 //横向填充
-draw_sprite_ext(spr_pixel,0,x-left-sprite_get_width(corner_spr)+1,y-up,sprite_get_width(corner_spr)-1+left+right+sprite_get_width(corner_spr)-1,up+down,0,c_white,1);
+draw_sprite_ext(spr_pixel,0,x-left-sprite_get_width(corner_spr),y-up,sprite_get_width(corner_spr)+left+right+sprite_get_width(corner_spr),up+down,0,c_white,1);
 //纵向填充
-draw_sprite_ext(spr_pixel,0,x-left,y-up-sprite_get_height(corner_spr)+1,left+right,sprite_get_height(corner_spr)-1+up+down+sprite_get_height(corner_spr)-1,0,c_white,1);
+draw_sprite_ext(spr_pixel,0,x-left,y-up-sprite_get_height(corner_spr),left+right,sprite_get_height(corner_spr)+up+down+sprite_get_height(corner_spr),0,c_white,1);
 
 //尖刺
 if(show_spike){

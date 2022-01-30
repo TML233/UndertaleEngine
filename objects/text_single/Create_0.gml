@@ -31,4 +31,5 @@ gui=true;
 _offset_x=0;
 _offset_y=0;
 
+_siner=0;
 _effect_shook=false;

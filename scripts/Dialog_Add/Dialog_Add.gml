@@ -1,5 +1,5 @@
 ///@arg text
-///@arg prefix
+///@arg prefix*
 function Dialog_Add() {
 	var prefix = ""
 	if (argument_count > 1) prefix = argument[1];
