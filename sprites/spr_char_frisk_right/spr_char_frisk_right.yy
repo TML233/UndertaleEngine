@@ -64,7 +64,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_char_frisk_right","path":"sprites/spr_char_frisk_right/spr_char_frisk_right.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "spr_char_frisk_right",
     "tags": [],
     "resourceType": "GMSequence",
   },

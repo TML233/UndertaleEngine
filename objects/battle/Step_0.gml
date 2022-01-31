@@ -276,10 +276,10 @@ if(_state==BATTLE_STATE.BOARD_RESETTING){
 
 if(_state==BATTLE_STATE.RESULT){
 	if(!instance_exists(_dialog[0])){
-		Cutscene_ChangeOrder(0, C_FadeFader, [0, 1, 10]);
-		Cutscene_ChangeOrder(1, C_Wait, [10]);
-		Cutscene_ChangeOrder(2, C_ExecuteScript, [Battle_End]);
 		Cutscene_Begin();
+		C_FadeFader(0, 0, 1, 10);
+		C_Wait(0, 10);
+		C_Execute(1, Battle_End);
 	}
 }
 
@@ -298,4 +298,5 @@ if(_state!=BATTLE_STATE.RESULT && Battle_GetEnemyNumber()==0){
 	}
 	text+="{pause}{end}";
 	Battle_SetDialog(text);
+	Cutscene_End(-1);
 }

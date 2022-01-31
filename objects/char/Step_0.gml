@@ -47,17 +47,14 @@ if(refresh){
 		sprite_index=res_move_sprite[dir];
 		image_index=res_move_image[dir];
 		image_speed=res_move_speed[dir];
-		image_xscale*=((res_move_flip_x[dir]&&sign(image_xscale)==1)||(!res_move_flip_x[dir]&&sign(image_xscale)==-1) ? -1 : 1);
 	}else if(talking){
 		sprite_index=res_talk_sprite[dir];
 		image_index=res_talk_image[dir];
 		image_speed=res_talk_speed[dir];
-		image_xscale*=((res_talk_flip_x[dir]&&sign(image_xscale)==1)||(!res_talk_flip_x[dir]&&sign(image_xscale)==-1) ? -1 : 1);
 	}else{
 		sprite_index=res_idle_sprite[dir];
 		image_index=res_idle_image[dir];
 		image_speed=res_idle_speed[dir];
-		image_xscale*=((res_idle_flip_x[dir]&&sign(image_xscale)==1)||(!res_idle_flip_x[dir]&&sign(image_xscale)==-1) ? -1 : 1);
 	}
 }
 

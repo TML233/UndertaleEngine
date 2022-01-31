@@ -137,6 +137,6 @@ if(_menu==3){
 	BGM_Stop(0);
 	BGM_Play(0, bgm_cymbal, false);
 	fader.color=c_white;
-	Fader_Fade(-1,1,240);
-	alarm[0]=240;
+	Fader_Fade(-1,1,160);
+	alarm[0]=160;
 }

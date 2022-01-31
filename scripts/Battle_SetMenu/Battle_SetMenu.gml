@@ -45,7 +45,7 @@ function Battle_SetMenu() {
 		Battle_SetMenuFightAnimTime(0);
 		Battle_SetMenuFightDamageTime(0);
 	
-		var OBJ=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.BATTLE_MENU_FIGHT_OBJ);
+		var OBJ=asset_get_index(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.BATTLE_MENU_FIGHT_OBJ));
 		if(object_exists(OBJ)){
 			if(OBJ==battle_menu_fight||Object_GetBaseParent(OBJ)==battle_menu_fight){
 				instance_create_depth(0,0,0,OBJ);
