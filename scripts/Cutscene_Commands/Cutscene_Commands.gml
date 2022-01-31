@@ -42,6 +42,20 @@ function C_FadeFader(order_to_check, start, target, time, delay = 0) {
 	}
 }
 
+function C_WaitUntilEvent(order_to_check, object, event) {
+	if (cutscene._current_order == order_to_check) {
+		with (cutscene) {
+			_wait = true;
+			if (object.event_type)
+				_wait_frames = -1;
+			else {
+				_wait_frames = 0;
+				_sleep_timer++;
+			}
+		}
+	}
+}
+
 function C_Wait(order_to_check, frames) {
 	if (cutscene._current_order == order_to_check) {
 		with (cutscene) {

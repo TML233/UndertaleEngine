@@ -1,4 +1,5 @@
 event_inherited();
 
 dir_locked=true;
-text="";
+prefix="";
+text[0]="";

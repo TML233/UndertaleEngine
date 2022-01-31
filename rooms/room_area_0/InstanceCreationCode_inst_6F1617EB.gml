@@ -1,1 +1,1 @@
-text="* Determination."
+text[0]="* Determination."
