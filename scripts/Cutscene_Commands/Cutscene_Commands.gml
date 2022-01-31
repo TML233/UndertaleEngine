@@ -44,13 +44,54 @@ function C_FadeFader(order_to_check, start, target, time, delay = 0) {
 
 function C_WaitUntilEvent(order_to_check, object, event) {
 	if (cutscene._current_order == order_to_check) {
-		with (cutscene) {
-			_wait = true;
-			if (object.event_type)
-				_wait_frames = -1;
+		with (object) {
+			if (event_type == event) {
+				with (cutscene) {
+					_wait_frames = 0;
+					_sleep_timer = 0;
+				}
+				show_debug_message("Working!");
+			}
 			else {
+				with (cutscene) {
+					_wait = true;
+					_wait_frames = -1;
+				}
+			}
+		}
+	}
+}
+
+function C_WaitUntilVariable(order_to_check, object, variable, value_to_check) {
+	if (cutscene._current_order == order_to_check) {
+		if (variable_instance_get(object, variable) == value_to_check) {
+			with (cutscene) {
 				_wait_frames = 0;
-				_sleep_timer++;
+				_sleep_timer = 0;
+			}
+			show_debug_message("Working!");
+		}
+		else {
+			with (cutscene) {
+				_wait = true;
+				_wait_frames = -1;
+			}
+		}
+	}
+}
+
+function C_WaitUntilDestroy(order_to_check, object) {
+	if (cutscene._current_order == order_to_check) {
+		if (!instance_exists(object)) {
+			with (cutscene) {
+				_wait_frames = 0;
+				_sleep_timer = 0;
+			}
+		}
+		else {
+			with (cutscene) {
+				_wait = true;
+				_wait_frames = -1;
 			}
 		}
 	}

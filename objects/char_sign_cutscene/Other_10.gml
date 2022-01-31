@@ -1,6 +1,6 @@
 event_inherited();
 
-if (!_collided_previous) {
+if (!_start_cutscene) {
 	Cutscene_End(-1);
 	_start_cutscene = true;
 }
