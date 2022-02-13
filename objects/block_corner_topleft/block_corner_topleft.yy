@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_block_corner",
-    "path": "sprites/spr_block_corner/spr_block_corner.yy",
+    "name": "spr_block_corner_topleft",
+    "path": "sprites/spr_block_corner_topleft/spr_block_corner_topleft.yy",
   },
   "solid": false,
   "visible": false,
@@ -23,7 +23,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +33,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "block_corner",
+  "name": "block_corner_topleft",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -11,14 +11,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_menu_confirm",
-  "duration": 0.187166,
+  "soundFile": "snd_buy_item.wav",
+  "duration": 0.645805,
   "parent": {
     "name": "SFX",
     "path": "folders/Sounds/SFX.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_menu_confirm",
+  "name": "snd_buy_item",
   "tags": [],
   "resourceType": "GMSound",
 }

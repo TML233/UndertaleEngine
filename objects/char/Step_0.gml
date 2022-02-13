@@ -1,8 +1,10 @@
 var proc=0;
 repeat(4){
 	if(move[proc]>0){
-		if(!dir_locked){
-			dir=proc;
+		if (object_index != char_player) {
+			if(!dir_locked){
+				dir=proc;
+			}
 		}
 		var move_x=0;
 		var move_y=0;
@@ -30,8 +32,53 @@ repeat(4){
 				}
 			}
 			if(cmove){
-				x+=move_x;
-				y+=move_y;
+				if (object_index == char_player) {
+					if (collision) {
+						if (place_meeting(x,y,block_corner_topleft)) {
+							if (Input_IsHeld(INPUT.LEFT)) {
+								y+=(move_speed[DIR.DOWN]*0.05)*30;
+							}
+							if (Input_IsHeld(INPUT.UP)) {
+								x+=(move_speed[DIR.RIGHT]*0.05)*30;
+							}
+						}
+						if (place_meeting(x,y,block_corner_topright)) {
+							if (Input_IsHeld(INPUT.RIGHT)) {
+								y+=(move_speed[DIR.DOWN]*0.05)*30;
+							}
+							if (Input_IsHeld(INPUT.UP)) {
+								x-=(move_speed[DIR.LEFT]*0.05)*30;
+							}
+						}
+						if (place_meeting(x,y,block_corner_bottomleft)) {
+							if (Input_IsHeld(INPUT.LEFT)) {
+								y-=(move_speed[DIR.UP]*0.05)*30;
+							}
+							if (Input_IsHeld(INPUT.DOWN)) {
+								x+=(move_speed[DIR.RIGHT]*0.05)*30;
+							}
+						}
+						if (place_meeting(x,y,block_corner_bottomright)) {
+							if (Input_IsHeld(INPUT.RIGHT)) {
+								y-=(move_speed[DIR.UP]*0.05)*30;
+							}
+							if (Input_IsHeld(INPUT.DOWN)) {
+								x-=(move_speed[DIR.LEFT]*0.05)*30;
+							}
+						}
+						if (!place_meeting(x,y,block_corner_bottomright)) ||
+						   (!place_meeting(x,y,block_corner_topright)) ||
+						   (!place_meeting(x,y,block_corner_bottomleft)) ||
+						   (!place_meeting(x,y,block_corner_topleft)) {
+							x+=move_x;
+							y+=move_y;
+						}
+					}
+				}
+				else {
+					x+=move_x;
+					y+=move_y;
+				}
 			}else{
 				break;
 			}
