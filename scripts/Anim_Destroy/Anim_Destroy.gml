@@ -36,7 +36,7 @@ function Anim_Destroy() {
 			var key=global._gmu_anim_list[|proc];
 			var map=global._gmu_anim_data[?key];
 			if(instance_exists(map[?ANIM_DATA.TARGET])){
-				if(map[?ANIM_DATA.TARGET]==TARGET||(map[?ANIM_DATA.TARGET]).object_index=TARGET){
+				if((map[?ANIM_DATA.TARGET]).object_index==TARGET.object_index){
 					if(VAR_NAME==""||map[?ANIM_DATA.VAR_NAME]==VAR_NAME){
 						result=true;
 						if(SKIP){
