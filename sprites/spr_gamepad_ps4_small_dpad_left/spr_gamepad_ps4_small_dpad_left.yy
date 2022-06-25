@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_gamepad_ps4_small_dpad_left","path":"sprites/spr_gamepad_ps4_small_dpad_left/spr_gamepad_ps4_small_dpad_left.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
