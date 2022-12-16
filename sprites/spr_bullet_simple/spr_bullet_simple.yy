@@ -68,7 +68,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Bullets",
-    "path": "folders/Sprites/Battle/Bullets.yy",
+    "name": "undertale_engine",
+    "path": "undertale_engine.yyp",
   },
 }
