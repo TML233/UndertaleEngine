@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_battle_menu_fight_anim_knife",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 26,
   "height": 110,
   "textureGroupId": {
@@ -24,27 +28,17 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"0f148dad-7001-45a4-b921-61db592b128b","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0f148dad-7001-45a4-b921-61db592b128b","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":{"name":"c6b9c400-abcf-41ef-9038-d59dfc84672a","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"0f148dad-7001-45a4-b921-61db592b128b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"02271e56-8788-455a-a0d5-1e75a6b2ae4f","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"02271e56-8788-455a-a0d5-1e75a6b2ae4f","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":{"name":"c6b9c400-abcf-41ef-9038-d59dfc84672a","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"02271e56-8788-455a-a0d5-1e75a6b2ae4f","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"e76b2cfd-24f4-4682-9b9f-b72d7de3d160","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"e76b2cfd-24f4-4682-9b9f-b72d7de3d160","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":{"name":"c6b9c400-abcf-41ef-9038-d59dfc84672a","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"e76b2cfd-24f4-4682-9b9f-b72d7de3d160","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5d4ba022-ea65-4c37-86bf-0b15b19548d5","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5d4ba022-ea65-4c37-86bf-0b15b19548d5","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":{"name":"c6b9c400-abcf-41ef-9038-d59dfc84672a","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"5d4ba022-ea65-4c37-86bf-0b15b19548d5","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4b33ef13-9870-4ea7-9f4c-ff66ee397bb4","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4b33ef13-9870-4ea7-9f4c-ff66ee397bb4","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":{"name":"c6b9c400-abcf-41ef-9038-d59dfc84672a","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"4b33ef13-9870-4ea7-9f4c-ff66ee397bb4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"cd9d3b89-d2bc-44fa-affd-8f61917ff2f9","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"cd9d3b89-d2bc-44fa-affd-8f61917ff2f9","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"LayerId":{"name":"c6b9c400-abcf-41ef-9038-d59dfc84672a","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","name":"cd9d3b89-d2bc-44fa-affd-8f61917ff2f9","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0f148dad-7001-45a4-b921-61db592b128b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"02271e56-8788-455a-a0d5-1e75a6b2ae4f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e76b2cfd-24f4-4682-9b9f-b72d7de3d160",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5d4ba022-ea65-4c37-86bf-0b15b19548d5",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4b33ef13-9870-4ea7-9f4c-ff66ee397bb4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cd9d3b89-d2bc-44fa-affd-8f61917ff2f9",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 10.0,
@@ -55,14 +49,14 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"bac1982e-ac83-4eb9-abf1-b83aa3f5d7f6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0f148dad-7001-45a4-b921-61db592b128b","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3bb2d6a1-4c96-4661-9d64-0b591a51d1b7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"02271e56-8788-455a-a0d5-1e75a6b2ae4f","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"105ebac8-cdd4-4948-a80d-7bd30c58d4c7","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e76b2cfd-24f4-4682-9b9f-b72d7de3d160","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3f156326-c6f8-455c-a1b0-920beba3388d","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5d4ba022-ea65-4c37-86bf-0b15b19548d5","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"6fc7f4c4-abb4-4887-a27b-3f18d158e0ab","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4b33ef13-9870-4ea7-9f4c-ff66ee397bb4","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"16787f9e-de25-4fb0-b040-3a852a21fce5","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cd9d3b89-d2bc-44fa-affd-8f61917ff2f9","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": {"x":0.0,"y":0.0,},
     "lockOrigin": false,
@@ -78,22 +72,13 @@
     "yorigin": 55,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c6b9c400-abcf-41ef-9038-d59dfc84672a","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c6b9c400-abcf-41ef-9038-d59dfc84672a","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Fight",
     "path": "folders/Sprites/Battle/Menu/Fight.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_battle_menu_fight_anim_knife",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
