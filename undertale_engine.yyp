@@ -574,6 +574,7 @@
     {"roomId":{"name":"room_example","path":"rooms/room_example/room_example.yy",},},
   ],
   "Folders": [
+    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cutscenes","folderPath":"folders/Cutscenes.yy","order":34,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Empty","folderPath":"folders/Empty.yy","order":33,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Empty/Animation Curves.yy","order":0,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Configurations","folderPath":"folders/Empty/Configurations.yy","order":8,},
@@ -671,7 +672,6 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Large","folderPath":"folders/Sprites/Gamepad/PS4/Large.yy","order":3,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Small","folderPath":"folders/Sprites/Gamepad/PS4/Small.yy","order":1,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Tile Sets","folderPath":"folders/Tile Sets.yy","order":27,},
-    {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Cutscenes","folderPath":"folders/Cutscenes.yy","order":34,},
   ],
   "AudioGroups": [
     {"resourceType":"GMAudioGroup","resourceVersion":"1.3","name":"audiogroup_default","targets":-1,},

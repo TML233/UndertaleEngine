@@ -32,7 +32,7 @@ switch(Battle_GetMenuChoiceButton()){
 				//check if sparable, or just do the code
 				if(Battle_SetEnemySpareable(_enemy_slot,true)){
 					audio_play_sound(snd_vaporize,0,false);
-					repeat(5) instance_create_depth(x,y-sprite_height/2,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,battle_spare_particle);
+					repeat(15) instance_create_depth(x,y-sprite_height/2,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,battle_spare_particle);
 					var inst=instance_create_depth(x,y,depth,battle_spare_particle_enemy);
 					inst.sprite_index=sprite_index;
 					inst.image_xscale=image_xscale;

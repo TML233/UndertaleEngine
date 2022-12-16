@@ -1,6 +1,7 @@
+randomize();
 direction=random(360);
-speed=0.5+random(1);
-image_xscale=2;
-image_yscale=2;
+speed=2+random(3);
+image_xscale=1.5;
+image_yscale=1.5;
 image_index=random(image_number);
 image_speed=0;
