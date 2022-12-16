@@ -79,7 +79,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_battle_menu_fight_anim_knife","path":"sprites/spr_battle_menu_fight_anim_knife/spr_battle_menu_fight_anim_knife.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

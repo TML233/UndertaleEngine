@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_battle_menu_item_scrollbar_arrow","path":"sprites/spr_battle_menu_item_scrollbar_arrow/spr_battle_menu_item_scrollbar_arrow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",

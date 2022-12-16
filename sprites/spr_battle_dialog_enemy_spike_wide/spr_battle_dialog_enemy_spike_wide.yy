@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_battle_dialog_enemy_spike_wide","path":"sprites/spr_battle_dialog_enemy_spike_wide/spr_battle_dialog_enemy_spike_wide.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "",
     "tags": [],
     "resourceType": "GMSequence",
