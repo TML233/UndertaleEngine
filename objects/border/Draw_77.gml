@@ -15,7 +15,9 @@ if(_enabled){
 	}else{
 		draw_sprite_ext(spr_pixel,0,(SW-960*SF)/2,(SH-540*SF)/2,SW,SH,0,c_black,_alpha);
 	}
+	gpu_set_blendenable(false);
 	draw_surface_ext(application_surface,(SW-960*SF)/2+160*SF,(SH-540*SF)/2+30*SF,SF,SF,0,c_white,1);
+	gpu_set_blendenable(true);
 }else{
 	var SW=(window_get_fullscreen() ? display_get_width() : window_get_width());
 	var SH=(window_get_fullscreen() ? display_get_height() : window_get_height());
@@ -23,5 +25,7 @@ if(_enabled){
 	var SY=SH/480;
 	var SF=min(SX,SY);
 	display_set_gui_maximize(SF,SF,(SW-640*SF)/2,(SH-480*SF)/2);
+	gpu_set_blendenable(false);
 	draw_surface_ext(application_surface,(SW-640*SF)/2,(SH-480*SF)/2,SF,SF,0,c_white,1);
+	gpu_set_blendenable(true);
 }

@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_battle_dialog_enemy_spike",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 13,
   "height": 13,
   "textureGroupId": {
@@ -24,12 +28,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"9aa00fd9-583e-4a0f-8e02-e5f4a4faef8a","path":"sprites/spr_battle_dialog_enemy_spike/spr_battle_dialog_enemy_spike.yy",},"LayerId":null,"resourceVersion":"1.0","name":"imported","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"9aa00fd9-583e-4a0f-8e02-e5f4a4faef8a","path":"sprites/spr_battle_dialog_enemy_spike/spr_battle_dialog_enemy_spike.yy",},"LayerId":{"name":"d15177da-92f7-4e9d-aecc-d1e813f58929","path":"sprites/spr_battle_dialog_enemy_spike/spr_battle_dialog_enemy_spike.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_battle_dialog_enemy_spike","path":"sprites/spr_battle_dialog_enemy_spike/spr_battle_dialog_enemy_spike.yy",},"resourceVersion":"1.0","name":"9aa00fd9-583e-4a0f-8e02-e5f4a4faef8a","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"11299221-91db-4825-8d39-92f121fbd37f",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_battle_dialog_enemy_spike","path":"sprites/spr_battle_dialog_enemy_spike/spr_battle_dialog_enemy_spike.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -40,11 +44,11 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"8729e9be-56f5-4c45-8373-9e80e398d2fd","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9aa00fd9-583e-4a0f-8e02-e5f4a4faef8a","path":"sprites/spr_battle_dialog_enemy_spike/spr_battle_dialog_enemy_spike.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+            {"id":"14423dc3-2206-434a-919a-e01a6f87faff","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"11299221-91db-4825-8d39-92f121fbd37f","path":"sprites/spr_battle_dialog_enemy_spike/spr_battle_dialog_enemy_spike.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -58,22 +62,13 @@
     "yorigin": 6,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_battle_dialog_enemy_spike","path":"sprites/spr_battle_dialog_enemy_spike/spr_battle_dialog_enemy_spike.yy",},
-    "resourceVersion": "1.4",
-    "name": "",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"d15177da-92f7-4e9d-aecc-d1e813f58929","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d7e53f09-8dc0-47b9-8c45-8a5ff7920f6f","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Dialog Enemy",
     "path": "folders/Sprites/Battle/Dialog Enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_battle_dialog_enemy_spike",
-  "tags": [],
-  "resourceType": "GMSprite",
 }

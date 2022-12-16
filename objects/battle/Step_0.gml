@@ -2,6 +2,12 @@
 if(_state==BATTLE_STATE.MENU){
 	//按钮
 	if(_menu==BATTLE_MENU.BUTTON){
+		//重新启动文本写作
+		if(_menu_dialog_reset){
+			Battle_SetDialog(Battle_GetMenuDialog());
+			_menu_dialog_reset=false;
+		}
+		
 		//左/右
 		if(Input_IsPressed(INPUT.LEFT)){
 			var button=_menu_choice_button;
@@ -273,7 +279,17 @@ if(_state==BATTLE_STATE.BOARD_RESETTING){
 
 if(_state==BATTLE_STATE.RESULT){
 	if(!instance_exists(_dialog[0])){
-		Battle_End();
+		switch(_reward_fade_state){
+			case 0:
+				Fader_Fade(-1,1,30);
+				_reward_fade_state=1;
+				break;
+			case 1:
+				_reward_fade_timer++;
+				if(_reward_fade_timer==30)
+					Battle_End();
+				break;
+		}
 	}
 }
 

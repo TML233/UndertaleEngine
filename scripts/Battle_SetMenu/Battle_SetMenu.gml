@@ -8,13 +8,14 @@ function Battle_SetMenu() {
 	}
 
 	battle._menu=MENU;
+	battle._menu_dialog_reset=true;
 	Battle_SetDialog("",false,false);
 	Battle_SetDialog("",false,true);
 	
 	////////////////////////////////////////
 	//按钮
 	if(MENU==BATTLE_MENU.BUTTON){
-		Battle_SetDialog(Battle_GetMenuDialog());
+		Battle_SetDialog("");
 	}
 	
 	////////////////////////////////////////
@@ -32,9 +33,9 @@ function Battle_SetMenu() {
 			var inst=Battle_GetEnemy(proc);
 			if(instance_exists(inst)){
 				if(Battle_IsEnemySpareable(proc)){
-					text+="{color `yellow`}"
+					text+="{color_text `yellow`}"
 				}
-				text+=Battle_GetEnemyName(proc)+"{color `white`}&";
+				text+=Battle_GetEnemyName(proc)+"{color_text `white`}&";
 			}
 			proc+=1;
 		}
@@ -102,7 +103,7 @@ function Battle_SetMenu() {
 			//仁慈菜单文字
 			repeat(3){
 				if(Battle_IsEnemySpareable(proc)){
-					text+="{color `yellow`}";
+					text+="{color_text `yellow`}";
 					break;
 				}
 				proc+=1;
@@ -111,7 +112,7 @@ function Battle_SetMenu() {
 		
 			//逃跑是否可用
 			if(Battle_IsMenuMercyFleeEnabled()){
-				text+="&{color `white`}";
+				text+="&{color_text `white`}";
 				text+=Lang_GetString("battle.menu.mercy.flee");
 			}
 		}else{

@@ -10,8 +10,8 @@ switch(Battle_GetMenuChoiceButton()){
 			audio_play_sound(snd_vaporize,0,false);
 			
 			//Player_SetKills(Player_GetKills()+1);
-			Battle_RewardExp(+1);
-			Battle_RewardGold(+1);
+			Battle_RewardExp(1);
+			Battle_RewardGold(1);
 			
 			instance_destroy();
 		}
@@ -26,15 +26,21 @@ switch(Battle_GetMenuChoiceButton()){
 		}
 		//is mercy button chosen
 	case BATTLE_MENU_CHOICE_BUTTON.MERCY:
-			  //is spare option chosen
-			  if(Battle_GetMenuChoiceButton()==3){
-				  if(Battle_GetMenuChoiceMercy()==0){
-				    //check if sparable, or just do the code
-				    if(Battle_SetEnemySpareable(_enemy_slot,true)){
-				       //TODO: create some dust effects
-				       instance_destroy();
-				    }
+		//is spare option chosen
+		if(Battle_GetMenuChoiceButton()==3){
+			if(Battle_GetMenuChoiceMercy()==0){
+				//check if sparable, or just do the code
+				if(Battle_SetEnemySpareable(_enemy_slot,true)){
+					audio_play_sound(snd_vaporize,0,false);
+					repeat(5) instance_create_depth(x,y-sprite_height/2,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,battle_spare_particle);
+					var inst=instance_create_depth(x,y,depth,battle_spare_particle_enemy);
+					inst.sprite_index=sprite_index;
+					inst.image_xscale=image_xscale;
+					inst.image_yscale=image_yscale;
+						
+					instance_destroy();
 				}
 			}
+		}
 		break;
 }

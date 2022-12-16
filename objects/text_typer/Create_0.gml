@@ -61,6 +61,7 @@ _shadow_x=0.5;
 _shadow_y=0.5;
 _effect=-1;
 _gui=false;
+siner=0;
 
 //group init
 event_user(5);

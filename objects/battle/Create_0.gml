@@ -67,6 +67,7 @@ _menu_choice_mercy_override_name[2]="";
 _menu_fleeable=false;
 _menu_mercy_flee_enabled=Encounter_IsMenuMercyFleeEnabled(ENCOUNTER);
 _menu_dialog=Encounter_GetMenuDialog(ENCOUNTER);
+_menu_dialog_reset=false;
 
 _menu_fight_damage=0;
 _menu_fight_anim_time=0;
@@ -82,6 +83,8 @@ _dialog[1]=noone;
 _dialog_auto_end=true;
 _dialog_enemy_auto_end=true;
 
+_reward_fade_timer=0;
+_reward_fade_state=0;
 _reward_gold=0;
 _reward_exp=0;
 

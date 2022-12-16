@@ -3,11 +3,11 @@ if(_line<480){
 		var X=0;
 		repeat(640/2){
 			if(position_meeting(X,_line,_inst)){
-				part_particles_create(_ps,X,_line,_p,1);
+				instance_create_depth(X,_line,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,battle_death_particle_pixel);
 			}
 			X+=2;
 		}
-		_line+=2;
+		_line+=1;
 	}
 }
 

@@ -50,6 +50,8 @@ Console_OutputLine("Game Name: "+GAME_NAME);
 Console_OutputLine("Game Author: "+GAME_AUTHOR);
 Console_OutputLine("Game Version: "+GAME_VERSION);
 
+Game_SetFrameSkip(1);
+
 //show_debug_overlay(true);
 
 room_goto_next();

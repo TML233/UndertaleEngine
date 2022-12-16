@@ -1,10 +1,14 @@
 {
+  "resourceType": "GMObject",
+  "resourceVersion": "1.0",
+  "name": "block_corner",
   "spriteId": {
     "name": "spr_block_corner",
     "path": "sprites/spr_block_corner/spr_block_corner.yy",
   },
   "solid": false,
   "visible": false,
+  "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
@@ -30,8 +34,4 @@
     "name": "Objects",
     "path": "folders/Objects.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "block_corner",
-  "tags": [],
-  "resourceType": "GMObject",
 }

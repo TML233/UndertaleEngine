@@ -16,6 +16,7 @@ if(_char!=" "&&_char!="　"){
 	
 	var INST=instance_create_depth(x+_char_x,y+_char_y+OFFSET,depth,text_single);
 	INST.text=_char;
+	INST.siner=siner;
 	INST.font=_group_font[_font,font];
 	INST.scale_x=_scale_x*_group_font_scale_x[_font,font];
 	INST.scale_y=_scale_y*_group_font_scale_y[_font,font];

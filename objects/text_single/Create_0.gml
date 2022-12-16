@@ -27,8 +27,10 @@ alpha_shadow=1;
 alpha_outline=1;
 effect=0;
 gui=true;
+siner=0;
 
 _offset_x=0;
 _offset_y=0;
 
 _effect_shook=false;
+_effect_partshook=false;
