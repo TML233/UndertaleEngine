@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_menu_cancel",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_menu_cancel",
-  "duration": 0.0,
+  "duration": 0.726871,
   "parent": {
     "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "path": "folders/Sounds/BGM/SFX.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_menu_cancel",
-  "tags": [],
-  "resourceType": "GMSound",
 }

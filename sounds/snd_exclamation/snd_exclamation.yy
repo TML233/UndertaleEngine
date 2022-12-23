@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_exclamation",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -15,10 +18,6 @@
   "duration": 0.0,
   "parent": {
     "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "path": "folders/Sounds/BGM/SFX.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_exclamation",
-  "tags": [],
-  "resourceType": "GMSound",
 }

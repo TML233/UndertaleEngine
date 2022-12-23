@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSound",
+  "resourceVersion": "1.0",
+  "name": "snd_item_equip",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -12,13 +15,9 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_item_equip",
-  "duration": 0.0,
+  "duration": 0.163991,
   "parent": {
     "name": "SFX",
-    "path": "folders/Sounds/SFX.yy",
+    "path": "folders/Sounds/BGM/SFX.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "snd_item_equip",
-  "tags": [],
-  "resourceType": "GMSound",
 }
