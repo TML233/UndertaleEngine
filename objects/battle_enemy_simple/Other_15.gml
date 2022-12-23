@@ -37,7 +37,6 @@ switch(Battle_GetMenuChoiceButton()){
 					inst.sprite_index=sprite_index;
 					inst.image_xscale=image_xscale;
 					inst.image_yscale=image_yscale;
-						
 					instance_destroy();
 				}
 			}

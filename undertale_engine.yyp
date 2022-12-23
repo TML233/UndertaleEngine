@@ -590,6 +590,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"room_init","path":"rooms/room_init/room_init.yy",},},
+    {"roomId":{"name":"room_battle_ex","path":"rooms/room_battle_ex/room_battle_ex.yy",},},
     {"roomId":{"name":"room_logo","path":"rooms/room_logo/room_logo.yy",},},
     {"roomId":{"name":"room_menu","path":"rooms/room_menu/room_menu.yy",},},
     {"roomId":{"name":"room_area_vent","path":"rooms/room_area_vent/room_area_vent.yy",},},
@@ -601,7 +602,6 @@
     {"roomId":{"name":"room_battle_gb","path":"rooms/room_battle_gb/room_battle_gb.yy",},},
     {"roomId":{"name":"room_area_demo","path":"rooms/room_area_demo/room_area_demo.yy",},},
     {"roomId":{"name":"room_example","path":"rooms/room_example/room_example.yy",},},
-    {"roomId":{"name":"room_battle_ex","path":"rooms/room_battle_ex/room_battle_ex.yy",},},
     {"roomId":{"name":"room_battle_simple","path":"rooms/room_battle_simple/room_battle_simple.yy",},},
   ],
   "Folders": [

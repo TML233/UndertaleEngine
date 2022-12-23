@@ -125,14 +125,16 @@ function cutscene_variable_set(cut, instance, variable, value) {
 	});
 }
 
-function cutscene_instance_create(cut, _x, _y, instance, _depth = 0) {
+function cutscene_instance_create(cut, _x, _y, instance, _depth = 0, sender = id) {
 	cutscene_custom(cut, {
 		_x: _x,
 		_y: _y,
 		instance: instance,
 		_depth: _depth,
+		sender: sender,
 		init: function() {
-			instance_create_depth(_x,_y,_depth,instance);
+			var inst = instance_create_depth(_x,_y,_depth,instance);
+			with (sender) return inst;
 		},
 		update: function() {
 			return false;
@@ -192,14 +194,19 @@ function cutscene_create_anim(cut, inst, var_name, tween, ease, start, change, d
 		relative: relative,
 		wait: wait,
 		init: function() {
-			Anim_Create(inst,var_name,tween,ease,start,change,duration,delay,arg_0,arg_1,mode,relative);
+			if(instance_exists(inst))
+				Anim_Create(inst,var_name,tween,ease,start,change,duration,delay,arg_0,arg_1,mode,relative);
 		},
 		update: function() {
 			if(wait==0){
-				return false;
+				if(instance_exists(inst))
+					return false;
+				else return true;
 			}
 			else if(wait==1){
-				return !Anim_IsExists(inst,var_name);
+				if(instance_exists(inst))
+					return !Anim_IsExists(inst,var_name);
+				else return true;
 			}
 		}
 	});
