@@ -29,20 +29,20 @@ draw_sprite_ext(spr_pixel,0,x-left,y-up-sprite_get_height(corner_spr)+1,left+rig
 
 //尖刺
 if(show_spike){
-	//朝左
-	if(dir==DIR.LEFT){
-		draw_sprite_ext(spike_spr,0,x-left-sprite_get_width(corner_spr),y,1,1,0,c_white,1);
-	}
-	//朝右
-	if(dir==DIR.RIGHT){
-		draw_sprite_ext(spike_spr,0,x+right+sprite_get_width(corner_spr),y,-1,1,0,c_white,1);
-	}
-	//朝上
-	if(dir==DIR.UP){
-		draw_sprite_ext(spike_spr,0,x,y-up-sprite_get_height(corner_spr),-1,1,90,c_white,1);
-	}
-	//朝下
-	if(dir==DIR.DOWN){
-		draw_sprite_ext(spike_spr,0,x,y+down+sprite_get_height(corner_spr),1,1,90,c_white,1);
-	}
+    //朝左
+    if(dir==DIR.LEFT){
+        draw_sprite_ext(spike_spr,0,x-left-sprite_get_width(corner_spr)-spike_offset_x,y+spike_offset_y,1,1,0,c_white,1);
+    }
+    //朝右
+    if(dir==DIR.RIGHT){
+        draw_sprite_ext(spike_spr,0,x+right+sprite_get_width(corner_spr)+spike_offset_x,y+spike_offset_y,-1,1,0,c_white,1);
+    }
+    //朝上
+    if(dir==DIR.UP){
+        draw_sprite_ext(spike_spr,0,x+spike_offset_x,y-up-sprite_get_height(corner_spr)-spike_offset_y,-1,1,90,c_white,1);
+    }
+    //朝下
+    if(dir==DIR.DOWN){
+        draw_sprite_ext(spike_spr,0,x+spike_offset_x,y+down+sprite_get_height(corner_spr)+spike_offset_y,1,1,90,c_white,1);
+    }
 }

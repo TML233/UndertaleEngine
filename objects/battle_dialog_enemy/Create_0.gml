@@ -4,18 +4,21 @@ visible=false;
 text="";
 dir=DIR.LEFT;
 show_spike=true;
-wide_spike=true;
-up=0;
+wide_spike=false;
+spike_offset_x=0;
+spike_offset_y=0;
+up=20;
 down=0;
 left=0;
 right=0;
 template=0;
 
-text_offset_x=0;
-text_offset_y=0;
+char_amt_array=array_create(64);
+text_offset_x=-3;
+text_offset_y=-3;
 
 fast=false;
 
-_inst=instance_create_depth(x-left+text_offset_x,y-up+text_offset_y,0,text_typer);
+_inst=noone;
 
 alarm[0]=1;

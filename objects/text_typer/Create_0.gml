@@ -75,3 +75,13 @@ override_color_text[0]=c_white;
 override_color_text[1]=c_white;
 override_color_text[2]=c_white;
 override_color_text[3]=c_white;
+
+_amt_i=0;
+str_mode_amt=false;
+str_mode_amt_cmd="";
+
+_char_amt_finish=array_create(0);
+_char_amt=1;
+_newline_amt=0;
+
+alarm[0]=1;
