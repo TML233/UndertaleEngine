@@ -134,12 +134,22 @@ function cutscene_instance_create(cut, _x, _y, instance, _depth = 0, sender = id
 		sender: sender,
 		init: function() {
 			var inst = instance_create_depth(_x,_y,_depth,instance);
-			with (sender) return inst;
+			var inst_return = instance_create_depth(0,0,0,obj_cutscene_inst_return);
+			inst_return._sender=sender;
+			inst_return._inst=inst;
 		},
 		update: function() {
 			return false;
 		}
 	});
+	
+	if (instance_exists(obj_cutscene_inst_return)) {
+		for (var i = 0; i < instance_number(obj_cutscene_inst_return); i++) {
+			if(instance_find(obj_cutscene_inst_return,i)._sender == sender) {
+				return instance_find(obj_cutscene_inst_return,i)._inst;
+			}
+		}
+	}
 }
 
 function cutscene_player_move(cut, can_move) {

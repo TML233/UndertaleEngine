@@ -15,7 +15,7 @@ if !suspend {
 				array_delete(actions, 0, 1);
 				_action_init = false;
 			} else {
-				_process_actions = false;	
+				_process_actions = false;
 			}
 		
 		} else {
