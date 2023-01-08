@@ -7,7 +7,7 @@ switch(Battle_GetMenuChoiceButton()){
 			//Create particle effect
 			var inst=instance_create_depth(x,y,0,battle_death_particle);
 			inst.sprite=sprite_index;
-			audio_play_sound(snd_vaporize,0,false);
+			inst._sound=snd_vaporize;
 			
 			//Player_SetKills(Player_GetKills()+1);
 			Battle_RewardExp(1);

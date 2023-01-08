@@ -26,8 +26,8 @@ switch(effect){
 		break;
 		
 	case 2:
-		_offset_x=cos(pi*siner);
-		_offset_y=sin(pi*siner);
+		_offset_x=dcos(siner*10); // increment 15 degrees every frame
+		_offset_y=dsin(siner*10); // increment 15 degrees every frame
 		siner++;
 		break;
 }

@@ -28,9 +28,9 @@ switch(Battle_GetMenu()){
 			var shake=instance_create_depth(0,0,0,shaker);
 			shake.target=self;
 			shake.var_name="x";
-			shake.shake_distance=15;
+			shake.shake_distance=18;
 			shake.shake_decrease=3;
-			shake.shake_speed=4;
+			shake.shake_speed=2;
 		}
 		break;
 }

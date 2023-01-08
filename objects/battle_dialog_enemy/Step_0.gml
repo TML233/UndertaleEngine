@@ -3,7 +3,6 @@ if(fast&&Input_IsPressed(INPUT.CONFIRM)){
 }else if(instance_exists(_inst)){
     _inst.x=x-left+text_offset_x;
     _inst.y=y-up+text_offset_y;
-    char_amt_array=_inst._char_amt_finish;
     down=(_inst._newline_amt*10)+10;
 }else{
     instance_destroy();

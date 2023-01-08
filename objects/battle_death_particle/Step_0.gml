@@ -1,15 +1,17 @@
-if(_line<480){
-	repeat(4){
-		var X=0;
-		repeat(640/2){
-			if(position_meeting(X,_line,_inst)){
-				instance_create_depth(X,_line,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,battle_death_particle_pixel);
+if(_delay<=0){
+	if(_line<480){
+		repeat(4){
+			var X=0;
+			repeat(640/2){
+				if(position_meeting(X,_line,_inst)){
+					instance_create_depth(X,_line,DEPTH_BATTLE.BULLET_OUTSIDE_HIGH,battle_death_particle_pixel);
+				}
+				X+=2;
 			}
-			X+=2;
+			_line+=1;
 		}
-		_line+=1;
 	}
-}
+} else _delay--;
 
 if(instance_exists(_inst)&&_line>y-sprite_get_yoffset(sprite)*scale_y+sprite_get_height(sprite)*scale_y&&part_particles_count(_ps)==0){
 	instance_destroy();

@@ -1,5 +1,5 @@
 _voice_played=false;
-siner++;
+siner+=2;
 
 event_user(4);
 

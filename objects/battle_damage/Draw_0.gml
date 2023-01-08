@@ -4,11 +4,11 @@ if(bar_visible&&damage>0){
 }
 
 if(damage<=0){
-	draw_sprite_ext(spr_battle_damage_miss,0,xstart,y,1,1,0,c_gray,1);
+	draw_sprite_ext(spr_battle_damage_miss,0,xstart,y,1,1,0,c_silver,1);
 }else{
 	var STR=string(damage);
 	var LEN=string_length(STR);
-	var SPR_W=sprite_get_width(spr_battle_damage);
+	var SPR_W=floor(sprite_get_width(spr_battle_damage)*1.1);
 	var draw_x=x;
 	
 	if(LEN%2!=0){

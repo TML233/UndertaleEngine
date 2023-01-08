@@ -125,31 +125,20 @@ function cutscene_variable_set(cut, instance, variable, value) {
 	});
 }
 
-function cutscene_instance_create(cut, _x, _y, instance, _depth = 0, sender = id) {
+function cutscene_instance_create(cut, _x, _y, instance, _depth = 0, _args = {}) {
 	cutscene_custom(cut, {
 		_x: _x,
 		_y: _y,
 		instance: instance,
 		_depth: _depth,
-		sender: sender,
+		_args: _args,
 		init: function() {
-			var inst = instance_create_depth(_x,_y,_depth,instance);
-			var inst_return = instance_create_depth(0,0,0,obj_cutscene_inst_return);
-			inst_return._sender=sender;
-			inst_return._inst=inst;
+			instance_create_depth(_x,_y,_depth,instance,_args);
 		},
 		update: function() {
 			return false;
 		}
 	});
-	
-	if (instance_exists(obj_cutscene_inst_return)) {
-		for (var i = 0; i < instance_number(obj_cutscene_inst_return); i++) {
-			if(instance_find(obj_cutscene_inst_return,i)._sender == sender) {
-				return instance_find(obj_cutscene_inst_return,i)._inst;
-			}
-		}
-	}
 }
 
 function cutscene_player_move(cut, can_move) {
