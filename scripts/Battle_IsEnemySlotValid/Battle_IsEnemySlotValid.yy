@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "Battle_IsEnemySlotValid",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Enemy",
     "path": "folders/Scripts/Battle/Enemy.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Battle_IsEnemySlotValid",
-  "tags": [],
-  "resourceType": "GMScript",
 }

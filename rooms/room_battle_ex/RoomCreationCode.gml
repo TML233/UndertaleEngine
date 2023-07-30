@@ -1,1 +1,1 @@
-Encounter_Start(ENEMY_ID.GB);
+Encounter_Start(ENEMY_ID.EX);
