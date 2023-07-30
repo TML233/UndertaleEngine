@@ -18,6 +18,7 @@ function Border_SetEnabled() {
 			border._sprite_previous=-1;
 		}
 	}
+	if(!window_get_fullscreen()){window_center();}
 	return true;
 
 
