@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "Anim_Create",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Anim",
     "path": "folders/Scripts/GMU/Anim.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Anim_Create",
-  "tags": [],
-  "resourceType": "GMScript",
 }
