@@ -377,7 +377,6 @@
     {"name":"Player_GetLvDef","order":5,"path":"scripts/Player_GetLvDef/Player_GetLvDef.yy",},
     {"name":"Player_GetLvExp","order":7,"path":"scripts/Player_GetLvExp/Player_GetLvExp.yy",},
     {"name":"Player_LvUp","order":9,"path":"scripts/Player_LvUp/Player_LvUp.yy",},
-    {"name":"test","order":5,"path":"sprites/test/test.yy",},
     {"name":"Player_UpdateLv","order":11,"path":"scripts/Player_UpdateLv/Player_UpdateLv.yy",},
     {"name":"Player_GetTextTyperChoice","order":19,"path":"scripts/Player_GetTextTyperChoice/Player_GetTextTyperChoice.yy",},
     {"name":"BattleFightPanel","order":3,"path":"scripts/BattleFightPanel/BattleFightPanel.yy",},

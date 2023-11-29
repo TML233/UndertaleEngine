@@ -526,7 +526,6 @@
     {"id":{"name":"Player_GetLvDef","path":"scripts/Player_GetLvDef/Player_GetLvDef.yy",},},
     {"id":{"name":"Player_GetLvExp","path":"scripts/Player_GetLvExp/Player_GetLvExp.yy",},},
     {"id":{"name":"Player_LvUp","path":"scripts/Player_LvUp/Player_LvUp.yy",},},
-    {"id":{"name":"test","path":"sprites/test/test.yy",},},
     {"id":{"name":"Player_UpdateLv","path":"scripts/Player_UpdateLv/Player_UpdateLv.yy",},},
     {"id":{"name":"Player_GetTextTyperChoice","path":"scripts/Player_GetTextTyperChoice/Player_GetTextTyperChoice.yy",},},
     {"id":{"name":"BattleFightPanel","path":"scripts/BattleFightPanel/BattleFightPanel.yy",},},
