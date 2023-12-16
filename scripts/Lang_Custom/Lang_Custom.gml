@@ -1,5 +1,5 @@
 function Lang_Custom() {
-#macro GMU_LANG_PATH_BASE "./locale/"
+#macro GMU_LANG_PATH_BASE working_directory+"/locale/"
 #macro GMU_LANG_PATH_LIST "list.txt"
 #macro GMU_LANG_PATH_STRING	"string.txt"
 #macro GMU_LANG_PATH_SPRITE "sprite.txt"
