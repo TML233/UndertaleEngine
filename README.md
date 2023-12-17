@@ -1,4 +1,10 @@
 # UNDERTALE Engine
+
+## Important
+**This branch contains the legacy version of UNDERTALE Engine, which only works properly in old versions of GameMaker Studio 2 (prior than 2.3 update)!**
+
+**This branch is archived and will no-longer be maintained.**
+
 ## About
 ![](https://img.shields.io/github/release-pre/TML233/undertale_engine.svg?style=flat-square ":no-zoom")
 ![](https://img.shields.io/github/stars/TML233/undertale_engine.svg?style=flat-square ":no-zoom")
