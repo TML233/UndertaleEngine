@@ -12,5 +12,5 @@ if(room_exists(target_room)){
 	}
 	alarm[0]=fade_in_time+warp_wait+1;
 }else{
-	Console_OutputLine("Attempt to warp to non-existing room "+string(target_room)+"!");
+	show_debug_message("Attempt to warp to non-existing room "+string(target_room)+"!");
 }

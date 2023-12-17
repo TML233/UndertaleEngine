@@ -28,4 +28,4 @@ Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BATTLE_START);
 
 Battle_GotoNextState();
 
-Console_OutputLine("Battle initialized. Encounter ID "+string(ENCOUNTER)+".");
+show_debug_message("Battle initialized. Encounter ID "+string(ENCOUNTER)+".");

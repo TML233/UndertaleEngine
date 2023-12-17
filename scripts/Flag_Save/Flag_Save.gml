@@ -17,7 +17,7 @@ function Flag_Save() {
 
 	file_text_close(file);
 
-	Console_OutputLine("Flag type "+string(TYPE)+" saved to \""+PATH+"\".");
+	show_debug_message("Flag type "+string(TYPE)+" saved to \""+PATH+"\".");
 
 	return true;
 

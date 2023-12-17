@@ -1,11 +1,5 @@
 Anim_Init();
 
-Console_Init();
-Console_SetStatusNumber(3);
-Console_SetStatusRatio(0,2/11);
-Console_SetStatusRatio(1,8/11);
-Console_SetStatusRatio(2,11/11);
-
 Input_Init();
 Input_Bind(INPUT.CONFIRM,INPUT_TYPE.KEYBOARD,0,vk_enter);
 Input_Bind(INPUT.CONFIRM,INPUT_TYPE.KEYBOARD,0,ord("Z"));
@@ -43,12 +37,12 @@ application_surface_draw_enable(false);
 
 //Border_SetEnabled(true);
 
-Console_OutputLine("UNDERTALE by Toby Fox");
-Console_OutputLine("UNDERTALE Engine by TML");
-Console_OutputLine("Engine Version: "+ENGINE_VERSION);
-Console_OutputLine("Game Name: "+GAME_NAME);
-Console_OutputLine("Game Author: "+GAME_AUTHOR);
-Console_OutputLine("Game Version: "+GAME_VERSION);
+show_debug_message("UNDERTALE by Toby Fox");
+show_debug_message("UNDERTALE Engine by TML");
+show_debug_message("Engine Version: "+ENGINE_VERSION);
+show_debug_message("Game Name: "+GAME_NAME);
+show_debug_message("Game Author: "+GAME_AUTHOR);
+show_debug_message("Game Version: "+GAME_VERSION);
 
 //show_debug_overlay(true);
 
