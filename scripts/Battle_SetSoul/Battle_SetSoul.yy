@@ -1,12 +1,11 @@
 {
-  "isDnD": false,
+  "resourceType": "GMScript",
+  "resourceVersion": "1.0",
+  "name": "Battle_SetSoul",
   "isCompatibility": false,
+  "isDnD": false,
   "parent": {
     "name": "Soul",
     "path": "folders/Scripts/Battle/Soul.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "Battle_SetSoul",
-  "tags": [],
-  "resourceType": "GMScript",
 }

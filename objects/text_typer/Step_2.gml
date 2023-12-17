@@ -79,7 +79,7 @@ if(_char_proc<string_length(text)+1){
 									_char_proc+=1;
 								}
 								if(loop){
-									Console_OutputLine("WARNING! Text typer command is not valid in \""+text+"\"!");
+									show_debug_message("WARNING! Text typer command is not valid in \""+text+"\"!");
 								}
 							}
 							
