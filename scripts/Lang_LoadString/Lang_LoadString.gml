@@ -14,6 +14,7 @@ function Lang_LoadString() {
 		return false;
 	}
 
+	var MAP=global._gmu_lang_string;
 	var LIST=Lang_LoadFileToString(GMU_LANG_PATH_BASE+LANG+"/"+GMU_LANG_PATH_STRING);
 	var FILE=file_text_open_from_string(LIST);
 	while(!file_text_eof(FILE)){
@@ -22,47 +23,18 @@ function Lang_LoadString() {
 		var PATH=GMU_LANG_PATH_BASE+LANG+"/"+TARGET;
 		if(file_exists(PATH)){
 			var STR=Lang_LoadFileToString(PATH);
-			var proc=0;
-			var str_mode=false;
-			var str_input_name=true;
-			var str_name="";
-			var str_text="";
-			var MAP=global._gmu_lang_string;
-			while(string_length(STR)>proc){
-				proc+=1;
-				var CHAR=string_char_at(STR,proc);
-				if(CHAR="\""){
-					str_mode=!str_mode;
-				
-					if(!str_mode){
-						str_input_name=!str_input_name;
-					
-						if(str_input_name){
-							ds_map_replace(MAP,str_name,str_text);
-							str_name="";
-							str_text="";
-						}
-					}
-				}else if(str_mode){
-					if(CHAR!="\t" && CHAR!="\n" && CHAR!="\r"){
-						if(CHAR=="\\"){
-							proc+=1;
-							CHAR=string_char_at(STR,proc);
-						
-							if(CHAR=="n"){
-								CHAR="\n";
-							}
-							if(CHAR=="\\"){
-								CHAR="\\"
-							}
-						}
-						if(str_input_name){
-							str_name+=CHAR;
-						}else{
-							str_text+=CHAR;
-						}
-					}
+			var obj=json_parse(STR);
+			if(typeof(obj)!="struct"){
+				continue;
+			}
+			var names=variable_struct_get_names(obj);
+			for(var i=0;i<array_length(names);i+=1){
+				var key=names[i];
+				var innerLine=variable_struct_get(obj,key);
+				if(typeof(innerLine)!="string"){
+					continue;
 				}
+				ds_map_add(MAP,key,innerLine);
 			}
 		}
 	}
