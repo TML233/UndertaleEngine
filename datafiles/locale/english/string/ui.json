@@ -1,0 +1,22 @@
+{
+    "ui.menu.item": "ITEM",
+    "ui.menu.item.use": "USE",
+    "ui.menu.item.info": "INFO",
+    "ui.menu.item.drop": "DROP",
+
+    "ui.menu.stat": "STAT",
+    "ui.menu.stat.0": "\"{insert NAME}\"{space_y -1}&&{space_y 0}LV  {insert LV}&HP  {insert HP} / {insert HP_MAX}&&AT  {insert ATK} ({insert ATK_ITEM})&DF  {insert DEF} ({insert DEF_ITEM}){space_y -1}&&{space_y 0}WEAPON: {insert WEAPON}&ARMOR: {insert ARMOR}{space_y 4}&{space_y 0}GOLD: {insert GOLD}",
+    "ui.menu.stat.1": "EXP: {insert EXP}&NEXT: {insert EXP_NEXT}",
+    "ui.menu.stat.2": "{space_y -1}&&{space_y 0}&{space_y 4}&{space_y 0}KILLS: {insert KILLS}",
+
+    "ui.menu.phone": "CELL",
+
+    "ui.save.name.empty": "EMPTY",
+    "ui.save.save": "Save",
+    "ui.save.return": "Return",
+    "ui.save.saved": "File Saved.",
+    
+    "ui.box.inventory": "INVENTORY",
+    "ui.box.box": "BOX",
+    "ui.box.finish": "Press [X] to finish"
+}

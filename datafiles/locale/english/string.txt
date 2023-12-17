@@ -1,5 +1,5 @@
-./string/battle.txt
-./string/ui.txt
-./string/item.txt
-./string/menu.txt
-./string/font.txt
+./string/battle.json
+./string/ui.json
+./string/item.json
+./string/menu.json
+./string/font.json

@@ -1,0 +1,27 @@
+{
+    "menu.begin": "Begin Game",
+    "menu.settings": "Settings",
+    "menu.continue": "Continue",
+    "menu.reset": "Reset",
+    "menu.reset.true": "True Reset",
+    
+    "menu.naming.title": "Name the fallen human.",
+    "menu.naming.quit": "Quit",
+    "menu.naming.backspace": "Backspace",
+    "menu.naming.done": "Done",
+
+    "menu.confirm.title": "Is this name correct?",
+    "menu.confirm.title.reset": "A name has already&been chosen.",
+    "menu.confirm.title.aaaaaa": "Not very creative...?",
+    "menu.confirm.title.alphys": "D-don't do that.",
+    "menu.confirm.title.alphy": "Uh.... OK?",
+    "menu.confirm.title.asgore": "You cannot.",
+    "menu.confirm.title.toriel": "I think you should&think of your own&name, my child.",
+    "menu.confirm.title.asriel": "...",
+    "menu.confirm.title.flowey": "I already CHOSE&that name.",
+    "menu.confirm.title.sans": "nope.",
+    "menu.confirm.title.papyru": "I'LL ALLOW IT!!!!",
+    "menu.confirm.title.undyne": "Get your OWN name!",
+    "menu.confirm.title.mtt": "OOOOH!!! ARE YOU&PROMOTING MY BRAND?",
+    "menu.confirm.title.chara": "The true name."
+}
