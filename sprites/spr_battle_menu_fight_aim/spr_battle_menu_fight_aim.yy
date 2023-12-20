@@ -13,15 +13,15 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"61ecc0a4-2ff4-412d-bd6a-007a84a762e7",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"279485e4-471e-4dde-ae88-2ea38ec4be0f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4bf70027-12ff-49ac-9e88-a5124d0fa42d",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0791715c-8488-4613-8ff5-db12fdeda220",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 128,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0b7b4bda-b5ad-4a24-ae87-28624f0506fb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7246982f-3239-43e8-9215-9be0da3afbf5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 4,
@@ -55,11 +55,11 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"61ecc0a4-2ff4-412d-bd6a-007a84a762e7","path":"sprites/spr_battle_menu_fight_aim/spr_battle_menu_fight_aim.yy",},},},"Disabled":false,"id":"cfea26cb-fbc3-4818-83f4-61d129378f0c","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"279485e4-471e-4dde-ae88-2ea38ec4be0f","path":"sprites/spr_battle_menu_fight_aim/spr_battle_menu_fight_aim.yy",},},},"Disabled":false,"id":"02530c01-7901-4ede-833f-d5246e1984fe","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"4bf70027-12ff-49ac-9e88-a5124d0fa42d","path":"sprites/spr_battle_menu_fight_aim/spr_battle_menu_fight_aim.yy",},},},"Disabled":false,"id":"e7b6a759-34b8-4f9b-8d3c-571ed0ccf195","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"0791715c-8488-4613-8ff5-db12fdeda220","path":"sprites/spr_battle_menu_fight_aim/spr_battle_menu_fight_aim.yy",},},},"Disabled":false,"id":"7e52c247-ac31-4b12-819c-afc3bae1e65e","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "volume": 1.0,
     "xorigin": 7,
     "yorigin": 64,
