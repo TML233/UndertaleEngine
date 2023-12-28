@@ -9,58 +9,58 @@ function Player_GetLvExp() {
 			result=10;
 			break;
 		case 3:
-			result=40;
+			result=30;
 			break;
 		case 4:
-			result=110;
+			result=70;
 			break;
 		case 5:
-			result=230;
+			result=120;
 			break;
 		case 6:
-			result=430;
+			result=200;
 			break;
 		case 7:
-			result=530;
+			result=300;
 			break;
 		case 8:
-			result=1030;
+			result=500;
 			break;
 		case 9:
-			result=1830;
+			result=800;
 			break;
 		case 10:
-			result=3030;
+			result=1200;
 			break;
 		case 11:
-			result=4730;
+			result=1700;
 			break;
 		case 12:
-			result=7230;
+			result=2500;
 			break;
 		case 13:
-			result=10730;
+			result=3500;
 			break;
 		case 14:
-			result=15730;
+			result=5000;
 			break;
 		case 15:
-			result=22730;
+			result=7000;
 			break;
 		case 16:
-			result=32730;
+			result=10000;
 			break;
 		case 17:
-			result=47730;
+			result=15000;
 			break;
 		case 18:
-			result=72730;
+			result=25000;
 			break;
 		case 19:
-			result=122730;
+			result=50000;
 			break;
 		case 20:
-			result=222729;
+			result=99999;
 			break;
 	}
 
