@@ -86,7 +86,7 @@ function Battle_SetMenu() {
 	//物品
 	if(MENU==BATTLE_MENU.ITEM){
 		Battle_SetMenuChoiceItem(0,false);
-		instance_create_depth(0,0,0,battle_menu_item_scrollbar);
+		instance_create_depth(0,0,0,(NEW_ITEM_MENU ? battle_menu_item_scrollbar : battle_menu_item_ui));
 	}
 
 	//仁慈
