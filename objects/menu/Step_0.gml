@@ -19,14 +19,9 @@ if(_menu==0){
 			}
 		}
 	}else{
-		if(Input_IsPressed(INPUT.LEFT)){
-			if(_choice==1){
-				_choice=0;
-				event_user(2);
-			}
-		}else if(Input_IsPressed(INPUT.RIGHT)){
-			if(_choice==0){
-				_choice=1;
+		if(Input_IsPressed(INPUT.LEFT)||Input_IsPressed(INPUT.RIGHT)){
+			if(_choice!=2){
+				_choice=!_choice;
 				event_user(2);
 			}
 		}else if(Input_IsPressed(INPUT.DOWN)){
@@ -110,6 +105,8 @@ if(_menu==0){
 			if(string_length(_naming_name)<6){
 				var inst=_inst_naming_letters._list_inst[|_choice_naming_letter];
 				_naming_name+=inst.text;
+				if string_lower(_naming_name) == "gaster"
+					game_restart();
 			}
 		}else if(Input_IsPressed(INPUT.CANCEL)){
 			if(string_length(_naming_name)>0){
@@ -118,15 +115,11 @@ if(_menu==0){
 		}
 	}else{
 		if(Input_IsPressed(INPUT.RIGHT)){
-			if(_choice_naming_command<2){
-				_choice_naming_command+=1;
-				event_user(3);
-			}
+			_choice_naming_command=(_choice_naming_command+1)%3;
+			event_user(3);
 		}else if(Input_IsPressed(INPUT.LEFT)){
-			if(_choice_naming_command>0){
-				_choice_naming_command-=1;
-				event_user(3);
-			}
+			_choice_naming_command=(_choice_naming_command+2)%3;
+			event_user(3);
 		}else if(Input_IsPressed(INPUT.UP)){
 			if(_choice_naming_command==0){
 				_choice_naming=0;
@@ -153,7 +146,7 @@ if(_menu==0){
 			event_user(3);
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			if(_choice_naming_command==0){
-				_menu=0;
+				game_end()
 				event_user(0);
 			}
 			if(_choice_naming_command==1){
@@ -175,16 +168,9 @@ if(_menu==0){
 		}
 	}
 }else if(_menu==2){
-	if(Input_IsPressed(INPUT.LEFT)){
-		if(_choice_confirm>0){
-			_choice_confirm=0;
-			event_user(5);
-		}
-	}else if(Input_IsPressed(INPUT.RIGHT)){
-		if(_choice_confirm<1&&_confirm_valid){
-			_choice_confirm=1;
-			event_user(5);
-		}
+	if(Input_IsPressed(INPUT.LEFT)||Input_IsPressed(INPUT.RIGHT)){
+		_choice_confirm = (_choice_confirm+1)%2
+		event_user(5);
 	}else if(Input_IsPressed(INPUT.CONFIRM)){
 		if(_choice_confirm==0){
 			_menu=(_mode==0 ? 1 : 0);
