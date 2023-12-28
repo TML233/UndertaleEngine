@@ -17,6 +17,6 @@ function Macro_Game() {
 
 //Engine settings
 	//if true then the item menu will be a scroll-bar otherwise it will be a 4-item grid
-#macro NEW_ITEM_MENU false
+#macro NEW_ITEM_MENU true
 
 }
