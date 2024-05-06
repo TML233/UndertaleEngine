@@ -33,7 +33,7 @@
   "solid": false,
   "spriteId": {
     "name": "spr_battle_soul_red",
-    "path": "sprites/spr_battle_soul_red/spr_battle_soul_red.yy",
+    "path": "sprites/spr_battle_soul_red/spr_battle_soul_,cyan.yy",
   },
   "spriteMaskId": null,
   "visible": true,
