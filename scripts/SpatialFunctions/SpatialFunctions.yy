@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"SpatialFunctions",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"SpatialFunctions",
+  "parent":{
+    "name":"Spatial",
+    "path":"folders/Scripts/Spatial.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
