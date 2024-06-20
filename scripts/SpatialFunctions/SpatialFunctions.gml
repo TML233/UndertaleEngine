@@ -9,9 +9,11 @@ function Spatial_InitVertexFormat() {
 	return format;
 }
 
-function Model(modelBuffer, transform) constructor {
+function Model(modelBuffer, transform, prim = pr_trianglestrip, texture = -1) constructor {
 	Buffer = vertex_create_buffer_from_buffer(modelBuffer, vertexFormat);
 	Transform = transform;
+	PrimType = prim;
+	Texture = texture;
 }
 
 function Vec3(xx, yy, zz) constructor {
@@ -189,8 +191,36 @@ function Spatial_LoadModel(fileName, vertexFormat) {
     return model;
 }
 
+function CameraProp(pos, target, up, fov, aspect, near, far) constructor {
+	Pos = pos;
+	Target = target;
+	Up = up;
+	Fov = fov;
+	Aspect = aspect;
+	ZNear = near;
+	ZFar = far;
+}
+
 //You should first create a list with models that share the same camera state
 //And then call this function to draw them together
 function DrawModels(modelList, cameraProp) {
-	//TODO
+	var cam = camera_get_active();
+	
+	var viewMatPrevious = camera_get_view_mat(cam);
+	var projMatPrevious = camera_get_proj_mat(cam);
+	
+	var viewMat = matrix_build_lookat(cameraProp.Pos.X, cameraProp.Pos.Y, cameraProp.Pos.Z, cameraProp.Target.X, cameraProp.Target.Y, cameraProp.Target.Z, cameraProp.Up.X, cameraProp.Up.Y, cameraProp.Up.Z);
+	var projMat = matrix_build_projection_perspective_fov(cameraProp.Fov, cameraProp.Aspect, cameraProp.ZNear,  cameraProp.ZFar);
+	
+	camera_set_view_mat(cam, viewMat);
+	camera_set_proj_mat(cam, projMat);
+	
+	for (var i=0; i<ds_list_size(modelList); i++)
+	{
+		var model = modelList[| i];
+		vertex_submit(model.Buffer, model.PrimType, model.Texture);
+	}
+	
+	camera_set_view_mat(cam, viewMatPrevious);
+	camera_set_proj_mat(cam, projMatPrevious);
 }
