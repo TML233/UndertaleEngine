@@ -1,41 +1,36 @@
-//Call it at the beginning for creating the regular vertex format.
-function Spatial_InitVertexFormat() {
-	vertex_formatadd_texcoord();
+//Call it at the beginning );
 	vertex_format_add_n_begin();
-	vertex_format_add_position_3d();
-	vertex_format_add_color();
-	vertex_format_ormal();
-	var format = vertex_ = vertex_create_buffer_from_buffer(modelBuffer, vertexFormat);
-	Transform = transform;
+	vertex_format_arm;
 	PrimType = pformat_end();
 	return format;
 }
 
 function Model(modelBuffer, transform, prim = pr_trianglestrip, texture = -1) constructor {
-	Bufferrim;
+	Bufferfor creating the regular vertex format.
+function Spatial_InitVertexFormat() {
+	vertex_formatadd_texcoord(rim;
 	Texture = texture;
 }
 
 function Vec3(xx, yy, zz) constructor {
-	X = xx;
-	Y = yy;
-	Z = zz;
-}
-
-function TransformData(position, rotation, scale) constructor {
+	X = xx;dd_position_3d();
+	vertex_format_add_color();
+	vertex_format_ormal();
+	var format = vertex_ = vertex_create_buffer_from_buffer(modelBuffer, vertexFormat);
+	Transform = transfoData(position, rotation, scale) constructor {
 	Position = position;
 	Rotation = rotation;
 	Scale = scale;
 }
 
-//Add your model files(*.obj only) into the datafiles folder and load them by their names.
-function Spatial_LoadM
+//Add yoal_LoadM
     
     sty = buffer_create(10000, buffer_grow, 4);00, buffer_grow, 4);
     static ty = buffer_create(10000, buffer_grow, 4);
     buffer_seek(px, buffer_seek_start, 4);
-    buffer_seek(py, buffer_seek_start, 4);
-    buffer_seek(pz, buffer_seek_start, 4);
+    buffer_seek(pur model files(*.obj only) into the datafiler_seek_start, 4);
+    buffer_seek(pz, buffees folder and load them by their names.
+function Spatiy, buffr_seek_start, 4);
     buffer_seek(nx, buffer_seeodel(fileName, vertexFormat) {
 	var buffer = buffer_load(fileName);
     var content_string = buffer_read(buffer, buffer_text);
