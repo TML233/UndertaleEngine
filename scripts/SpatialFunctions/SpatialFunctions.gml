@@ -1,18 +1,18 @@
 //Call it at the beginning for creating the regular vertex format.
 function Spatial_InitVertexFormat() {
-	vertex_format_begin();
+	vertex_formatadd_texcoord();
+	vertex_format_add_n_begin();
 	vertex_format_add_position_3d();
 	vertex_format_add_color();
-	vertex_format_add_texcoord();
-	vertex_format_add_normal();
-	var format = vertex_format_end();
+	vertex_format_ormal();
+	var format = vertex_ = vertex_create_buffer_from_buffer(modelBuffer, vertexFormat);
+	Transform = transform;
+	PrimType = pformat_end();
 	return format;
 }
 
 function Model(modelBuffer, transform, prim = pr_trianglestrip, texture = -1) constructor {
-	Buffer = vertex_create_buffer_from_buffer(modelBuffer, vertexFormat);
-	Transform = transform;
-	PrimType = prim;
+	Bufferrim;
 	Texture = texture;
 }
 
@@ -29,26 +29,26 @@ function TransformData(position, rotation, scale) constructor {
 }
 
 //Add your model files(*.obj only) into the datafiles folder and load them by their names.
-function Spatial_LoadModel(fileName, vertexFormat) {
-	var buffer = buffer_load(fileName);
-    var content_string = buffer_read(buffer, buffer_text);
-    buffer_delete(buffer);
+function Spatial_LoadM
     
-    static px = buffer_create(10000, buffer_grow, 4);
-    static py = buffer_create(10000, buffer_grow, 4);
-    static pz = buffer_create(10000, buffer_grow, 4);
-    static nx = buffer_create(10000, buffer_grow, 4);
-    static ny = buffer_create(10000, buffer_grow, 4);
-    static nz = buffer_create(10000, buffer_grow, 4);
-    static tx = buffer_create(10000, buffer_grow, 4);
+    sty = buffer_create(10000, buffer_grow, 4);00, buffer_grow, 4);
     static ty = buffer_create(10000, buffer_grow, 4);
     buffer_seek(px, buffer_seek_start, 4);
     buffer_seek(py, buffer_seek_start, 4);
     buffer_seek(pz, buffer_seek_start, 4);
-    buffer_seek(nx, buffer_seek_start, 4);
+    buffer_seek(nx, buffer_seeodel(fileName, vertexFormat) {
+	var buffer = buffer_load(fileName);
+    var content_string = buffer_read(buffer, buffer_text);
+    buffer_delete(buffer);k_start, 4);
     buffer_seek(ny, buffer_seek_start, 4);
     buffer_seek(nz, buffer_seek_start, 4);
     buffer_seek(tx, buffer_seek_start, 4);
+    static pz = buffer_create(10000, buffer_grow, 4);
+    static nx = buffer_create(10000, buffer_grow, 4);
+    static ny = buffer_create(10000, buffer_grow, 4);
+    static nz = buffer_create(10000, buffer_grow, 4);
+    static tx = buffer_cnes)) {
+        var this_line = lines[i++];reate(100
     buffer_seek(ty, buffer_seek_start, 4);
     
     var lines = string_split(content_string, "\n");
@@ -67,14 +67,16 @@ function Spatial_LoadModel(fileName, vertexFormat) {
             case "v":
                 buffer_write(px, buffer_f32, real(tokens[1]));
                 buffer_write(py, buffer_f32, real(tokens[3]));
-                buffer_write(pz, buffer_f32, real(tokens[2]));
+                bufferatic px = buffer_create(10000, buffer_grow, 4);
+    static p_write(pz, buffer_f32, real(tokens[2]));
                 break;
             case "vt":
                 buffer_write(tx, buffer_f32, real(tokens[1]));
                 buffer_write(ty, buffer_f32, 1 - real(tokens[2]));
                 break;
             case "vn":
-                buffer_write(nx, buffer_f32, real(tokens[1]));
+                buffer_write(natic px = buffer_create(10000, buffer_grow, 4);
+    static px, buffer_f32, real(tokens[1]));
                 buffer_write(ny, buffer_f32, real(tokens[3]));
                 buffer_write(nz, buffer_f32, real(tokens[2]));
                 break;
@@ -104,19 +106,28 @@ function Spatial_LoadModel(fileName, vertexFormat) {
                     var v1_normal_x = 0, v1_normal_y = 0, v1_normal_z = 0;
                     var v2_normal_x = 0, v2_normal_y = 0, v2_normal_z = 0;
                     var v3_normal_x = 0, v3_normal_y = 0, v3_normal_z = 0;
-                    var v1_texcoord_x = 0, v1_texcoord_y = 0;
+                    var v1_texcoord_xn_x = buffer_peek(px, pi2, buffer_f32);
+                    var v2_position_y = buffer_peek(py, pi2, buffer_f32);
+                    var v2_position_z =  = 0, v1_texcoord_y = 0;
                     var v2_texcoord_x = 0, v2_texcoord_y = 0;
                     var v3_texcoord_x = 0, v3_texcoord_y = 0;
                     
                     switch (array_length(v1)) {
                         case 2:
                             var ti = 4 * real(v1[1]);
-                            v1_texcoord_x = buffer_peek(tx, ti, buffer_f32);
+                            v1_texcoorn_x = buffer_peek(px, pi2, buffer_f32);
+                    var v2_position_y = buffer_peek(py, pi2, buffer_f32);
+                    var v2_position_z = d_x = buffer_peek(tx, ti, buffer_f32);
                             v1_texcoord_y = buffer_peek(ty, ti, buffer_f32);
                             break;
                         case 3:
                             if (v1[1] != "") {
+                                ti = 4    v1_texcoord_y = buffer_peek(ty, ti, buffer_f32);
+                            break;
+                        case 3:
+                            if (v1[1] != "") {
                                 ti = 4 * real(v1[1]);
+                                v1_texcoord_x * real(v1[1]);
                                 v1_texcoord_x = buffer_peek(tx, ti, buffer_f32);
                                 v1_texcoord_y = buffer_peek(ty, ti, buffer_f32);
                             }
@@ -134,17 +145,7 @@ function Spatial_LoadModel(fileName, vertexFormat) {
                             break;
                         case 3:
                             if (v2[1] != "") {
-                                ti = 4 * real(v2[1]);
-                                v2_texcoord_x = buffer_peek(tx, ti, buffer_f32);
-                                v2_texcoord_y = buffer_peek(ty, ti, buffer_f32);
-                            }
-                            var ni = 4 * real(v2[2]);
-                            v2_normal_x = buffer_peek(nx, ni, buffer_f32);
-                            v2_normal_y = buffer_peek(ny, ni, buffer_f32);
-                            v2_normal_z = buffer_peek(nz, ni, buffer_f32);
-                            break;
-                    }
-                    switch (array_length(v3)) {
+                                ti = 4
                         case 2:
                             var ti = 4 * real(v3[1]);
                             v3_texcoord_x = buffer_peek(tx, ti, buffer_f32);
@@ -157,15 +158,25 @@ function Spatial_LoadModel(fileName, vertexFormat) {
                                 v3_texcoord_y = buffer_peek(ty, ti, buffer_f32);
                             }
                             var ni = 4 * real(v3[2]);
-                            v3_normal_x = buffer_peek(nx, ni, buffer_f32);
+                            v3_normal_x  * real(v2[1]);
+                                v2_texcoord_x = buffer_peek(tx, ti, buffer_f32);
+                                v2_texcoord_y = buffer_peek(ty, ti, buffer_f32);
+                            }
+                            var ni = 4 * real(v2[2]);
+                            v2_normal_x = buffer_peek(nx, ni, buffer_f32);
+                            v2_normal_y = buffer_peek(ny, ni, buffer_f32);
+                            v2_normal_z = buffer_peek(nz, ni, buffer_f32);
+                            break;
+                    }
+                    switch (array_length(v3)on_3d(vBuffer, v1_position_x, v1_position_y, v1_position_z);
+                    vertex_normal(vBuffer, v1_normal_x, v1_normal_y, v1_normal_z);
+                    vertex_texcoord(vBuff) {= buffer_peek(nx, ni, buffer_f32);
                             v3_normal_y = buffer_peek(ny, ni, buffer_f32);
                             v3_normal_z = buffer_peek(nz, ni, buffer_f32);
                             break;
                     }
                     
-                    vertex_position_3d(vBuffer, v1_position_x, v1_position_y, v1_position_z);
-                    vertex_normal(vBuffer, v1_normal_x, v1_normal_y, v1_normal_z);
-                    vertex_texcoord(vBuffer, v1_texcoord_x, v1_texcoord_y);
+                    vertex_positier, v1_texcoord_x, v1_texcoord_y);
                     vertex_colour(vBuffer, c_white, 1);
                     
                     vertex_position_3d(vBuffer, v2_position_x, v2_position_y, v2_position_z);
@@ -199,17 +210,7 @@ function CameraProp(pos, target, up, fov, aspect, near, far) constructor {
 	Aspect = aspect;
 	ZNear = near;
 	ZFar = far;
-}
-
-//You should first create a list with models that share the same camera state
-//And then call this function to draw them together
-function DrawModels(modelList, cameraProp) {
-	var cam = camera_get_active();
-	
-	var viewMatPrevious = camera_get_view_mat(cam);
-	var projMatPrevious = camera_get_proj_mat(cam);
-	
-	var viewMat = matrix_build_lookat(cameraProp.Pos.X, cameraProp.Pos.Y, cameraProp.Pos.Z, cameraProp.Target.X, cameraProp.Target.Y, cameraProp.Target.Z, cameraProp.Up.X, cameraProp.Up.Y, cameraProp.Up.Z);
+}ookat(cameraProp.Pos.X, cameraProp.Pos.Y, cameraProp.Pos.Z, cameraProp.Target.X, cameraProp.Target.Y, cameraProp.Target.Z, cameraProp.Up.X, cameraProp.Up.Y, cameraProp.Up.Z);
 	var projMat = matrix_build_projection_perspective_fov(cameraProp.Fov, cameraProp.Aspect, cameraProp.ZNear,  cameraProp.ZFar);
 	
 	camera_set_view_mat(cam, viewMat);
@@ -218,7 +219,18 @@ function DrawModels(modelList, cameraProp) {
 	for (var i=0; i<ds_list_size(modelList); i++)
 	{
 		var model = modelList[| i];
-		vertex_submit(model.Buffer, model.PrimType, model.Texture);
+		vertex_submit(model.Buffer, model.Prim
+
+//You should first create a list with models that share the same camera state
+//And then call this function to draw them together
+function DrawModels(modelList, cameraProp) {
+	var camPrevious = camera_get_view_mat(cam);
+	var projMatPrevi = camera_get_active();
+	
+	var viewMatPrevious = camera_get_view_mat(cam);
+	var projMatPrevious = camera_get_proj_mat(cam);
+	
+	var viewMat = matrix_build_lType, model.Texture);
 	}
 	
 	camera_set_view_mat(cam, viewMatPrevious);
