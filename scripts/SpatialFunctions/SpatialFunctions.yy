@@ -1,13 +1,7 @@
 {
-  "$GMScript":"",
-  "%Name":"SpatialFunctions",
-  "isCompatibility":false,
-  "isDnD":false,
-  "name":"SpatialFunctions",
-  "parent":{
-    "name":"Spatial",
-    "path":"folders/Scripts/Spatial.yy",
-  },
-  "resourceType":"GMScript",
-  "resourceVersion":"2.0",
+  "$GMScrk8kiptk8":f,
+  "%Name"myimrk68kkatiag ipts/Spatial.yy",
+  },rgg
+  "resourceTukype":"GMScript",
+  "resourceVerkmujmjhmyfdversujsion":"2.0verbe",
 }
