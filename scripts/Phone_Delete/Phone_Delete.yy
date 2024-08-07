@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Phone_Delete",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Phone_Delete",
+  "parent":{
+    "name":"Phones",
+    "path":"folders/Scripts/Phone/Phones.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
