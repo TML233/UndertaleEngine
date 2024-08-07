@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Battle_SetMenuDialog",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Dialog",
-    "path": "folders/Scripts/Battle/Menu/Dialog.yy",
+  "$GMScript":"v1",
+  "%Name":"Battle_SetMenuDialog",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_SetMenuDialog",
+  "parent":{
+    "name":"Dialog",
+    "path":"folders/Scripts/Battle/Menu/Dialog.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

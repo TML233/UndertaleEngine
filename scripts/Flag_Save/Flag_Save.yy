@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Flag_Save",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Flag",
-    "path": "folders/Scripts/Flag.yy",
+  "$GMScript":"v1",
+  "%Name":"Flag_Save",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Flag_Save",
+  "parent":{
+    "name":"Flag",
+    "path":"folders/Scripts/Flag.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

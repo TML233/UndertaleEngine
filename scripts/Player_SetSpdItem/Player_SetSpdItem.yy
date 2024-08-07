@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Player_SetSpdItem",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Stat",
-    "path": "folders/Scripts/Player/Stat.yy",
+  "$GMScript":"v1",
+  "%Name":"Player_SetSpdItem",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Player_SetSpdItem",
+  "parent":{
+    "name":"Stat",
+    "path":"folders/Scripts/Player/Stat.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

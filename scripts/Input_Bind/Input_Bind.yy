@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Input_Bind",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Input",
-    "path": "folders/Scripts/GMU/Input.yy",
+  "$GMScript":"v1",
+  "%Name":"Input_Bind",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Input_Bind",
+  "parent":{
+    "name":"Input",
+    "path":"folders/Scripts/GMU/Input.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

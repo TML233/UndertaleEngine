@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Battle_FadeFader",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Battle",
-    "path": "folders/Scripts/Battle.yy",
+  "$GMScript":"v1",
+  "%Name":"Battle_FadeFader",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_FadeFader",
+  "parent":{
+    "name":"Battle",
+    "path":"folders/Scripts/Battle.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

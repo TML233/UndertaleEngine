@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Battle_RewardExp",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Reward",
-    "path": "folders/Scripts/Battle/Reward.yy",
+  "$GMScript":"v1",
+  "%Name":"Battle_RewardExp",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Battle_RewardExp",
+  "parent":{
+    "name":"Reward",
+    "path":"folders/Scripts/Battle/Reward.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
