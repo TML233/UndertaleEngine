@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Encounter_GetEnemy",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Encounter",
-    "path": "folders/Scripts/Encounter.yy",
+  "$GMScript":"v1",
+  "%Name":"Encounter_GetEnemy",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Encounter_GetEnemy",
+  "parent":{
+    "name":"Encounter",
+    "path":"folders/Scripts/Encounter.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Demo_Init",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Demo",
-    "path": "folders/Scripts/Demo.yy",
+  "$GMScript":"v1",
+  "%Name":"Demo_Init",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Demo_Init",
+  "parent":{
+    "name":"Demo",
+    "path":"folders/Scripts/Demo.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
