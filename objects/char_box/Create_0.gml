@@ -1,2 +1,3 @@
 event_inherited();
-gra = 0
+
+_interact = false;

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Lang_GetString",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Lang",
-    "path": "folders/Scripts/GMU/Lang.yy",
+  "$GMScript":"v1",
+  "%Name":"Lang_GetString",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Lang_GetString",
+  "parent":{
+    "name":"Lang",
+    "path":"folders/Scripts/GMU/Lang.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Box_Get",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Box",
-    "path": "folders/Scripts/Box.yy",
+  "$GMScript":"v1",
+  "%Name":"Box_Get",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Box_Get",
+  "parent":{
+    "name":"Box",
+    "path":"folders/Scripts/Box.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
