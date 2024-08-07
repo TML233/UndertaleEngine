@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Game_SetFrameSkip",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Game",
-    "path": "folders/Scripts/Game.yy",
+  "$GMScript":"v1",
+  "%Name":"Game_SetFrameSkip",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Game_SetFrameSkip",
+  "parent":{
+    "name":"Game",
+    "path":"folders/Scripts/Game.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }

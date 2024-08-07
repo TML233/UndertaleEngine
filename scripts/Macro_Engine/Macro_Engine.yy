@@ -1,11 +1,13 @@
 {
-  "resourceType": "GMScript",
-  "resourceVersion": "1.0",
-  "name": "Macro_Engine",
-  "isCompatibility": false,
-  "isDnD": false,
-  "parent": {
-    "name": "Macro",
-    "path": "folders/Scripts/Macro.yy",
+  "$GMScript":"v1",
+  "%Name":"Macro_Engine",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Macro_Engine",
+  "parent":{
+    "name":"Macro",
+    "path":"folders/Scripts/Macro.yy",
   },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
 }
