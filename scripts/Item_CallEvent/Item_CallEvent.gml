@@ -12,7 +12,6 @@ function Item_CallEvent() {
 	if(Item_IsValid(ITEM)&&(Item_IsSlotValid(SLOT)||SLOT==-1)){
 		var INST=Item_GetItem(ITEM);
 		INST._item_slot=SLOT;
-		show_debug_message(variable_struct_get(INST, EVENT));
 		method_call(variable_struct_get(INST, EVENT),[]);
 		return true;
 	}else{
