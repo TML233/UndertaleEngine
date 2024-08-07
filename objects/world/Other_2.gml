@@ -18,6 +18,8 @@ Lang_LoadString(0);
 Lang_LoadSprite(0);
 Lang_LoadFont(0);
 
+Item_Init();
+
 Flag_Init();
 
 Encounter_Init();
@@ -27,7 +29,6 @@ BGM_Init();
 Dialog_Init();
 
 Demo_Init();
-
 instance_create_depth(0,0,0,camera);
 instance_create_depth(0,0,0,fader);
 instance_create_depth(0,0,0,border);
