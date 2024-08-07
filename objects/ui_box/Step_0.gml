@@ -20,6 +20,7 @@ if(_state==-1){
 			_choice_item=7;
 		}
 	}else if(Input_IsPressed(INPUT.CONFIRM)){
+		event_user(1);
 		if(_choice_mode==0){
 			var target=Item_Get(_choice_item);
 			if(Item_IsValid(target) && Box_GetNumber(box_slot)<10){
@@ -37,5 +38,6 @@ if(_state==-1){
 		}
 	}else if(Input_IsPressed(INPUT.CANCEL)){
 		instance_destroy();
+		char_player.moveable = true;
 	}
 }
