@@ -6,7 +6,7 @@
   "name":"Item_GetWeapon",
   "parent":{
     "name":"Item",
-    "path":"folders/Scripts/Item/Item.yy",
+    "path":"folders/Scripts/Item.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

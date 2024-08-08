@@ -10,9 +10,11 @@ function Phone_CallEvent() {
 	}
 
 	if(Phone_IsValid(PHONE)&&(Phone_IsSlotValid(SLOT)||SLOT==-1)){
-		var INST=Phone_GetPhone(PHONE);
+		var INST=instance_create_depth(0,0,0,PHONE);
 		INST._phone_slot=SLOT;
-		method_call(variable_struct_get(INST, EVENT),[]);
+		with(INST){
+			event_user(EVENT);
+		}
 		return true;
 	}else{
 		return false;

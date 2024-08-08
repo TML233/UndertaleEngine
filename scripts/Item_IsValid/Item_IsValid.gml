@@ -2,7 +2,11 @@
 function Item_IsValid() {
 	var ITEM=argument[0];
 
-	return variable_struct_exists(global._items, ITEM);
+	if(object_exists(ITEM)){
+		return (ITEM==item || Object_GetBaseParent(ITEM)==item);
+	}else{
+		return false;
+	}
 
 
 }

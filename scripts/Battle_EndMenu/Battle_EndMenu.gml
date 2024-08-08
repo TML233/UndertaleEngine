@@ -8,7 +8,7 @@ function Battle_EndMenu() {
 		//使用物品
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ITEM){
 			battle._menu_item_used_last=Item_Get(Battle_GetMenuChoiceItem());
-			Item_CallEvent(Item_Get(Battle_GetMenuChoiceItem()),"_use",Battle_GetMenuChoiceItem());
+			Item_CallEvent(Item_Get(Battle_GetMenuChoiceItem()),ITEM_EVENT.USE,Battle_GetMenuChoiceItem());
 		}
 	
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FIGHT){

@@ -10,9 +10,11 @@ function Item_CallEvent() {
 	}
 
 	if(Item_IsValid(ITEM)&&(Item_IsSlotValid(SLOT)||SLOT==-1)){
-		var INST=Item_GetItem(ITEM);
+		var INST=instance_create_depth(0,0,0,ITEM);
 		INST._item_slot=SLOT;
-		method_call(variable_struct_get(INST, EVENT),[]);
+		with(INST){
+			event_user(EVENT);
+		}
 		return true;
 	}else{
 		return false;

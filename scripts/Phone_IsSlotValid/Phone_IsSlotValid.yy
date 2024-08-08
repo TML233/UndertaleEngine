@@ -6,7 +6,7 @@
   "name":"Phone_IsSlotValid",
   "parent":{
     "name":"Phone",
-    "path":"folders/Scripts/Phone/Phone.yy",
+    "path":"folders/Scripts/Phone.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
