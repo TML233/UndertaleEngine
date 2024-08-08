@@ -2,7 +2,11 @@
 function Phone_IsValid() {
 	var PHONE=argument[0];
 
-	return variable_struct_exists(global._phones, PHONE);
+	if(object_exists(PHONE)){
+		return (PHONE==phone || Object_GetBaseParent(PHONE)==phone);
+	}else{
+		return false;
+	}
 
 
 }
