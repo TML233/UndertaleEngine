@@ -1,3 +1,3 @@
 event_inherited();
 
-_interact = false;
+_ready=false;
