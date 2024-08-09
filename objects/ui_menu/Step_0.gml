@@ -79,13 +79,13 @@ if(_menu==-1){
 		event_user(0);
 		switch(_choice_item_operate){
 			case 0:
-				Item_CallEvent(Item_Get(_choice_item),ITEM_EVENT.USE,_choice_item);
+				Item_CallEvent(Item_Get(_choice_item),"_use",_choice_item);
 				break;
 			case 1:
-				Item_CallEvent(Item_Get(_choice_item),ITEM_EVENT.INFO,_choice_item);
+				Item_CallEvent(Item_Get(_choice_item),"_info",_choice_item);
 				break;
 			case 2:
-				Item_CallEvent(Item_Get(_choice_item),ITEM_EVENT.DROP,_choice_item);
+				Item_CallEvent(Item_Get(_choice_item),"_drop",_choice_item);
 				break;
 		}
 		audio_play_sound(snd_menu_confirm,0,false);
@@ -110,7 +110,7 @@ if(_menu==-1){
 			audio_play_sound(snd_menu_switch,0,false);
 		}
 	}else if(Input_IsPressed(INPUT.CONFIRM)){
-		Phone_CallEvent(Phone_Get(_choice_phone),PHONE_EVENT.CALL,_choice_phone);
+		Phone_CallEvent(Phone_Get(_choice_phone),"_call",_choice_phone);
 		_menu=-1;
 		event_user(0);
 		audio_play_sound(snd_menu_confirm,0,false);

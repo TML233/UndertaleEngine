@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Phone_GetPhone",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Phone_GetPhone",
+  "parent":{
+    "name":"Phones",
+    "path":"folders/Scripts/Phone/Phones.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
