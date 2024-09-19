@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ItemType_Dice",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ItemType_Dice",
+  "parent":{
+    "name":"CustomItems",
+    "path":"folders/Scripts/Item/CustomItems.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
