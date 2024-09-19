@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Item_GetArmor",
+  "%Name":"Player_SetWeaponItem",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Item_GetArmor",
+  "name":"Player_SetWeaponItem",
   "parent":{
-    "name":"Item",
-    "path":"folders/Scripts/Item.yy",
+    "name":"Player",
+    "path":"folders/Scripts/Player.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
