@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Item_Custom",
+  "%Name":"CustomItem_PhoneToriel",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Item_Custom",
+  "name":"CustomItem_PhoneToriel",
   "parent":{
     "name":"CustomItems",
     "path":"folders/Scripts/Item/CustomItems.yy",

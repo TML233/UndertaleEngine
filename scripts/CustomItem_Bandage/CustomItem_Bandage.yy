@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Item_GetTextEat",
+  "%Name":"CustomItem_Bandage",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Item_GetTextEat",
+  "name":"CustomItem_Bandage",
   "parent":{
-    "name":"TextHelpers",
-    "path":"folders/Scripts/Item/TextHelpers.yy",
+    "name":"CustomItems",
+    "path":"folders/Scripts/Item/CustomItems.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Item_Custom",
+  "%Name":"CustomItem_FadedRibbon",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Item_Custom",
+  "name":"CustomItem_FadedRibbon",
   "parent":{
     "name":"CustomItems",
     "path":"folders/Scripts/Item/CustomItems.yy",

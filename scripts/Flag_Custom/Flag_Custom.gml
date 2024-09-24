@@ -1,31 +1,25 @@
 function Flag_Custom() {
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.NAME,"PLAYER");
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.LV,1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX,20);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.HP,20);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+1,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+2,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+3,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+4,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+5,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+6,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM+7,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_WEAPON,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_ARMOR,-1);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ATK,10);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.DEF,10);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.SPD,2);
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.INV,40);
+	Player_SetName("PLAYER");
+	Player_SetLv(1);
+	Player_SetHpMax(20);
+	Player_SetHp(20);
+	Player_SetAtk(10);
+	Player_SetDef(10);
+	Player_SetSpd(2);
+	Player_SetInv(40);
 	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.BATTLE_MENU_FIGHT_OBJ,battle_menu_fight_knife);
+	
+	var items=Item_GetInventoryForItems();
+	items.Clear();
+	
+	var phones=Item_GetInventoryForPhones();
+	phones.Clear();
+	phones.Add(ITEM_DICE);
+	
+	Player_SetWeaponItem(ITEM_EMPTY);
+	Player_SetArmorItem(ITEM_EMPTY);
 
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.BATTLE_ROOM_RETURN,-1);
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_LANDMARK,noone);
 	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_DIR,-1);
-
-	Item_SetWeapon(item_stick);
-	Item_SetArmor(item_bandage);
-	Item_Add(item_tml);
-
-
 }

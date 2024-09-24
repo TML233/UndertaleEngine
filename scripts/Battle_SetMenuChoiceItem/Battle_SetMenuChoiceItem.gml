@@ -7,7 +7,9 @@ function Battle_SetMenuChoiceItem() {
 		CALL=argument[1];
 	}
 
-	if(SLOT<Item_GetNumber()){
+	var items=Item_GetInventoryForItems();
+	var count=items.GetCount();
+	if(SLOT<count){
 		battle._menu_choice_item=SLOT;
 		while(SLOT>=battle._menu_choice_item_first+3){
 			battle._menu_choice_item_first+=1;
@@ -19,11 +21,9 @@ function Battle_SetMenuChoiceItem() {
 		//更新文字
 		var text="";
 		var proc=battle._menu_choice_item_first;
-		repeat(3){
-			if(Item_IsValid(Item_Get(proc))){
-				text+="* "+Item_GetName(Item_Get(proc))+"&";
-				proc+=1;
-			}
+		repeat(min(3,count)){
+			text+="* "+items.GetItemName(proc)+"&";
+			proc+=1;
 		}
 		Battle_SetDialog(text,true);
 				

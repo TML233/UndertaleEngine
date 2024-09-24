@@ -1,135 +1,151 @@
-#macro ITEM_TYPE_EMPTY ""
 
-function Inventory(size) : RegisterManager() constructor{
+
+function Inventory(itemTypeManager,capacity) constructor{
 	itemIds = [];
 	
-	self.size = size;
-	function EnsureSize(){
-		var length=array_length(itemIds);
-		if(length!=size){
-			array_resize(itemIds,size);
-		}
-		if(length<size){
-			for(var i=length;i<size;i+=1){
-				itemIds[i]="";
-			}
-		}
-	};
-	function GetSize(){
-		return size;
+	self.itemTypeManager=itemTypeManager;
+	function IsItemTypeValid(itemId){
+		return itemTypeManager.IsValid(itemId);
+	}
+	function IsItemTypeEmptyOrValid(itemId){
+		return itemTypeManager.IsEmptyOrValid(itemId);
+	}
+	
+	self.capacity = capacity;
+	function GetCapacity(){
+		return capacity;
+	}
+	function GetCount(){
+		return array_length(itemIds);
 	}
 	
 	function Get(index){
-		EnsureSize();
-			
-		if(index<0||index>=size){
-			show_error($"Inventory index out of range({index}>={size})!",true);
-			return false;
+		var count=GetCount();
+		if(index<0||index>=count){
+			show_error($"Inventory index out of range({index}>={count})!",true);
+			return undefined;
 		}
-			
+		
 		return itemIds[index];
 	}
+	function GetOrEmpty(index){
+		var capacity=GetCapacity();
+		if(index<0||index>=capacity){
+			show_error($"Inventory index out of range({index}>={capacity})!",true);
+			return undefined;
+		}
+		if(index>=GetCount()){
+			return ITEM_EMPTY;
+		}
 		
-	static itemTypeManager=GLOBAL_ITEM_TYPE_MANAGER;
-	function IsItemTypeValid(itemId){
-		return itemId!=ITEM_TYPE_EMPTY && itemTypeManager.Contains(itemId);
+		return itemIds[index];
+	}
+	function GetItem(index){
+		var typeId=Get(index);
+		var itemType=itemTypeManager.Get(typeId);
+		return itemType;
+	}
+	function GetItemOrUndefined(index){
+		var typeId=GetOrEmpty(index);
+		if(typeId==ITEM_EMPTY){
+			return undefined;
+		}
+		var itemType=itemTypeManager.GetOrUndefined(typeId);
+		return itemType;
 	}
 	
 	// Normalize is the process that removes all invalid items and empty spaces between items.
 	function Normalize(){
-		EnsureSize();
-			
 		var slot=0;
-		for(var i=0;i<size;i+=1){
+		var length=array_length(itemIds);
+		for(var i=0;i<length;i+=1){
 			var itemId=itemIds[i];
-			if(!IsItemTypeValid(itemId)){
-				SetWithoutNormalize(i,"");
-				SetWithoutNormalize(slot,itemId);
+			if(IsItemTypeValid(itemId)){
+				itemIds[i]=ITEM_EMPTY;
+				itemIds[slot]=itemId;
 				slot+=1;
 			}
 		}
+		if(length!=slot){
+			array_resize(itemIds,slot);
+		}
 	}
 	
-	function SetWithoutNormalize(index, itemId){
-		EnsureSize();
-			
-		if(index<0||index>=size){
-			show_error($"Inventory index out of range({index}>={size})!",true);
-			return false;
-		}
-			
-		itemIds[index]=itemId;
-		return true;
-	}
 	function Set(index, itemId){
-		if(!SetWithoutNormalize(index,itemId)){
+		if(itemId==ITEM_EMPTY){
+			return Remove(index);
+		}
+		
+		if(!IsItemTypeValid(itemId)){
+			show_error("Item type does not exist in inventory's item type manager!",true);
 			return false;
 		}
-			
-		Normalize();
+		var count=GetCount();
+		if(index<0||index>=count){
+			show_error($"Inventory index out of range({index}>={count})!",true);
+			return false;
+		}
+		
+		itemIds[index]=itemId;
 		return true;
 	}
 	
 	function Remove(index){
-		return Set(index,ITEM_TYPE_EMPTY);
-	}
-	
-	function Clear(){
-		EnsureSize();
-		for(var i=0;i<size;i+=1){
-			itemIds[index]=ITEM_TYPE_EMPTY;
+		var count=GetCount();
+		if(index<0||index>=count){
+			show_error($"Inventory index out of range({index}>={count})!",true);
+			return false;
 		}
+		
+		array_delete(itemIds,index,1);
 		return true;
 	}
 	
-	// Will NOT normalize. Only counts the number of slots that are not empty.
-	function GetCount(){
-		EnsureSize();
-			
-		var count=0;
-		for(var i=0;i<size;i+=1){
-			if(itemIds[i]!=ITEM_TYPE_EMPTY){
-				count+=1;
-			}
+	function Clear(){
+		array_resize(itemIds,0);
+		return true;
+	}
+	
+	function Insert(index,itemId){
+		if(!IsItemTypeValid(itemId)){
+			show_error("Item type does not exist in inventory's item type manager!",true);
+			return false;
 		}
-		return count;
+		
+		var count=GetCount();
+		if(index<0||index>count){
+			show_error($"Inventory index out of range({index}>{count})!",true);
+			return false;
+		}
+		if(count>=GetCapacity()){
+			show_debug_message($"Failed to insert item {itemId} because inventory is full!");
+			return false;
+		}
+		
+		array_insert(itemIds,index,itemId);
+		return true;
 	}
 	
 	function Add(itemId){
-		Normalize();
-		if(Get(size-1)!=ITEM_TYPE_EMPTY){
-			show_debug_message($"Failed to add item {itemId} because inventory is full!");
-			return false;
-		}
-		return Set(size-1,itemId);
+		return Insert(GetCount(),itemId);
 	}
 	
 	// func(inventory, index, itemType)
 	function InvokeItem(index,func){
-		var typeId=Get(index);
-		var itemType=itemTypeManager.GetOrUndefined(typeId);
-		if(is_undefined(itemType)){
-			show_debug_message("Cannot invoke an item type that doesn't exist!");
-			return false;
-		}
+		var itemType=GetItem(index);
 		return func(self, index, itemType);
 	}
 	
+	function GetItemName(index){
+		return GetItem(index).GetName();
+	}
 	function InvokeItemUse(index){
-		InvokeItem(index,function(inventory,index,itemType){
-			itemType.OnUse(inventory,index);
-		});
+		GetItem(index).OnUse(self,index);
 	}
 	function InvokeItemInfo(index){
-		InvokeItem(index,function(inventory,index,itemType){
-			itemType.OnInfo(inventory,index);
-		});
+		GetItem(index).OnInfo(self,index);
 	}
 	function InvokeItemDrop(index){
-		InvokeItem(index,function(inventory,index,itemType){
-			itemType.OnDrop(inventory,index);
-		});
+		GetItem(index).OnDrop(self,index);
 	}
-	
-	EnsureSize();
 }

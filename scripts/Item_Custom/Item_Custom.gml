@@ -1,35 +1,64 @@
 function Item_Custom(){
-	// Register item types and inventories here.
-	// Don't add items to inventories! Those are done in Flag_Custom.
-	var inventories=GLOBAL_INVENTORY_MANAGER;
+	{
+		// Register item types here.
+		var itemTypes=Item_GetTypeManager();
 	
-	inventories.Register("items",new Inventory(8));
-	#macro INVENTORY_ITEMS GLOBAL_INVENTORY_MANAGER.Get("items");
+		// To create an item type, you need to first write code for your item type.
+		// See CustomItem_Dice for more information.
+		// We created an example item type "Dice" there.
 	
-	inventories.Register("phones",new Inventory(8));
-	#macro INVENTORY_PHONES GLOBAL_INVENTORY_MANAGER.Get("phones");
+		// After creating an item type, you need to register it to let the game know.
+		// Item type id must be unique.
+	
+		// It's good practice to define a macro to make an alias for item type id.
+		// This helps you reference the item type id more quickly and eliminate potential typos.
+		#macro ITEM_DICE "dice"
+		itemTypes.Register(ITEM_DICE, new CustomItem_Dice());
+	
+		// See CustomItem_Stick for help of ItemTypeSimple, a helper item base code.
+		#macro ITEM_STICK "stick"
+		itemTypes.Register(ITEM_STICK, new CustomItem_Stick());
+	
+		// See CustomItem_ToyKnife for help of equippable weapon.
+		#macro ITEM_TOY_KNIFE "toy_knife"
+		itemTypes.Register(ITEM_TOY_KNIFE, new CustomItem_ToyKnife());
+	
+		// See CustomItem_FadedRibbon for help of equippable armor.
+		#macro ITEM_FADED_RIBBON "faded_ribbon"
+		itemTypes.Register(ITEM_FADED_RIBBON, new CustomItem_FadedRibbon());
+	
+	}
+	
+	
+	
+	{
+		// Register item types and inventories here.
+		// Don't add items to inventories! Those are done in Flag_Custom.
+		var inventories=Item_GetInventoryManager();
+	
+		// After registering inventories, It's recommended to
+		// create a function to quickly get these inventories.
+		// See Inventory_GetFor___() below.
+		inventories.Register("items",new Inventory(itemTypes,8));
+		inventories.Register("phones",new Inventory(itemTypes,8));
+		inventories.Register("box1",new Inventory(itemTypes,10));
+		inventories.Register("box2",new Inventory(itemTypes,10));
+	}
+}
 
-	inventories.Register("box1",new Inventory(10));
-	#macro INVENTORY_BOX1 GLOBAL_INVENTORY_MANAGER.Get("box1");
-	
-	inventories.Register("box2",new Inventory(10));
-	#macro INVENTORY_BOX2 GLOBAL_INVENTORY_MANAGER.Get("box2");
-	
-	
-	
-	
-	// Register item types here.
-	var itemTypes=GLOBAL_ITEM_TYPE_MANAGER;
-	
-	// To create an item type, you need to first write code for your item type.
-	// See ItemType_Dice for more information.
-	// We created an example item type "Dice" there.
-	
-	// After creating an item type, you need to register it to let the game know.
-	// The item type id must be unique.
-	
-	// It's good practice to define a macro to make an alias for item type id.
-	// This helps you reference the item type id more quickly and eliminate potential typos.
-	#macro ITEM_TYPE_DICE "dice"
-	itemTypes.Register(ITEM_TYPE_DICE, new ItemType_Dice());
+function Item_GetInventoryForItems(){
+	return Item_GetInventoryManager().Get("items");
+}
+function Item_GetInventoryForPhones(){
+	return Item_GetInventoryManager().Get("phones");
+}
+function Item_GetInventoryForBoxes(index){
+	var boxId="box1";
+	switch(index){
+		case 0:
+			boxId="box1";
+		case 1:
+			boxId="box2";
+	}
+	return Item_GetInventoryManager().Get(boxId);
 }

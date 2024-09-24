@@ -23,10 +23,10 @@ function ItemType() constructor{
 	}
 }
 
-// ItemTypeSimple uses localized strings "item.keyId.name" and "item.keyId.info"
-// as its name and info text. It also recieves a function that is called when OnUse.
-// The function will be rebound to the item type struct.
-function ItemTypeSimple(keyId, funcOnUse) : ItemType() constructor{
+// ItemTypeSimple base receives a name localization key.
+// It automatically sets up GetName to show the localized name "item.key.name"
+// and OnInfo to show the localized dialog "item.key.info"
+function ItemTypeSimple(keyId) : ItemType() constructor{
 	self.nameKey=$"item.{keyId}.name";
 	self.infoTextKey=$"item.{keyId}.info";
 	
@@ -36,5 +36,27 @@ function ItemTypeSimple(keyId, funcOnUse) : ItemType() constructor{
 	function OnInfo(inventory,index){
 		return Lang_GetString(infoTextKey,infoTextKey);
 	}
-	OnUse=method(self,funcOnUse);
+}
+
+#macro ITEM_EMPTY ""
+#macro FALLBACK_ITEM_NAME_EMPTY "!EMPTY!"
+#macro FALLBACK_ITEM_NAME_UNDEFINED "!UNDEFINED!"
+
+function ItemTypeManager() : RegisterManager() constructor{
+	function GetNameOrFallback(id){
+		if(id==ITEM_EMPTY){
+			return FALLBACK_ITEM_NAME_EMPTY;
+		}
+		var itemType=GetOrUndefined(id);
+		if(is_undefined(itemType)){
+			return FALLBACK_ITEM_NAME_UNDEFINED;
+		}
+		return itemType.GetName();
+	}
+	function IsValid(itemId){
+		return itemId!=ITEM_EMPTY && Contains(itemId);
+	}
+	function IsEmptyOrValid(itemId){
+		return itemId==ITEM_EMPTY || Contains(itemId);
+	}
 }

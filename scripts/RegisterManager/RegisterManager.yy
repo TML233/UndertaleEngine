@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"RegisterManager",
   "parent":{
-    "name":"Item",
-    "path":"folders/Scripts/Item.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

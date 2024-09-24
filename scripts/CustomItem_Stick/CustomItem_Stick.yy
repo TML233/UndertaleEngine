@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"Item_GetTextEat",
+  "%Name":"CustomItem_Stick",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Item_GetTextEat",
+  "name":"CustomItem_Stick",
   "parent":{
-    "name":"TextHelpers",
-    "path":"folders/Scripts/Item/TextHelpers.yy",
+    "name":"CustomItems",
+    "path":"folders/Scripts/Item/CustomItems.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

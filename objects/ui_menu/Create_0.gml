@@ -28,6 +28,9 @@ _inst_name=instance_create_depth(32+6+8,52+6+(_top ? 270 : 0)+2,0,text_typer);
 _inst_name.text=_prefix+Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.NAME);
 
 _inst_menu=instance_create_depth(32+6+46,168+6+14,0,text_typer);
-_inst_menu.text=_prefix+"{space_y 2}"+(Item_GetNumber()<=0 ? "{color_text `gray`}" : "")+Lang_GetString("ui.menu.item")+(Item_GetNumber()<=0 ? "{color_text `white`}" : "")+"&"+Lang_GetString("ui.menu.stat")+(Phone_GetNumber()>0 ? "&"+Lang_GetString("ui.menu.phone") : "");
+
+var hasItem=Item_GetInventoryForItems().GetCount() > 0;
+var hasPhone=Item_GetInventoryForPhones().GetCount() > 0;
+_inst_menu.text=_prefix+"{space_y 2}"+(!hasItem ? "{color_text `gray`}" : "")+Lang_GetString("ui.menu.item")+(!hasItem ? "{color_text `white`}" : "")+"&"+Lang_GetString("ui.menu.stat")+(hasPhone ? "&"+Lang_GetString("ui.menu.phone") : "");
 
 audio_play_sound(snd_menu_switch,0,false);

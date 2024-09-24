@@ -18,6 +18,8 @@ Lang_LoadString(0);
 Lang_LoadSprite(0);
 Lang_LoadFont(0);
 
+Item_Init();
+
 Flag_Init();
 
 Encounter_Init();

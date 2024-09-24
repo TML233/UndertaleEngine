@@ -11,7 +11,7 @@ function Item_GetTextHeal() {
 	result+=(LINE ? "&" : "");
 	result+="{define `HP` "+string(HEAL)+"}";
 
-	if(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP)>=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX)){
+	if(Player_GetHp()>=Player_GetHpMax()){
 		result+=Lang_GetString("item.heal.all");
 	}else{
 		result+=Lang_GetString("item.heal.part");

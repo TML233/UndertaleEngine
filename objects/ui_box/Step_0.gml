@@ -20,18 +20,20 @@ if(_state==-1){
 			_choice_item=7;
 		}
 	}else if(Input_IsPressed(INPUT.CONFIRM)){
-		if(_choice_mode==0){
-			var target=Item_Get(_choice_item);
-			if(Item_IsValid(target) && Box_GetNumber(box_slot)<10){
-				Item_Remove(_choice_item);
-				Box_Add(box_slot,target);
+		var items=Item_GetInventoryForItems();
+		var box=Item_GetInventoryForBoxes(box_slot);
+		if(_choice_mode==0){	
+			var target=items.GetOrEmpty(_choice_item);
+			if(items.IsItemTypeValid(target) && box.GetCount()<box.GetCapacity()){
+				items.Remove(_choice_item);
+				box.Add(target);
 				event_user(1);
 			}
 		}else{
-			var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.BOX+10*box_slot+_choice_item);
-			if(Item_IsValid(target) && Item_GetNumber()<8){
-				Box_Remove(box_slot,_choice_item);
-				Item_Add(target);
+			var target=box.GetOrEmpty(_choice_item);
+			if(box.IsItemTypeValid(target) && items.GetCount()<items.GetCapacity()){
+				box.Remove(_choice_item);
+				items.Add(target);
 				event_user(1);
 			}
 		}

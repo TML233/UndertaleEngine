@@ -4,8 +4,9 @@ if(_menu==1){
 		_inst_item.text=_prefix;
 		
 		var proc=0;
-		repeat(Item_GetNumber()){
-			_inst_item.text+=Item_GetName(Item_Get(proc))+"&";
+		var items=Item_GetInventoryForItems();
+		repeat(items.GetCount()){
+			_inst_item.text+=items.GetItemName(proc)+"&";
 			proc+=1;
 		}
 	}
@@ -49,8 +50,9 @@ if(_menu==3){
 		var atk_item=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ATK_ITEM);
 		var def=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.DEF);
 		var def_item=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.DEF_ITEM);
-		var weapon=Item_GetName(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_WEAPON));
-		var armor=Item_GetName(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_ARMOR));
+		var itemTypeManager=Item_GetTypeManager();
+		var weapon=itemTypeManager.GetNameOrFallback(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_WEAPON));
+		var armor=itemTypeManager.GetNameOrFallback(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_ARMOR));
 		var gold=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD);
 		_inst_stat_0.text=_prefix+"{define `NAME` `"+name+"`}{define `LV` "+string(lv)+"}{define `HP` "+string(hp)+"}{define `HP_MAX` "+string(hp_max)+"}{define `ATK` "+string(atk)+"}{define `ATK_ITEM` "+string(atk_item)+"}{define `DEF` "+string(def)+"}{define `DEF_ITEM` "+string(def_item)+"}{define `WEAPON` `"+weapon+"`}{define `ARMOR` `"+armor+"`}{define `GOLD` "+string(gold)+"}"+Lang_GetString("ui.menu.stat.0");
 	}
@@ -77,8 +79,9 @@ if(_menu==4){
 		_inst_phone.text=_prefix;
 		
 		var proc=0;
-		repeat(Phone_GetNumber()){
-			_inst_phone.text+=Phone_GetName(Phone_Get(proc))+"&";
+		var phones=Item_GetInventoryForPhones();
+		repeat(phones.GetCount()){
+			_inst_phone.text+=phones.GetItemName(proc)+"&";
 			proc+=1;
 		}
 	}
