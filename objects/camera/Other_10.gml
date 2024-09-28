@@ -8,6 +8,12 @@ scale_y=1;
 angle=0;
 target=noone;
 
+use_room_limit=true;
+limit_top=0;
+limit_bottom=0;
+limit_left=0;
+limit_right=0;
+
 shake_x=0;
 shake_y=0;
 shake_speed_x=0;
