@@ -1,5 +1,5 @@
 var proc=0;
-var items=Item_GetInventoryForItems();
+var items=Item_GetInventoryItems();
 var NUMBER=items.GetCount();
 var CURRENT=Battle_GetMenuChoiceItem();
 

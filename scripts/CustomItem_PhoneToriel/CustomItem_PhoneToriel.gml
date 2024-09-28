@@ -1,8 +1,8 @@
 // Phone calls are also items.
 // When the player selects a phone item, OnUse is called.
-function CustomItem_PhoneToriel() : ItemType() constructor{
+function CustomItem_Phone_TML() : ItemType() constructor{
 	function GetName(){
-		return "Toriel";
+		return "Call TML";
 	}
 	
 	function OnUse(inventory,index){

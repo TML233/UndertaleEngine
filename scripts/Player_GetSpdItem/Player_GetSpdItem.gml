@@ -1,5 +1,3 @@
 function Player_GetSpdItem() {
-	return Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.SPD_ITEM);
-
-
+	return Storage_GetStaticGeneral().Get(FLAG_STATIC_SPD_ITEM,0);
 }

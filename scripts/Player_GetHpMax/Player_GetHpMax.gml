@@ -1,5 +1,3 @@
 function Player_GetHpMax() {
-	return Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX);
-
-
+	return Storage_GetStaticGeneral().Get(FLAG_STATIC_HP_MAX);
 }

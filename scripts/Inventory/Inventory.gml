@@ -2,6 +2,13 @@
 
 function Inventory(itemTypeManager,capacity) constructor{
 	itemIds = [];
+	function GetRawArray(){
+		return itemIds;
+	}
+	function SetRawArray(arr){
+		itemIds=arr;
+		Normalize();
+	}
 	
 	self.itemTypeManager=itemTypeManager;
 	function IsItemTypeValid(itemId){
@@ -58,6 +65,11 @@ function Inventory(itemTypeManager,capacity) constructor{
 	function Normalize(){
 		var slot=0;
 		var length=array_length(itemIds);
+		var capacity=GetCapacity();
+		if(length>capacity){
+			array_resize(itemIds,capacity);
+			length=capacity;
+		}
 		for(var i=0;i<length;i+=1){
 			var itemId=itemIds[i];
 			if(IsItemTypeValid(itemId)){
@@ -128,12 +140,6 @@ function Inventory(itemTypeManager,capacity) constructor{
 	
 	function Add(itemId){
 		return Insert(GetCount(),itemId);
-	}
-	
-	// func(inventory, index, itemType)
-	function InvokeItem(index,func){
-		var itemType=GetItem(index);
-		return func(self, index, itemType);
 	}
 	
 	function GetItemName(index){

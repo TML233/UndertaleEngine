@@ -7,7 +7,7 @@ function Battle_SetMenuChoiceItem() {
 		CALL=argument[1];
 	}
 
-	var items=Item_GetInventoryForItems();
+	var items=Item_GetInventoryItems();
 	var count=items.GetCount();
 	if(SLOT<count){
 		battle._menu_choice_item=SLOT;

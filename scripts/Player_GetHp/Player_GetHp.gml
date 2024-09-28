@@ -1,5 +1,3 @@
 function Player_GetHp() {
-	return Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP);
-
-
+	return Storage_GetStaticGeneral().Get(FLAG_STATIC_HP);
 }

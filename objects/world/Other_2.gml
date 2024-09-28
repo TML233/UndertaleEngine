@@ -20,7 +20,7 @@ Lang_LoadFont(0);
 
 Item_Init();
 
-Flag_Init();
+Storage_Init();
 
 Encounter_Init();
 

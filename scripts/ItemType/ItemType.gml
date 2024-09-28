@@ -34,7 +34,8 @@ function ItemTypeSimple(keyId) : ItemType() constructor{
 		return Lang_GetString(nameKey,nameKey);
 	}
 	function OnInfo(inventory,index){
-		return Lang_GetString(infoTextKey,infoTextKey);
+		Dialog_Add(Lang_GetString(infoTextKey,infoTextKey));
+		Dialog_Start();
 	}
 }
 

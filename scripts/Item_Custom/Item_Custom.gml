@@ -19,6 +19,10 @@ function Item_Custom(){
 		#macro ITEM_STICK "stick"
 		itemTypes.Register(ITEM_STICK, new CustomItem_Stick());
 	
+		// See CustomItem_Bandage for healing item example.
+		#macro ITEM_BANDAGE "bandage"
+		itemTypes.Register(ITEM_BANDAGE, new CustomItem_Bandage());
+		
 		// See CustomItem_ToyKnife for help of equippable weapon.
 		#macro ITEM_TOY_KNIFE "toy_knife"
 		itemTypes.Register(ITEM_TOY_KNIFE, new CustomItem_ToyKnife());
@@ -26,6 +30,10 @@ function Item_Custom(){
 		// See CustomItem_FadedRibbon for help of equippable armor.
 		#macro ITEM_FADED_RIBBON "faded_ribbon"
 		itemTypes.Register(ITEM_FADED_RIBBON, new CustomItem_FadedRibbon());
+		
+		// See CustomItem_PhoneTML for phone item example.
+		#macro ITEM_PHONE_TML "phone_tml"
+		itemTypes.Register(ITEM_PHONE_TML, new CustomItem_Phone_TML());
 	
 	}
 	
@@ -33,7 +41,7 @@ function Item_Custom(){
 	
 	{
 		// Register item types and inventories here.
-		// Don't add items to inventories! Those are done in Flag_Custom.
+		// Don't add items to inventories! Those are done in Player_CustomInitialData.
 		var inventories=Item_GetInventoryManager();
 	
 		// After registering inventories, It's recommended to
@@ -46,13 +54,13 @@ function Item_Custom(){
 	}
 }
 
-function Item_GetInventoryForItems(){
+function Item_GetInventoryItems(){
 	return Item_GetInventoryManager().Get("items");
 }
-function Item_GetInventoryForPhones(){
+function Item_GetInventoryPhones(){
 	return Item_GetInventoryManager().Get("phones");
 }
-function Item_GetInventoryForBoxes(index){
+function Item_GetInventoryBoxes(index){
 	var boxId="box1";
 	switch(index){
 		case 0:

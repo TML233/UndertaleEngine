@@ -6,7 +6,7 @@ if(_state==0){
 	draw_sprite_ext(spr_pixel,0,16+6+301,16+6+72,1,300,0,c_white,1);
 	
 	{
-		var items=Item_GetInventoryForItems();
+		var items=Item_GetInventoryItems();
 		var proc=0;
 		var count=items.GetCount();
 		repeat(8){
@@ -18,7 +18,7 @@ if(_state==0){
 	}
 	
 	{
-		var box=Item_GetInventoryForBoxes(box_slot);
+		var box=Item_GetInventoryBoxes(box_slot);
 		var proc=0;
 		var count=box.GetCount();
 		repeat(10){

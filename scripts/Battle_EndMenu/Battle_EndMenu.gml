@@ -8,7 +8,7 @@ function Battle_EndMenu() {
 		//使用物品
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ITEM){
 			var index=Battle_GetMenuChoiceItem();
-			var items=Item_GetInventoryForItems();
+			var items=Item_GetInventoryItems();
 			var itemId=items.Get(index);
 			battle._menu_item_used_last=itemId;
 			items.InvokeItemUse(index);

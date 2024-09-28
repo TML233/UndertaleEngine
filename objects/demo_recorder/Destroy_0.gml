@@ -11,7 +11,7 @@ buffer_write(buffer,buffer_u32,_frame_number);
 buffer_copy(_buffer,0,buffer_tell(_buffer),buffer,buffer_tell(buffer));
 
 var base64=buffer_base64_encode(buffer,0,buffer_get_size(buffer));
-Flag_Set(FLAG_TYPE.DEMO,FLAG_DEMO.DATA,base64);
+//Flag_Set(FLAG_TYPE.DEMO,FLAG_DEMO.DATA,base64);
 buffer_delete(buffer);
 
 buffer_delete(_buffer);

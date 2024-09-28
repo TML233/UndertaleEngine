@@ -1,3 +1,3 @@
-Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,room);
+// Current room are now only set into storage when calling Storage_SaveGame()
 
 room_persistent=false;

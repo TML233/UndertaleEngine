@@ -20,8 +20,8 @@ if(_state==-1){
 			_choice_item=7;
 		}
 	}else if(Input_IsPressed(INPUT.CONFIRM)){
-		var items=Item_GetInventoryForItems();
-		var box=Item_GetInventoryForBoxes(box_slot);
+		var items=Item_GetInventoryItems();
+		var box=Item_GetInventoryBoxes(box_slot);
 		if(_choice_mode==0){	
 			var target=items.GetOrEmpty(_choice_item);
 			if(items.IsItemTypeValid(target) && box.GetCount()<box.GetCapacity()){

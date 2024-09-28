@@ -41,16 +41,21 @@ if(_menu==0){
 			}
 		}else if(Input_IsPressed(INPUT.CONFIRM)){
 			if(_choice==0){
-				Player_Load(0);
-				var target=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ROOM,-1);
-				if(room_exists(target)){
-					room_goto(target);
+				Storage_LoadGame();
+				var roomName=Storage_GetStaticGeneral().Get(FLAG_STATIC_ROOM,"");
+				var roomIndex=asset_get_index(roomName);
+				if(!room_exists(roomIndex)){
+					roomIndex=-1;
+				}
+				if(room_exists(roomIndex)){
+					room_goto(roomIndex);
 				}else{
-					show_message("ERROR:\nAttempt to goto an unexisting room "+string(target));
+					show_message($"ERROR:\nAttempt to goto an unexisting room {roomName}");
 				}
 			}else if(_choice==1){
 				_menu=2;
-				_naming_name=Flag_Get(FLAG_TYPE.INFO,FLAG_INFO.NAME,Lang_GetString("ui.save.name.empty"));
+				var z=Storage_GetInfoGeneral();
+				_naming_name=z.Get(FLAG_INFO_NAME,"???");
 				_confirm_title=Lang_GetString("menu.confirm.title.reset");
 				event_user(0);
 			}else if(_choice==2){

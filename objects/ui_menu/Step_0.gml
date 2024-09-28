@@ -16,7 +16,7 @@ if(_menu==-1){
 			audio_play_sound(snd_menu_switch,0,false);
 		}
 	}else if(Input_IsPressed(INPUT.DOWN)){
-		var phones=Item_GetInventoryForPhones();
+		var phones=Item_GetInventoryPhones();
 		if(_choice<(phones.GetCount()>0 ? 2 : 1)){
 			_choice+=1;
 			audio_play_sound(snd_menu_switch,0,false);
@@ -24,7 +24,7 @@ if(_menu==-1){
 	}else if(Input_IsPressed(INPUT.CONFIRM)){
 		switch(_choice){
 			case 0:
-				var items=Item_GetInventoryForItems();
+				var items=Item_GetInventoryItems();
 				if(items.GetCount()>0){
 					_menu=1;
 					event_user(0);
@@ -52,7 +52,7 @@ if(_menu==-1){
 			audio_play_sound(snd_menu_switch,0,false);
 		}
 	}else if(Input_IsPressed(INPUT.DOWN)){
-		var items=Item_GetInventoryForItems();
+		var items=Item_GetInventoryItems();
 		if(_choice_item<items.GetCount()-1){
 			_choice_item+=1;
 			audio_play_sound(snd_menu_switch,0,false);
@@ -80,7 +80,7 @@ if(_menu==-1){
 		//TODO
 		_menu=-1;
 		event_user(0);
-		var items=Item_GetInventoryForItems();
+		var items=Item_GetInventoryItems();
 		switch(_choice_item_operate){
 			case 0:
 				items.InvokeItemUse(_choice_item);
@@ -109,13 +109,13 @@ if(_menu==-1){
 			audio_play_sound(snd_menu_switch,0,false);
 		}
 	}else if(Input_IsPressed(INPUT.DOWN)){
-		var phones=Item_GetInventoryForPhones();
+		var phones=Item_GetInventoryPhones();
 		if(_choice_phone<phones.GetCount()-1){
 			_choice_phone+=1;
 			audio_play_sound(snd_menu_switch,0,false);
 		}
 	}else if(Input_IsPressed(INPUT.CONFIRM)){
-		var phones=Item_GetInventoryForPhones();
+		var phones=Item_GetInventoryPhones();
 		phones.InvokeItemUse(_choice_phone);
 		_menu=-1;
 		event_user(0);

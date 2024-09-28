@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Player_GetBattleFightMenuObj",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Player_GetBattleFightMenuObj",
+  "parent":{
+    "name":"Player",
+    "path":"folders/Scripts/Player.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

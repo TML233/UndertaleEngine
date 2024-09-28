@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Item_Custom",
   "parent":{
-    "name":"CustomItems",
-    "path":"folders/Scripts/Item/CustomItems.yy",
+    "name":"Item",
+    "path":"folders/Scripts/Item.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

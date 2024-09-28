@@ -8,6 +8,9 @@ function Player_GetRoomName() {
 		case -1:
 			name="--";
 			break;
+		case room_area_0:
+			name="Area 0";
+			break;
 	}
 	return name;
 

@@ -32,7 +32,7 @@ if(_state==BATTLE_STATE.MENU){
 					Battle_SetMenu(BATTLE_MENU.ACT_TARGET);
 					break;
 				case 2:
-					var items=Item_GetInventoryForItems();
+					var items=Item_GetInventoryItems();
 					if(items.GetCount()>0){
 						Battle_SetMenu(BATTLE_MENU.ITEM);
 					}else{
@@ -187,7 +187,7 @@ if(_state==BATTLE_STATE.MENU){
 			}
 		}else if(Input_IsPressed(INPUT.DOWN)){
 			var slot=Battle_GetMenuChoiceItem()+1;
-			var items=Item_GetInventoryForItems();
+			var items=Item_GetInventoryItems();
 			if(slot<items.GetCount()){
 				audio_play_sound(snd_menu_switch,0,false);
 				Battle_SetMenuChoiceItem(slot);
