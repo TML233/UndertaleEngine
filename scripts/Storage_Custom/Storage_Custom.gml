@@ -8,6 +8,8 @@ function Storage_Custom(){
 	Storage_Custom_Info(storages);
 	Storage_Custom_Settings(storages);
 	Storage_Custom_Temp(storages);
+	
+	Player_CustomInitialData();
 }
 
 function Storage_MakeGetFilePathFunc(useSlots,fileName){
