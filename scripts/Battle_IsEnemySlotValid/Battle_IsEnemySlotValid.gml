@@ -1,7 +1,5 @@
 ///@arg enemy_slot
-function Battle_IsEnemySlotValid() {
-	var ENEMY=argument[0];
-
+function Battle_IsEnemySlotValid(ENEMY) {
 	return (ENEMY>=0 && ENEMY<=2);
 
 

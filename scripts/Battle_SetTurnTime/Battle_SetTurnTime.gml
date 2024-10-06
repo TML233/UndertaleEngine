@@ -1,6 +1,6 @@
 ///@arg time
-function Battle_SetTurnTime() {
-	battle._turn_time=argument[0];
+function Battle_SetTurnTime(time) {
+	battle._turn_time=time;
 	return true;
 
 

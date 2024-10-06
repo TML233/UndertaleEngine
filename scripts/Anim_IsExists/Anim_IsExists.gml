@@ -1,12 +1,6 @@
 ///@arg target
 ///@arg var_name*
-function Anim_IsExists() {
-	var TARGET=argument[0];
-	var VAR_NAME="";
-	if(argument_count>=2){
-		VAR_NAME=argument[1];
-	}
-
+function Anim_IsExists(TARGET,VAR_NAME="") {
 	var result=false;
 
 	if(TARGET<=-10){

@@ -1,6 +1,6 @@
 ///@arg spd
-function Player_SetSpd() {
-	var SPD=argument[0];
+function Player_SetSpd(SPD) {
+
 
 	var result=Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.SPD,SPD);
 

@@ -1,9 +1,6 @@
-///@arg enemy_obj/inst
+///@arg enemy_obj
 ///@arg enemy_slot
-function Battle_SetEnemy() {
-	var ENEMY=argument[0];
-	var SLOT=argument[1];
-
+function Battle_SetEnemy(ENEMY,SLOT) {
 	if(Battle_IsEnemySlotValid(SLOT) && Battle_IsEnemyValid(ENEMY)){
 		Battle_RemoveEnemy(SLOT);
 		if(!object_exists(ENEMY)&&instance_exists(ENEMY)){

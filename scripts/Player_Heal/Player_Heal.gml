@@ -1,7 +1,5 @@
 ///@arg heal
-function Player_Heal() {
-	var HEAL=argument[0];
-
+function Player_Heal(HEAL) {
 	if(HEAL>=0){
 		var HP=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP);
 		var HP_MAX=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX);
@@ -10,6 +8,4 @@ function Player_Heal() {
 	}else{
 		return Player_Hurt(-HEAL);
 	}
-
-
 }

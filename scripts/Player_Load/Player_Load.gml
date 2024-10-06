@@ -1,7 +1,5 @@
 ///@arg slot
-function Player_Load() {
-	var SLOT=argument[0];
-
+function Player_Load(SLOT) {
 	Flag_SetSaveSlot(SLOT);
 
 	Flag_Load(FLAG_TYPE.STATIC);

@@ -1,7 +1,5 @@
 ///@arg room
-function Player_GetRoomName() {
-	var ROOM=argument[0];
-
+function Player_GetRoomName(ROOM) {
 	var name="";
 
 	switch(ROOM){
@@ -10,6 +8,4 @@ function Player_GetRoomName() {
 			break;
 	}
 	return name;
-
-
 }

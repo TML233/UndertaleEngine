@@ -1,20 +1,7 @@
 ///@arg text*
 ///@arg choice*
 ///@arg line2*
-function Battle_SetDialog() {
-	var TEXT="";
-	var CHOICE=false;
-	var LINE2=false;
-	if(argument_count>=1){
-		TEXT=argument[0];
-	}
-	if(argument_count>=2){
-		CHOICE=argument[1];
-	}
-	if(argument_count>=3){
-		LINE2=argument[2];
-	}
-
+function Battle_SetDialog(TEXT="",CHOICE=false,LINE2=false) {
 	//销毁原实例
 	if(instance_exists(battle._dialog[LINE2])){
 		instance_destroy(battle._dialog[LINE2]);

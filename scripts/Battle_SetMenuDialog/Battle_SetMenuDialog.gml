@@ -1,7 +1,7 @@
 ///@arg text
-function Battle_SetMenuDialog() {
+function Battle_SetMenuDialog(text) {
 
-	battle._menu_dialog=argument[0];
+	battle._menu_dialog=text;
 
 	return true;
 

@@ -1,6 +1,6 @@
 ///@arg bgm_slot
-function BGM_IsSlotValid() {
-	var SLOT=argument[0];
+function BGM_IsSlotValid(SLOT) {
+
 
 	if(SLOT>=0&&SLOT<6){
 		return true;

@@ -1,7 +1,5 @@
-///@arg turn_obj/inst
-function Battle_IsTurnValid() {
-	var TURN=argument[0];
-
+///@arg turn_obj
+function Battle_IsTurnValid(TURN) {
 	if(!object_exists(TURN)&&instance_exists(TURN)){
 		TURN=TURN.object_index;
 	}
@@ -10,6 +8,4 @@ function Battle_IsTurnValid() {
 	}else{
 		return false;
 	}
-
-
 }

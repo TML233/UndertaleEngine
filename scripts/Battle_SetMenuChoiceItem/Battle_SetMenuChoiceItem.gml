@@ -1,12 +1,6 @@
 ///@arg item_choice
 ///@arg call_event*
-function Battle_SetMenuChoiceItem() {
-	var SLOT=argument[0];
-	var CALL=true;
-	if(argument_count>=2){
-		CALL=argument[1];
-	}
-
+function Battle_SetMenuChoiceItem(SLOT,CALL=true) {
 	if(SLOT<Item_GetNumber()){
 		battle._menu_choice_item=SLOT;
 		while(SLOT>=battle._menu_choice_item_first+3){

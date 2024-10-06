@@ -1,15 +1,8 @@
 ///@arg type
-function Flag_Load() {
-	var TYPE=argument[0];
-	var PATH="";
-	if(argument_count>=2){
-		PATH=argument[1];
-	}
-
+function Flag_Load(TYPE,PATH="") {
 	if(PATH==""){
 		PATH=Flag_GetSavePath(TYPE);
 	}
-
 	if(!file_exists(PATH)){
 		show_debug_message("Attempted to load flag type "+string(TYPE)+" from non-existing file \""+PATH+"\"!");
 		return false;

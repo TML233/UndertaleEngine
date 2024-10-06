@@ -1,6 +1,5 @@
-///@arg soul_obj/inst
-function Battle_IsSoulValid() {
-	var SOUL=argument[0];
+///@arg soul_obj
+function Battle_IsSoulValid(SOUL) {
 
 	if(!object_exists(SOUL)&&instance_exists(SOUL)){
 		SOUL=SOUL.object_index;
@@ -10,6 +9,5 @@ function Battle_IsSoulValid() {
 	}else{
 		return false;
 	}
-
 
 }

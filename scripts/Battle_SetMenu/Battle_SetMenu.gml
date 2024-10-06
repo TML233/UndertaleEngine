@@ -1,12 +1,6 @@
 ///@arg menu
 ///@arg call_event*
-function Battle_SetMenu() {
-	var MENU=argument[0];
-	var CALL=true;
-	if(argument_count>=2){
-		CALL=argument[1];
-	}
-
+function Battle_SetMenu(MENU,CALL=true) {
 	battle._menu=MENU;
 	Battle_SetDialog("",false,false);
 	Battle_SetDialog("",false,true);

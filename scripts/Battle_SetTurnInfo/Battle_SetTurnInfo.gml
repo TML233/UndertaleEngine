@@ -1,8 +1,6 @@
 ///@arg info
 ///@arg value
-function Battle_SetTurnInfo() {
-	var INFO=argument[0];
-	var VALUE=argument[1];
+function Battle_SetTurnInfo(INFO,VALUE) {
 
 	battle._turn_info[?INFO]=VALUE;
 

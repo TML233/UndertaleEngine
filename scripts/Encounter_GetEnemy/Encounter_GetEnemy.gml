@@ -1,8 +1,6 @@
 ///@arg encounter_id
 ///@arg enemy_slot
-function Encounter_GetEnemy() {
-	var ID=argument[0];
-	var ENEMY=argument[1];
+function Encounter_GetEnemy(ID,ENEMY) {
 
 	var map=global._encounter;
 	if(ds_map_exists(map,ID) && Battle_IsEnemySlotValid(ENEMY)){
