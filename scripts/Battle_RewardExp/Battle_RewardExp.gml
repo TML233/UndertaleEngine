@@ -1,9 +1,5 @@
 ///@arg reward_exp
-function Battle_RewardExp() {
-	var EXP=argument[0];
-
+function Battle_RewardExp(EXP) {
 	battle._reward_exp+=EXP;
 	return true;
-
-
 }

@@ -1,7 +1,5 @@
 ///@arg lang_id/name
-function Lang_LoadSprite() {
-	var LANG=argument[0];
-
+function Lang_LoadSprite(LANG) {
 	if(!Lang_IsExists(LANG)){
 		return false;
 	}

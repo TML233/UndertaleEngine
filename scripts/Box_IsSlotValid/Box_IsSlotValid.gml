@@ -1,8 +1,6 @@
 ///@arg box_slot
-function Box_IsSlotValid() {
-	var SLOT=argument[0];
+function Box_IsSlotValid(SLOT) {
 
 	return (SLOT>=0 && SLOT<10);
-
 
 }

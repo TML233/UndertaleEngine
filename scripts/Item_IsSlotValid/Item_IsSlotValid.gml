@@ -1,8 +1,4 @@
 ///@arg item_slot
-function Item_IsSlotValid() {
-	var SLOT=argument[0];
-
+function Item_IsSlotValid(SLOT) {
 	return (SLOT>=0 && SLOT<8);
-
-
 }

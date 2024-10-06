@@ -1,7 +1,5 @@
 ///@arg lv
-function Player_GetLvExp() {
-	var LV=argument[0];
-
+function Player_GetLvExp(LV) {
 	var result=-1;
 
 	switch(LV){

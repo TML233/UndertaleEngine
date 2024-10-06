@@ -1,7 +1,5 @@
 ///@arg encounter_id
-function Encounter_GetMenuDialog() {
-	var ID=argument[0];
-
+function Encounter_GetMenuDialog(ID) {
 	var map=global._encounter;
 	if(ds_map_exists(map,ID)){
 		var map_e=ds_map_find_value(map,ID);

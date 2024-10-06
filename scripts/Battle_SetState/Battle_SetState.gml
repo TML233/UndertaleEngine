@@ -1,7 +1,5 @@
 ///@arg state
-function Battle_SetState() {
-	var STATE=argument[0];
-
+function Battle_SetState(STATE) {
 	battle._state=STATE;
 
 	//菜单

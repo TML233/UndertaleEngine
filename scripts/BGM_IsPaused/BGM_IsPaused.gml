@@ -1,6 +1,6 @@
 ///@arg bgm_slot
-function BGM_IsPaused() {
-	var SLOT=argument[0];
+function BGM_IsPaused(SLOT) {
+
 
 	if(BGM_IsSlotValid(SLOT)){
 		if(BGM_IsPlaying(SLOT)){

@@ -1,7 +1,5 @@
 ///@arg lv
-function Player_GetLvAtk() {
-	var LV=argument[0];
-
+function Player_GetLvAtk(LV) {
 	var result=-1;
 
 	result=10+(LV-1)*2;

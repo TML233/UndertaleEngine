@@ -1,7 +1,5 @@
 ///@arg lv
-function Player_GetLvHpMax() {
-	var LV=argument[0];
-
+function Player_GetLvHpMax(LV) {
 	var result=-1;
 	if(LV>=20){
 		result=99;
@@ -10,6 +8,4 @@ function Player_GetLvHpMax() {
 	}
 
 	return result;
-
-
 }

@@ -1,9 +1,5 @@
 ///@arg input
-function Input_IsPressed() {
-	var INPUT=argument[0];
-
+function Input_IsPressed(INPUT) {
 	var state=Input_GetState(INPUT);
 	return (state==INPUT_STATE.PRESSED);
-
-
 }

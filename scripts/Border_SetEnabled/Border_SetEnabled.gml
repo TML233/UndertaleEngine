@@ -1,6 +1,6 @@
 ///@arg enabled
-function Border_SetEnabled() {
-	var ENABLED=argument[0];
+function Border_SetEnabled(ENABLED) {
+
 
 	if(ENABLED){
 		window_set_size(960,540);

@@ -1,6 +1,6 @@
 ///@arg name
-function Player_SetName() {
-	var NAME=argument[0];
+function Player_SetName(NAME) {
+
 
 	var result=Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.NAME,NAME);
 

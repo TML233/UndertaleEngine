@@ -1,6 +1,5 @@
 ///@arg override
-function Battle_SetMenuChoiceMercyOverride() {
-	var OVERRIDE=argument[0];
+function Battle_SetMenuChoiceMercyOverride(OVERRIDE) {
 
 	battle._menu_choice_mercy_override=OVERRIDE;
 

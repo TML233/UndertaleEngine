@@ -1,6 +1,5 @@
 ///@arg type
-function Flag_Clear() {
-	var TYPE=argument[0];
+function Flag_Clear(TYPE) {
 
 	var map=global._flag;
 	var map_f=-1;

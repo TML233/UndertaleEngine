@@ -1,6 +1,5 @@
 ///@arg phone_id
-function Phone_Add() {
-	var PHONE=argument[0];
+function Phone_Add(PHONE) {
 
 	if(Phone_GetNumber()<8){
 		Phone_Set(Phone_GetNumber(),PHONE);

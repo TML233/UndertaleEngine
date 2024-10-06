@@ -1,8 +1,5 @@
 ///@arg file_name
-function Lang_LoadFileToString() {
-
-	var FILE_NAME=argument[0];
-
+function Lang_LoadFileToString(FILE_NAME) {
 	if(!file_exists(FILE_NAME)){
 		return "";
 	}
