@@ -1,6 +1,6 @@
 ///@arg input
-function Demo_RemoveInput(INPUT) {
-
+function Demo_RemoveInput() {
+	var INPUT=argument[0];
 
 	if(!Demo_IsRecording()){
 		var pos=ds_list_find_index(global._demo_input_list,INPUT);

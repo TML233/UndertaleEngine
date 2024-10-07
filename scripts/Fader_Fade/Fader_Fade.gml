@@ -2,7 +2,14 @@
 ///@arg target
 ///@arg time
 ///@arg delay*
-function Fader_Fade(START,TARGET,TIME,DELAY=0) {
+function Fader_Fade() {
+	var START=argument[0];
+	var TARGET=argument[1];
+	var TIME=argument[2];
+	var DELAY=0;
+	if(argument_count>=4){
+		DELAY=argument[3];
+	}
 	if(START==-1){
 		START=fader.alpha;
 	}
@@ -11,4 +18,6 @@ function Fader_Fade(START,TARGET,TIME,DELAY=0) {
 	Anim_Create(fader,"alpha",0,0,START,TARGET-START,TIME,DELAY);
 
 	return true;
+
+
 }

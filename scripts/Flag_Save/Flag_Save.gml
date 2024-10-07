@@ -1,6 +1,12 @@
 ///@arg type
 ///@arg path*
-function Flag_Save(TYPE,PATH="") {
+function Flag_Save() {
+	var TYPE=argument[0];
+	var PATH="";
+	if(argument_count>=2){
+		PATH=argument[1];
+	}
+
 	if(PATH==""){
 		PATH=Flag_GetSavePath(TYPE);
 	}
@@ -14,4 +20,6 @@ function Flag_Save(TYPE,PATH="") {
 	show_debug_message("Flag type "+string(TYPE)+" saved to \""+PATH+"\".");
 
 	return true;
+
+
 }

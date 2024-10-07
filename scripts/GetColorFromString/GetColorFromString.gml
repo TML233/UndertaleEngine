@@ -1,5 +1,7 @@
 ///@arg string
-function GetColorFromString(STR) {
+function GetColorFromString() {
+	var STR=argument[0];
+
 	var color=c_white;
 	switch(STR){
 		case "white":
@@ -25,4 +27,6 @@ function GetColorFromString(STR) {
 			break;
 	}
 	return color;
+
+
 }

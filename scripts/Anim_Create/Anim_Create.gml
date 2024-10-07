@@ -8,8 +8,30 @@
 ///@arg delay*
 ///@arg arg_0*
 ///@arg arg_1*
-function Anim_Create(TARGET,VAR_NAME,TWEEN,EASE,START,CHANGE,DURATION,DELAY=0,ARG_0=0,ARG_1=0) {
+function Anim_Create() {
+	var TARGET=argument[0];
+	var VAR_NAME=argument[1];
+	var TWEEN=argument[2];
+	var EASE=argument[3];
+	var START=argument[4];
+	var CHANGE=argument[5];
+	var DURATION=argument[6];
+	var DELAY=0;
+	var ARG_0=0;
+	var ARG_1=0;
+
+	if(argument_count>=8){
+		DELAY=argument[7];
+	}
+	if(argument_count>=9){
+		ARG_0=argument[8];
+	}
+	if(argument_count>=10){
+		ARG_1=argument[9];
+	}
+
 	var inst_result=-1;
+
 	if(DURATION>=0){
 		if(instance_exists(TARGET)){
 			var proc=0;

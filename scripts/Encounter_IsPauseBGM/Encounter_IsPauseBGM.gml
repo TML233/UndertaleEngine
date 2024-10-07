@@ -1,5 +1,6 @@
 ///@arg encounter_id
-function Encounter_IsPauseBGM(ID) {
+function Encounter_IsPauseBGM() {
+	var ID=argument[0];
 
 	var map=global._encounter;
 	if(ds_map_exists(map,ID)){
