@@ -18,7 +18,9 @@ Lang_LoadString(0);
 Lang_LoadSprite(0);
 Lang_LoadFont(0);
 
-Flag_Init();
+Item_Init();
+
+Storage_Init();
 
 Encounter_Init();
 

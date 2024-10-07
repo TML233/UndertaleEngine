@@ -1,4 +1,5 @@
-Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_LANDMARK,target_landmark);
+var z=Storage_GetTempGeneral();
+z.Set(FLAG_TEMP_TRIGGER_WARP_LANDMARK,target_landmark);
 if(instance_exists(char_player)){
 	var pdir=DIR.DOWN;
 	if(player_dir==-1){
@@ -6,7 +7,7 @@ if(instance_exists(char_player)){
 	}else{
 		pdir=player_dir;
 	}
-	Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TRIGGER_WARP_DIR,pdir);
+	z.Set(FLAG_TEMP_TRIGGER_WARP_DIR,pdir);
 }
 if(bgm_fade){
 	BGM_Stop(0);

@@ -6,7 +6,7 @@ draw_sprite_ext(spr_pixel,0,32+6,168+6,142-6*2,148-6*2,0,c_black,1);
 
 draw_set_font(font_crypt_of_tomorrow);
 draw_set_color(c_white);
-draw_text_ext_transformed(32+6+8,52+(_top ? 270 : 0)+6+42,"LV  "+string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.LV))+"\nHP  "+string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP))+"/"+string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX))+"\nG   "+string(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD)),9,-1,2,2,0);
+draw_text_ext_transformed(32+6+8,52+(_top ? 270 : 0)+6+42,"LV  "+string(Player_GetLv())+"\nHP  "+string(Player_GetHp())+"/"+string(Player_GetHpMax())+"\nG   "+string(Player_GetGold()),9,-1,2,2,0);
 
 if(_menu==0){
 	draw_sprite(spr_battle_soul_red,0,32+6+27,168+6+31+36*_choice);

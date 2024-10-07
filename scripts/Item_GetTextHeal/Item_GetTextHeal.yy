@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"Item_GetTextHeal",
   "parent":{
-    "name":"Item",
-    "path":"folders/Scripts/Item.yy",
+    "name":"TextHelpers",
+    "path":"folders/Scripts/Item/TextHelpers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

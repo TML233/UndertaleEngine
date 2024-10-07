@@ -20,7 +20,7 @@ if(_choice!=-1){
 			ds_map_delete(_map_macro,_choice_macro);
 			ds_map_add(_map_macro,_choice_macro,_choice);
 		}
-		Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.TEXT_TYPER_CHOICE,_choice);
+		Storage_GetTempGeneral().Set(FLAG_TEMP_TEXT_TYPER_CHOICE,_choice);
 		_choice=-1;
 		audio_play_sound(snd_menu_confirm,0,false);
 	}

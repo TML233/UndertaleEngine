@@ -1,5 +1,3 @@
 function Player_GetTextTyperChoice() {
-	return Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.TEXT_TYPER_CHOICE);
-
-
+	return Storage_GetTempGeneral().Get(FLAG_TEMP_TEXT_TYPER_CHOICE,-1);
 }

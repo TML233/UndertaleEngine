@@ -1,5 +1,3 @@
 function Player_GetLv() {
-	return Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.LV);
-
-
+	return Storage_GetStaticGeneral().Get(FLAG_STATIC_LV,1);
 }

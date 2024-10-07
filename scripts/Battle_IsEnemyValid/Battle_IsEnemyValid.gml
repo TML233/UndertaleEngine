@@ -6,13 +6,5 @@ function Battle_IsEnemyValid() {
 		ENEMY=ENEMY.object_index;
 	}
 
-	if(object_exists(ENEMY)){
-		if(ENEMY==battle_enemy || Object_GetBaseParent(ENEMY)==battle_enemy){
-			return true;
-		}else{
-			return false;
-		}
-	}
-
-
+	return (GetObjectBase(ENEMY)==battle_enemy);
 }

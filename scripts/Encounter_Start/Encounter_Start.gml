@@ -1,42 +1,29 @@
-///@arg encounter_id
-///@arg anim*
-///@arg exclamation*
-function Encounter_Start() {
-	var ENCOUNTER=argument[0];
-	var ANIM=true;
-	var EXCLAM=true;
-	if(argument_count>=2){
-		ANIM=argument[1];
-	}
-	if(argument_count>=3){
-		EXCLAM=argument[2];
-	}
-
-	if(Encounter_IsExists(ENCOUNTER)){
+function Encounter_Start(encounter,anim=true,exclam=true) {
+	if(Encounter_IsExists(encounter)){
 		if(!instance_exists(char_player)){
-			ANIM=false;
+			anim=false;
 		}
-		if(!ANIM){
-			if(Encounter_IsPauseBGM(ENCOUNTER)){
+		if(!anim){
+			if(Encounter_IsPauseBGM(encounter)){
 				BGM_Pause(0);
 			}
-			Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER,ENCOUNTER);
+			Storage_GetTempGeneral().Set(FLAG_TEMP_ENCOUNTER,encounter);
 			if(!Player_IsInBattle()){
-				Flag_Set(FLAG_TYPE.TEMP,FLAG_TEMP.BATTLE_ROOM_RETURN,room);
+				Storage_GetTempGeneral().Set(FLAG_TEMP_BATTLE_ROOM_RETURN,room);
 				room_persistent=true;
 			}
 			room_goto(room_battle);
 		}else{
 			var inst=instance_create_depth(0,0,0,encounter_anim);
-			inst._encounter=ENCOUNTER;
-			inst._exclam=EXCLAM;
-			inst._quick=Encounter_IsQuick(ENCOUNTER);
-			inst._soul_x=Encounter_GetSoulX(ENCOUNTER);
-			inst._soul_y=Encounter_GetSoulY(ENCOUNTER);
+			inst._encounter=encounter;
+			inst._exclam=exclam;
+			inst._quick=Encounter_IsQuick(encounter);
+			inst._soul_x=Encounter_GetSoulX(encounter);
+			inst._soul_y=Encounter_GetSoulY(encounter);
 		}
 		return true;
 	}else{
-		show_debug_message("Encounter ID "+string(ENCOUNTER)+" doesn't exists!");
+		show_debug_message($"Encounter ID {encounter} doesn't exists!");
 		return false;
 	}
 

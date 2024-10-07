@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Storage_InitUninit",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Storage_InitUninit",
+  "parent":{
+    "name":"Storage",
+    "path":"folders/Scripts/Storage.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

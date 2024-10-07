@@ -4,8 +4,9 @@ if(_menu==1){
 		_inst_item.text=_prefix;
 		
 		var proc=0;
-		repeat(Item_GetNumber()){
-			_inst_item.text+=Item_GetName(Item_Get(proc))+"&";
+		var items=Item_GetInventoryItems();
+		repeat(items.GetCount()){
+			_inst_item.text+=items.GetItemName(proc)+"&";
 			proc+=1;
 		}
 	}
@@ -41,25 +42,26 @@ if(_menu==1){
 if(_menu==3){
 	if(!instance_exists(_inst_stat_0)){
 		_inst_stat_0=instance_create_depth(188+6+22,52+6+26,0,text_typer);
-		var name=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.NAME);
-		var lv=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.LV);
-		var hp=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP);
-		var hp_max=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.HP_MAX);
-		var atk=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ATK);
-		var atk_item=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ATK_ITEM);
-		var def=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.DEF);
-		var def_item=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.DEF_ITEM);
-		var weapon=Item_GetName(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_WEAPON));
-		var armor=Item_GetName(Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.ITEM_ARMOR));
-		var gold=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD);
+		var name=Player_GetName();
+		var lv=Player_GetLv();
+		var hp=Player_GetHp();
+		var hp_max=Player_GetHpMax();
+		var atk=Player_GetAtk();
+		var atk_item=Player_GetAtkItem();
+		var def=Player_GetDef();
+		var def_item=Player_GetDefItem();
+		var itemTypeManager=Item_GetTypeManager();
+		var weapon=itemTypeManager.GetNameOrFallback(Player_GetItemWeapon());
+		var armor=itemTypeManager.GetNameOrFallback(Player_GetItemArmor());
+		var gold=Player_GetGold();
 		_inst_stat_0.text=_prefix+"{define `NAME` `"+name+"`}{define `LV` "+string(lv)+"}{define `HP` "+string(hp)+"}{define `HP_MAX` "+string(hp_max)+"}{define `ATK` "+string(atk)+"}{define `ATK_ITEM` "+string(atk_item)+"}{define `DEF` "+string(def)+"}{define `DEF_ITEM` "+string(def_item)+"}{define `WEAPON` `"+weapon+"`}{define `ARMOR` `"+armor+"`}{define `GOLD` "+string(gold)+"}"+Lang_GetString("ui.menu.stat.0");
 	}
 	if(!instance_exists(_inst_stat_1)){
 		_inst_stat_1=instance_create_depth(188+6+190,52+6+182,0,text_typer);
-		var xp=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.EXP);
-		var lv=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.LV);
+		var xp=Player_GetExp();
+		var lv=Player_GetLv();
 		var lv_xp=Player_GetLvExp(lv+1);
-		var kills=Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.KILLS);
+		var kills=Player_GetKills();
 		_inst_stat_1.text=_prefix+"{define `EXP` "+string(xp)+"}{define `EXP_NEXT` "+(lv_xp!=-1 ? string(lv_xp-xp) : "`N/A`")+"}"+Lang_GetString("ui.menu.stat.1")+(kills>0 ? "{define `KILLS` "+string(kills)+"}"+Lang_GetString("ui.menu.stat.2") : "");
 	}
 }else{
@@ -77,8 +79,9 @@ if(_menu==4){
 		_inst_phone.text=_prefix;
 		
 		var proc=0;
-		repeat(Phone_GetNumber()){
-			_inst_phone.text+=Phone_GetName(Phone_Get(proc))+"&";
+		var phones=Item_GetInventoryPhones();
+		repeat(phones.GetCount()){
+			_inst_phone.text+=phones.GetItemName(proc)+"&";
 			proc+=1;
 		}
 	}

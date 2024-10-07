@@ -7,8 +7,11 @@ function Battle_EndMenu() {
 	
 		//使用物品
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.ITEM){
-			battle._menu_item_used_last=Item_Get(Battle_GetMenuChoiceItem());
-			Item_CallEvent(Item_Get(Battle_GetMenuChoiceItem()),ITEM_EVENT.USE,Battle_GetMenuChoiceItem());
+			var index=Battle_GetMenuChoiceItem();
+			var items=Item_GetInventoryItems();
+			var itemId=items.Get(index);
+			battle._menu_item_used_last=itemId;
+			items.InvokeItemUse(index);
 		}
 	
 		if(BUTTON==BATTLE_MENU_CHOICE_BUTTON.FIGHT){

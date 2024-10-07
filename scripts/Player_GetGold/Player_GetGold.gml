@@ -1,5 +1,3 @@
 function Player_GetGold() {
-	return Flag_Get(FLAG_TYPE.STATIC,FLAG_STATIC.GOLD);
-
-
+	return Storage_GetStaticGeneral().Get(FLAG_STATIC_GOLD,0);
 }

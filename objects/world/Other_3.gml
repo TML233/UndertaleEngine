@@ -1,6 +1,7 @@
 Anim_Uninit();
 Dialog_Uninit();
-Flag_Uninit();
+Item_Uninit();
+Storage_Uninit();
 Encounter_Uninit();
 Lang_Uninit();
 Input_Uninit();

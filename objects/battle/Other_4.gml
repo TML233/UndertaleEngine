@@ -8,8 +8,7 @@ instance_create_depth(345,432,0,battle_button_item);
 instance_create_depth(500,432,0,battle_button_mercy);
 Battle_SetSoul(battle_soul_red);
 
-var ENCOUNTER=Flag_Get(FLAG_TYPE.TEMP,FLAG_TEMP.ENCOUNTER);
-var BGM=Encounter_GetBGM(ENCOUNTER);
+var BGM=Encounter_GetBGM(_encounter);
 if(audio_exists(BGM)){
 	BGM_Play(5,BGM);
 }
@@ -28,4 +27,4 @@ Battle_CallEnemyEvent(BATTLE_ENEMY_EVENT.BATTLE_START);
 
 Battle_GotoNextState();
 
-show_debug_message("Battle initialized. Encounter ID "+string(ENCOUNTER)+".");
+show_debug_message($"Battle initialized. Encounter ID {_encounter}");

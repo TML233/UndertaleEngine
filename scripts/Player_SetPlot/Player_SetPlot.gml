@@ -1,10 +1,3 @@
-///@arg plot
-function Player_SetPlot() {
-	var PLOT=argument[0];
-
-	Flag_Set(FLAG_TYPE.STATIC,FLAG_STATIC.PLOT,PLOT);
-
-	return true;
-
-
+function Player_SetPlot(plot) {
+	Storage_GetStaticGeneral().Set(FLAG_STATIC_PLOT,plot);
 }

@@ -1,3 +1,4 @@
 event_inherited();
 
-sprite_index=(Item_GetNumber()>0) ? Lang_GetSprite("battle.button.item",spr_default) : Lang_GetSprite("battle.button.item.empty",spr_default);
+var items=Item_GetInventoryItems();
+sprite_index=(items.GetCount()>0) ? Lang_GetSprite("battle.button.item",spr_default) : Lang_GetSprite("battle.button.item.empty",spr_default);
