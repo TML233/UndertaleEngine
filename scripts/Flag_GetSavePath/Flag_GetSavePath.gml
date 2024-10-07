@@ -1,5 +1,7 @@
 ///@arg type
-function Flag_GetSavePath(TYPE) {
+function Flag_GetSavePath() {
+	var TYPE=argument[0];
+
 	var result=working_directory+GAME_SAVE_NAME+"./flag/";
 	switch(TYPE){
 		case FLAG_TYPE.STATIC:

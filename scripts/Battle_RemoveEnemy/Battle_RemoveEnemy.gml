@@ -1,5 +1,7 @@
 ///@arg enemy_slot
-function Battle_RemoveEnemy(ENEMY) {
+function Battle_RemoveEnemy() {
+	var ENEMY=argument[0];
+
 	if(Battle_IsEnemySlotValid(ENEMY)){
 		var INST=Battle_GetEnemy(ENEMY);
 		if(instance_exists(INST)){

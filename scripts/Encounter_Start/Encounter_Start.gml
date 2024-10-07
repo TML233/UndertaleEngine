@@ -1,7 +1,17 @@
 ///@arg encounter_id
 ///@arg anim*
 ///@arg exclamation*
-function Encounter_Start(ENCOUNTER,ANIM=true,EXCLAM=true) {
+function Encounter_Start() {
+	var ENCOUNTER=argument[0];
+	var ANIM=true;
+	var EXCLAM=true;
+	if(argument_count>=2){
+		ANIM=argument[1];
+	}
+	if(argument_count>=3){
+		EXCLAM=argument[2];
+	}
+
 	if(Encounter_IsExists(ENCOUNTER)){
 		if(!instance_exists(char_player)){
 			ANIM=false;

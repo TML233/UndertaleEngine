@@ -1,5 +1,7 @@
 ///@arg time
-function Battle_SetMenuFightAnimTime(TIME) {
+function Battle_SetMenuFightAnimTime() {
+	var TIME=argument[0];
+
 	var MENU=Battle_GetMenu();
 
 	if((MENU==BATTLE_MENU.FIGHT_AIM||MENU==BATTLE_MENU.FIGHT_ANIM) && TIME>=-1){

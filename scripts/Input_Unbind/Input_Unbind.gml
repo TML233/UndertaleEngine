@@ -1,5 +1,7 @@
 ///@arg input
-function Input_Unbind(INPUT) {
+function Input_Unbind() {
+	var INPUT=argument[0];
+
 	var map=global._gmu_input;
 	if(ds_map_exists(map,INPUT)){
 		var list=ds_map_find_value(map,INPUT);
@@ -16,4 +18,6 @@ function Input_Unbind(INPUT) {
 	}else{
 		return false;
 	}
+
+
 }

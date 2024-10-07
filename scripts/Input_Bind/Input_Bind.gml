@@ -2,7 +2,13 @@
 ///@arg type
 ///@arg device
 ///@arg button
-function Input_Bind(INPUT,TYPE,DEVICE,BUTTON) {
+function Input_Bind() {
+
+	var INPUT=argument[0];
+	var TYPE=argument[1];
+	var DEVICE=argument[2];
+	var BUTTON=argument[3];
+
 	if(TYPE>=INPUT_TYPE.KEYBOARD&&TYPE<=INPUT_TYPE.MOUSE){
 		var map=global._gmu_input;
 		var list=-1;

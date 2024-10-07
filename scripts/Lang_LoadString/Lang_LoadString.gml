@@ -1,5 +1,7 @@
 ///@arg lang_id/name
-function Lang_LoadString(LANG) {
+function Lang_LoadString() {
+	var LANG=argument[0];
+
 	if(!Lang_IsExists(LANG)){
 		return false;
 	}

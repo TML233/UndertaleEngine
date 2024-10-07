@@ -1,5 +1,7 @@
 ///@arg menu_choice_enemy
-function Battle_ConvertMenuChoiceEnemyToEnemySlot(CHOICE_ENEMY) {
+function Battle_ConvertMenuChoiceEnemyToEnemySlot() {
+	var CHOICE_ENEMY=argument[0];
+
 	if(CHOICE_ENEMY<Battle_GetEnemyNumber()){
 		var proc=0;
 		var proc2=0;

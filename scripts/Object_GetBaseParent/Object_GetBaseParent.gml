@@ -1,5 +1,7 @@
-//@arg object
-function Object_GetBaseParent(OBJ) {
+function Object_GetBaseParent() {
+	//@arg object
+	var OBJ=argument[0];
+
 	if(object_exists(OBJ)){
 		var parent=object_get_parent(OBJ);
 		if(object_exists(parent)){

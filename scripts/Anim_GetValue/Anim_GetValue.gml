@@ -3,7 +3,19 @@
 ///@arg time
 ///@arg arg_0*
 ///@arg arg_1*
-function Anim_GetValue(TWEEN,EASE,TIME,ARG_0=0,ARG_1=0) {
+function Anim_GetValue() {
+	var TWEEN=argument[0];
+	var EASE=argument[1];
+	var TIME=argument[2];
+	var ARG_0=0;
+	var ARG_1=0;
+	if(argument_count>=4){
+		ARG_0=argument[3];
+	}
+	if(argument_count>=5){
+		ARG_1=argument[4];
+	}
+
 	var r=0;
 	var t=TIME;
 	var b=0;

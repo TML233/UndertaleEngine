@@ -1,7 +1,16 @@
 ///@arg target
 ///@arg var_name*
 ///@arg skip*
-function Anim_Destroy(TARGET,VAR_NAME="",SKIP=false) {
+function Anim_Destroy() {
+	var TARGET=argument[0];
+	var VAR_NAME="";
+	var SKIP=false;
+	if(argument_count>=2){
+		VAR_NAME=argument[1];
+	}
+	if(argument_count>=3){
+		SKIP=argument[2];
+	}
 
 	var result=false;
 
