@@ -21,7 +21,8 @@ function Anim_GetValue() {
 	var b=0;
 	var c=1;
 	var d=1;
-
+	var s;
+	
 	switch(TWEEN){
 		case ANIM_TWEEN.LINEAR:
 			r=(t/d)*c+b;
@@ -185,9 +186,9 @@ function Anim_GetValue() {
 		
 		case ANIM_TWEEN.BACK:
 			if(ARG_0>0){
-				var s=ARG_0;
+				s=ARG_0;
 			}else{
-				var s=1.70158;
+				s=1.70158;
 			}
 			switch(EASE){
 				case ANIM_EASE.IN:
@@ -230,9 +231,9 @@ function Anim_GetValue() {
 					}
 					if(a==0||a<abs(c)){
 						a=c;
-						var s=p/4;
+						s=p/4;
 					}else{
-						var s=p/(2*pi)*arcsin(c/a);
+						s=p/(2*pi)*arcsin(c/a);
 					}
 					t-=1;
 					r=-(a*power(2,10*t)* sin((t*d-s)*(2*pi)/p))+b;
@@ -252,9 +253,9 @@ function Anim_GetValue() {
 					}
 					if(a==0||a<abs(c)){
 						a=c;
-						var s=p/4;
+						s=p/4;
 					}else{
-						var s=p/(2*pi)*arcsin(c/a);
+						s=p/(2*pi)*arcsin(c/a);
 					}
 					r=a*power(2,-10*t)*sin((t*d-s)*(2*pi)/p)+c+b;
 					break;
@@ -273,9 +274,9 @@ function Anim_GetValue() {
 					}
 					if(a==0||a<abs(c)){
 						a=c;
-						var s=p/4;
+						s=p/4;
 					}else{
-						var s=p/(2*pi)*arcsin(c/a);
+						s=p/(2*pi)*arcsin(c/a);
 					}
 					t-=1;
 					if(t<1){

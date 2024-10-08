@@ -1,3 +1,4 @@
+var proc=0;
 //处理新增字幕队列
 while(!ds_queue_empty(_queue_text)){
 	var text=ds_queue_dequeue(_queue_text);
@@ -17,7 +18,7 @@ while(!ds_queue_empty(_queue_text)){
 }
 
 //处理显示时间
-var proc=0;
+proc=0;
 repeat(ds_list_size(_list_inst)){
 	if(instance_exists(_list_inst[|proc])){
 		if(_list_time[|proc]>0){
@@ -30,7 +31,7 @@ repeat(ds_list_size(_list_inst)){
 }
 
 //处理字幕显示完毕
-var proc=0;
+proc=0;
 repeat(ds_list_size(_list_inst)){
 	if(_list_time[|proc]<=0){
 		var inst=_list_inst[|proc];
@@ -49,7 +50,7 @@ repeat(ds_list_size(_list_inst)){
 }
 
 //处理字幕高度
-var proc=0;
+proc=0;
 var height=0;
 repeat(ds_list_size(_list_inst)){
 	var inst=_list_inst[|proc];
@@ -77,7 +78,7 @@ if(height>_up){
 }
 
 //处理字幕位置
-var proc=0;
+proc=0;
 var yy=_y-up_show;
 repeat(ds_list_size(_list_inst)){
 	var inst=_list_inst[|proc];
@@ -94,7 +95,7 @@ repeat(ds_list_size(_list_inst)){
 }
 
 //处理销毁实例列表
-var proc=0;
+proc=0;
 repeat(ds_list_size(_list_destroy_inst)){
 	if(_list_destroy_time[|proc]<=0){
 		var inst=_list_destroy_inst[|proc];

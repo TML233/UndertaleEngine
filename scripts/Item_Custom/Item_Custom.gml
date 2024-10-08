@@ -1,5 +1,5 @@
 function Item_Custom(){
-	{
+	#region Types
 		// Register item types here.
 		var itemTypes=Item_GetTypeManager();
 	
@@ -35,11 +35,9 @@ function Item_Custom(){
 		#macro ITEM_PHONE_TML "phone_tml"
 		itemTypes.Register(ITEM_PHONE_TML, new CustomItem_Phone_TML());
 	
-	}
-	
-	
-	
-	{
+	#endregion
+
+	#region Inventory
 		// Register item types and inventories here.
 		// Don't add items to inventories! Those are done in Player_CustomInitialData.
 		var inventories=Item_GetInventoryManager();
@@ -51,7 +49,7 @@ function Item_Custom(){
 		inventories.Register("phones",new Inventory(itemTypes,8));
 		inventories.Register("box1",new Inventory(itemTypes,10));
 		inventories.Register("box2",new Inventory(itemTypes,10));
-	}
+	#endregion
 }
 
 function Item_GetInventoryItems(){

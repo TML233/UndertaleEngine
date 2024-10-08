@@ -31,11 +31,11 @@ function Anim_Create() {
 	}
 
 	var inst_result=-1;
-
+	var proc_result=0;
+	
 	if(DURATION>=0){
 		if(instance_exists(TARGET)){
 			var proc=0;
-			var proc_result=0;
 			var inst_find=noone;
 		
 			repeat(instance_number(TARGET)){
@@ -90,6 +90,4 @@ function Anim_Create() {
 		}
 	}
 	return inst_result;
-
-
 }

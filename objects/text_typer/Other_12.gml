@@ -1,5 +1,7 @@
 ///@desc Command
 var cmd=_list_cmd;
+var ARGC;
+var target;
 
 switch(cmd[|0]){
 	case "speed":
@@ -51,7 +53,7 @@ switch(cmd[|0]){
 		break;
 		
 	case "color_text":
-		var ARGC=ds_list_size(cmd)-1;
+		ARGC=ds_list_size(cmd)-1;
 		if(ARGC==1||ARGC==4){
 			var proc=0;
 			repeat(ARGC){
@@ -75,7 +77,7 @@ switch(cmd[|0]){
 		break;
 		
 	case "color_shadow":
-		var ARGC=ds_list_size(cmd)-1;
+		ARGC=ds_list_size(cmd)-1;
 		if(ARGC==1||ARGC==4){
 			var proc=0;
 			repeat(ARGC){
@@ -99,7 +101,7 @@ switch(cmd[|0]){
 		break;
 		
 	case "color_outline":
-		var ARGC=ds_list_size(cmd)-1;
+		ARGC=ds_list_size(cmd)-1;
 		if(ARGC==1||ARGC==4){
 			var proc=0;
 			repeat(ARGC){
@@ -206,7 +208,7 @@ switch(cmd[|0]){
 		
 	case "voice":
 		if(is_real(cmd[|1])){
-			if(cmd[|1]==-1 || (cmd[|1]>=0 && cmd[|1]<array_height_2d(_group_voice))){
+			if(cmd[|1]==-1 || (cmd[|1]>=0 && cmd[|1]<array_length(_group_voice))){
 				_voice=cmd[|1];
 			}
 		}
@@ -214,7 +216,7 @@ switch(cmd[|0]){
 		
 	case "voice_single":
 		if(is_real(cmd[|1])){
-			if(cmd[|1]==-1 || cmd[|1]>=0 && cmd[|1]<array_length_2d(_group_voice,_voice)){
+			if(cmd[|1]==-1 || cmd[|1]>=0 && cmd[|1]<array_length(_group_voice[_voice])){
 				_voice_single=cmd[|1];
 			}
 		}
@@ -222,7 +224,7 @@ switch(cmd[|0]){
 		
 	case "font":
 		if(is_real(cmd[|1])){
-			if(cmd[|1]>=0&&cmd[|1]<array_height_2d(_group_font)){
+			if(cmd[|1]>=0&&cmd[|1]<array_length(_group_font)){
 				_font=cmd[|1];
 			}
 		}
@@ -348,7 +350,7 @@ switch(cmd[|0]){
 					x-=58*_scale_x;
 					event_user(4);
 				}
-			}else if(fface>=0 && fface<array_length_1d(_group_face)){
+			}else if(fface>=0 && fface<array_length(_group_face)){
 				if(instance_exists(_face)){
 					instance_destroy(_face);
 				}else{
@@ -415,7 +417,7 @@ switch(cmd[|0]){
 		break;
 		
 	case "sound":
-		var target=-1;
+		target=-1;
 		if(is_real(cmd[|1])){
 			target=cmd[|1];
 		}else{
@@ -427,7 +429,7 @@ switch(cmd[|0]){
 		break;
 		
 	case "script":
-		var target=-1;
+		target=-1;
 		if(is_real(cmd[|1])){
 			target=cmd[|1];
 		}else{
