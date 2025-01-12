@@ -1,5 +1,5 @@
-./sprite/battle_button_fight.ini
-./sprite/battle_button_act.ini
-./sprite/battle_button_item.ini
-./sprite/battle_button_item_empty.ini
-./sprite/battle_button_mercy.ini
+sprite/battle_button_fight.ini
+sprite/battle_button_act.ini
+sprite/battle_button_item.ini
+sprite/battle_button_item_empty.ini
+sprite/battle_button_mercy.ini

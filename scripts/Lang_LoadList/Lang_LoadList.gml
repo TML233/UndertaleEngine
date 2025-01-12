@@ -12,9 +12,7 @@ function Lang_LoadList() {
 		var LANG=file_text_read_string(FILE);
 		file_text_readln(FILE);
 		if(!Lang_IsExists(LANG)){
-			if(directory_exists(GMU_LANG_PATH_BASE+LANG)){
-				ds_list_add(LIST,LANG);
-			}
+			ds_list_add(LIST,LANG);
 		}
 	}
 
