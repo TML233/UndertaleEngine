@@ -10,6 +10,7 @@ function File_ReadAllText(path){
 	while(!file_text_eof(file)){
 		text+=file_text_readln(file);
 	}
+	file_text_close(file);
 	return text;
 }
 
