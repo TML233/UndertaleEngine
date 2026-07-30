@@ -27,6 +27,27 @@ if(keyboard_check_pressed(vk_f2)){
 }
 
 if(keyboard_check_pressed(vk_f4)&&!keyboard_check(vk_alt)&&!keyboard_check(vk_control)&&!keyboard_check(vk_shift)){
-	window_set_fullscreen(!window_get_fullscreen());
-	//display_set_gui_maximize();
+	var fs = !window_get_fullscreen();
+	window_set_fullscreen(fs);
+	Storage_GetSettings().Get("general").Set("fullscreen", fs);
+	Storage_GetSettings().SaveToFile();
+}
+
+// Karma tick down logic
+if (global.kr_enabled && global.kr > 0) {
+    if (Player_GetHp() <= 1) {
+        global.kr = 0;
+    } else {
+        global.kr_timer += 1;
+        var tick_rate = 10;
+        if (global.kr > 30) tick_rate = 1;
+        else if (global.kr > 20) tick_rate = 2;
+        else if (global.kr > 10) tick_rate = 5;
+        
+        if (global.kr_timer >= tick_rate) {
+            global.kr_timer = 0;
+            Player_SetHp(Player_GetHp() - 1);
+            global.kr -= 1;
+        }
+    }
 }

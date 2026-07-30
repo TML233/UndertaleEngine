@@ -21,6 +21,7 @@ Lang_LoadFont(0);
 Item_Init();
 
 Storage_Init();
+Settings_Load();
 
 Encounter_Init();
 

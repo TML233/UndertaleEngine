@@ -22,6 +22,8 @@ function BGM_Play() {
 		BGM_Stop(SLOT);
 		global._bgm_audio[SLOT]=AUDIO;
 		global._bgm_id[SLOT]=audio_play_sound(AUDIO,1,LOOP);
+		var bgm_vol = Storage_GetSettings().Get("general").Get("vol_bgm", 1);
+		audio_sound_gain(global._bgm_id[SLOT], bgm_vol, 0);
 		global._bgm_loop_start[SLOT]=LOOP_START;
 		global._bgm_loop_end[SLOT]=LOOP_END;
 		return true;

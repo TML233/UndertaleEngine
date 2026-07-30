@@ -1,8 +1,8 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"undertale_engine",
   "AudioGroups":[
-    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
+    {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
   "configs":{
     "children":[],
@@ -98,6 +98,7 @@
     {"$GMFolder":"","%Name":"Small","folderPath":"folders/Sprites/Gamepad/PS4/Small.yy","name":"Small","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"font.txt","CopyToMask":-1,"filePath":"datafiles/locale/english","name":"font.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"determination_mono.ini","CopyToMask":-1,"filePath":"datafiles/locale/english/font","name":"determination_mono.ini","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -192,6 +193,14 @@
     {"id":{"name":"ui_menu","path":"objects/ui_menu/ui_menu.yy",},},
     {"id":{"name":"ui_save","path":"objects/ui_save/ui_save.yy",},},
     {"id":{"name":"world","path":"objects/world/world.yy",},},
+    {"id":{"name":"battle_soul_yellow","path":"objects/battle_soul_yellow/battle_soul_yellow.yy",},},
+    {"id":{"name":"battle_soul_blue","path":"objects/battle_soul_blue/battle_soul_blue.yy",},},
+    {"id":{"name":"battle_soul_green","path":"objects/battle_soul_green/battle_soul_green.yy",},},
+    {"id":{"name":"battle_soul_purple","path":"objects/battle_soul_purple/battle_soul_purple.yy",},},
+    {"id":{"name":"battle_bullet_yellow","path":"objects/battle_bullet_yellow/battle_bullet_yellow.yy",},},
+    {"id":{"name":"battle_bullet_spear","path":"objects/battle_bullet_spear/battle_bullet_spear.yy",},},
+    {"id":{"name":"obj_settings","path":"objects/obj_settings/obj_settings.yy",},},
+    {"id":{"name":"Settings_LoadSave","path":"scripts/Settings_LoadSave/Settings_LoadSave.yy",},},
     {"id":{"name":"room_area_0","path":"rooms/room_area_0/room_area_0.yy",},},
     {"id":{"name":"room_battle","path":"rooms/room_battle/room_battle.yy",},},
     {"id":{"name":"room_gameover","path":"rooms/room_gameover/room_gameover.yy",},},
